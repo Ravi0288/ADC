@@ -79,16 +79,26 @@ WSGI_APPLICATION = 'economy_research_service.wsgi.application'
 
 # Database settings
 # ..................#####################
+# DATABASES = {
+#     'default': {
+#     'ENGINE': 'django.db.backends.mysql',
+#     'NAME': 'ers',
+#     'USER':'root',
+#     'PASSWORD':'admin',
+#     'HOST':'localhost',
+#     'PORT':'3306',
+#     }
+# }
+
+DATABASE_DIR = os.path.join(BASE_DIR, 'db.sqlite3')
 DATABASES = {
     'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'ers',
-    'USER':'root',
-    'PASSWORD':'admin',
-    'HOST':'localhost',
-    'PORT':'3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': DATABASE_DIR,
     }
 }
+
+
 
 # ..................#####################
 

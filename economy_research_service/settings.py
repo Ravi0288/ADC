@@ -4,6 +4,7 @@ Django settings for nal_library project
 import ftplib
 from pathlib import Path
 import os
+from .conf import get_env_variable
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -83,8 +84,8 @@ WSGI_APPLICATION = 'economy_research_service.wsgi.application'
 #     'default': {
 #     'ENGINE': 'django.db.backends.mysql',
 #     'NAME': 'ers',
-#     'USER':'root',
-#     'PASSWORD':'admin',
+    # 'USER':get_env_variable('DBUSER'),
+    # 'PASSWORD':get_env_variable('DBPSWD'),
 #     'HOST':'localhost',
 #     'PORT':'3306',
 #     }

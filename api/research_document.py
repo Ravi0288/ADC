@@ -68,7 +68,7 @@ class Research_document_serializer(ModelSerializer):
 
 
 # views for SyncFromSource
-class Sync_from_fource_view(ModelViewSet):
+class research_docs_view(ModelViewSet):
     queryset = Research_document.objects.all()
     serializer_class = Research_document_serializer
 

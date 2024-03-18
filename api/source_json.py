@@ -53,7 +53,6 @@ class Sync_from_source(models.Model):
     processed_on = models.DateTimeField(null=True)
     status = models.CharField(max_length=12)
 
-
     def __str__(self) -> str:
         return self.source
     
@@ -109,8 +108,6 @@ class URL_to_be_accessed_serializer(ModelSerializer):
 class URL_to_be_accessed_view(ModelViewSet):
     queryset = URL_to_be_accessed.objects.all()
     serializer_class = URL_to_be_accessed_serializer
-
-
 
 
 

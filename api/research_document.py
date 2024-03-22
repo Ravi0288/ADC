@@ -4,7 +4,7 @@ import os
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.serializers import ModelSerializer
 from datetime import datetime
-
+from django.db.models import Q
 from economy_research_service.settings import UPLOAD_ROOT
 from rest_framework.decorators import api_view
 from django.conf import settings
@@ -77,7 +77,10 @@ class research_docs_view(ModelViewSet):
 # function to download file from saved link
 @api_view(['GET'])
 def download_research_documents(request):
-    urls = URL_to_be_accessed.objects.filter(last_accessed_status__in = ('failed', 'initial'))
+    urls = URL_to_be_accessed.objects.filter(
+        Q(last_accessed_status__in = ('failed', 'initial')) |
+        Q(next_due_date__lte = datetime.today())
+        )
 
     for url in urls:
         response = requests.get(url.download_URL, verify=False)
@@ -87,7 +90,7 @@ def download_research_documents(request):
             if content_disposition:
                 file_name = content_disposition.split('filename=')[1]
             else:
-                file_name = "xx"  # Use URL as filename if content-disposition is not provided
+                file_name = (response.url).split('/')[-1]  # Use URL as filename if content-disposition is not provided
             file_size = int(response.headers.get('content-length', 0))
             file_type = os.path.splitext(file_name)[1]
 

@@ -98,6 +98,11 @@ class URL_to_be_accessed(models.Model):
     def __str__(self):
         return self.download_URL
 
+class Download_history(models.Model):
+    url = models.ForeignKey(URL_to_be_accessed, on_delete=models.CASCADE)
+    status = models.CharField(max_length=12)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
 
 class URL_to_be_accessed_serializer(ModelSerializer):
     class Meta:
@@ -105,9 +110,20 @@ class URL_to_be_accessed_serializer(ModelSerializer):
         fields = '__all__'
 
 
+class Download_history_serializer(ModelSerializer):
+    class Meta:
+        model = Download_history
+        fields = '__all__'
+
+
 class URL_to_be_accessed_view(ModelViewSet):
     queryset = URL_to_be_accessed.objects.all()
     serializer_class = URL_to_be_accessed_serializer
+
+
+class Download_history_view(ModelViewSet):
+    queryset = Download_history.objects.all()
+    serializer_class = Download_history_serializer
 
 
 
@@ -156,6 +172,8 @@ def make_entry_of_urls(response, resource_instance, bureau_code):
         return False
 
 
+
+
 # this function will downlod source json and will save the file to local storge
 # once saved this will iterate through the content and list all the required url and will internally call the make_entry_of_urls function
 @api_view(['GET'])
@@ -169,9 +187,10 @@ def read_from_source_json(request):
         if content_disposition:
             file_name = content_disposition.split('filename=')[1]
         else:
-            file_name = "data.json"  # Use URL as filename if content-disposition is not provided
+            file_name =  (response.url).split('/')[-1]  # Use URL as filename if content-disposition is not provided
         file_size = int(response.headers.get('content-length', 0))
-        # file_type = os.path.splitext(file_name)[1]
+        file_type = os.path.splitext(file_name)[1]
+
 
         resource_instance = Sync_from_source.objects.create(
             file_name = file_name,

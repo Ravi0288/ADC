@@ -1,3 +1,16 @@
+'''
+########################################## INTRODUCTIO TO THE PAGE ############################################
+This page provides Research_document, and it's serializer and view.
+1 Research_document : URLS from URLs_to_be_downloaded model will be accessed and the downloade file will be kept in this model.
+    and the accessed satatus will be update in URL_to_be_accessed model as last access status.
+
+ sequence of actions:
+ localhost:8000/api/download-research-docs => download the file, and store in Research_document model.
+
+    these files can be accessed from the link localhost:8000/api/documents
+'''
+
+
 from django.db import models
 from django.core.files.storage import FileSystemStorage
 import os
@@ -16,31 +29,30 @@ import os
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .source_json import URL_to_be_accessed
+import urllib.parse
 
-# Class to remove the existing file.
-# This will be used when we need to replace the existing file that is stored with the same name.
 
+'''
+Class to remove the existing file.
+This class will ensure to overwrite the existing file in case of same file is update in any recor
+'''
 class Over_write_storage(FileSystemStorage):
     def get_replace_or_create_file(self, name, max_length=None):
         if self.exists(name):
             os.remove(os.path.join(self.location, name))
             return super(Over_write_storage, self).get_replace_or_create_file(name, max_length)
 
-# file storage path
-upload_storage = FileSystemStorage(location=UPLOAD_ROOT, base_url='/uploads')
 
-# Function to return the storage file path.
-# This function will return file path as article_library/Current_year/Current_month/day/file_name_with_extension
-# Any downloaded file will be stored like this.
-# http://localhost:8000/article_library/2024/2/8/resume.pdf
-        
+'''
+    Function to return the storage file path as string.
+    This function will return file path as article_library/file_name_with_extension
+    Any downloaded file will be stored at this path.
+'''      
 def get_file_path(instance, filename):
-    return '{0}/{1}/{2}/{3}'.format(
-        datetime.today().year, 
-        datetime.today().month,
-        datetime.today().day, 
+    return '{0}'.format(
         filename
         )
+
 
 # Model to record logs of downloaded files/folders from FTP/SFTP's
 class Research_document(models.Model):
@@ -74,49 +86,85 @@ class research_docs_view(ModelViewSet):
 
 
 
-# function to download file from saved link
+# function to download file from the queried links
 @api_view(['GET'])
 def download_research_documents(request):
-    urls = URL_to_be_accessed.objects.filter(
-        Q(last_accessed_status__in = ('failed', 'initial')) |
-        Q(next_due_date__lte = datetime.today())
-        )
 
-    for url in urls:
-        response = requests.get(url.download_URL, verify=False)
+    # to filter specific bureau_code provide bureau_code in query params
+    bureau_code = request.GET.get('bureau_code')
+    '''
+    if bureau_code as query params received filter the relevant queries
+     that have bureau_code and either being accessed first time or last status was failed or due for download today.
+     'initial' is for first time accessed. 'Failed' shows the last time it was accessed but operation  was failed.
+     'next_due_date' is the due date to be accessed whether last status of access was failed or success.
+    '''
+    if bureau_code:
+        urls = URL_to_be_accessed.objects.filter(
+            Q(last_accessed_status__in = ('failed', 'initial')) |
+            Q(next_due_date__lte = datetime.today()).filter(
+              bureau_code=bureau_code  
+            )
+        ) 
+
+    # bureau_code not provide, filter all the query that are being accessed first time or last status was failed or due for download today
+    else:
+        urls = URL_to_be_accessed.objects.filter(
+            Q(last_accessed_status__in = ('failed', 'initial')) |
+            Q(next_due_date__lte = datetime.today())
+            )
+
+    # iterate through the urls in query
+    for item in urls:
+        response = requests.get(item.download_URL, verify=False)
         if response.status_code == 200:
             # Retrieve file name and file size from response headers
             content_disposition = response.headers.get('content-disposition')
             if content_disposition:
                 file_name = content_disposition.split('filename=')[1]
             else:
-                file_name = (response.url).split('/')[-1]  # Use URL as filename if content-disposition is not provided
+                file_name = item.download_URL.split('/')[-1]  # Use URL as filename if content-disposition is not provided
+            # decode the url to get the exact file name
+            file_name = urllib.parse.unquote(file_name)
+
             file_size = int(response.headers.get('content-length', 0))
             file_type = os.path.splitext(file_name)[1]
 
-            x = Research_document.objects.create(
-                file_name = file_name,
-                source = url,
-                processed_on = datetime.today(),
-                status = 'success',
-                file_size = file_size,
-                file_type = file_type
-            )
-            # save file
-            x.file_content.save('filename', ContentFile(response.content))
-            source_instance = URL_to_be_accessed.objects.get(id=x.source.id)
-            source_instance.last_accessed_status = 'success'
-            source_instance.last_accessed_at = datetime.now()
-            source_instance.save()
+            # query to check if the same record exists
+            qs = Research_document.objects.filter(file_name=file_name)
+
+            # if record exists and the size is also same, dont do anything
+            if qs.exists() and qs[0].file_size == file_size:
+                pass
+                # continue
+
+            # if record exists but the size is different, update the file
+            elif qs.exists() and not qs[0].file_size == file_size:
+                qs[0].file_size = file_size
+                qs[0].file_content.save(file_name, ContentFile(response.content))
+                # continue               
+                
+            # if record not found create new record
+            else:
+                x = Research_document.objects.create(
+                    file_name = file_name,
+                    source = item,
+                    processed_on = datetime.today(),
+                    status = 'success',
+                    file_size = file_size,
+                    file_type = file_type
+                )
+                # save file
+                x.file_content.save(file_name, ContentFile(response.content))
+
+            # finally update the last accessed status
+            item.last_accessed_status = 'success'
+            item.last_accessed_at = datetime.now()
+            item.save()
 
         else:
-            x = Research_document.objects.create(
-            file_name = '',
-            source = url,
-            processed_on = datetime.today(),
-            status = 'failed',
-            file_size = 0,
-            file_type = 'none'
-            )
+            # update the failed status
+            item.last_accessed_status = 'success'
+            item.last_accessed_at = datetime.now()
+            item.save()
 
-    return Response("suuccessfully executed")
+    return Response("successfully executed")

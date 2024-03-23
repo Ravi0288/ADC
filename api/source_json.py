@@ -1,3 +1,28 @@
+'''
+########################################## INTRODUCTIO TO THE PAGE ############################################
+This page has three models, related serializers and views.
+1 Sync_from_source : This model will store the history each time the source.json will be accssed.
+
+2 URL_to_be_accessed : Each time the source.json will be downloaded, the file is read and queried for concerned bureau_code,
+    and finally these json record is saved in this model.
+
+3 Download_history : This model is maintained for the logging purpose only. Each time url's from the URL_to_be_accessed will be
+ accessed to downlod file, last accessed date_time and status is updated in URL_to_be_accessed model itself, in Download_history a new 
+ entry of the last accessed status and dateitme will be made.
+
+
+ sequence of actions:
+ localhost:8000/api/download-and-read-source-json => download the source.json file, read it, query the concerned bureau code records, and make 
+    entry in URL_to_be_accessed.
+
+    source_json history can be accessed from the link localhost:8000/api/fetch
+    all the bureau_code links can be accessed from the link localhost:8000/api/url-to-be-accessed
+    hisrtory of url accessed can be fetched from localhost:8000/api/download-history
+
+'''
+
+
+
 from django.db import models
 from django.core.files.storage import FileSystemStorage
 import os
@@ -12,11 +37,13 @@ from django.conf import settings
 import requests
 from rest_framework.response import Response
 from django.core.files.base import ContentFile
+import urllib.parse
 
 
-# Class to remove the existing file.
-# This will be used when we need to replace the existing file that is stored with the same name.
-
+'''
+Class to remove the existing file.
+This class will ensure to overwrite the existing file in case of same file is update in any recor
+'''
 class Over_write_storage(FileSystemStorage):
     def get_replace_or_create_file(self, name, max_length=None):
         if self.exists(name):
@@ -24,14 +51,12 @@ class Over_write_storage(FileSystemStorage):
             return super(Over_write_storage, self).get_replace_or_create_file(name, max_length)
 
 
-# upload storage location
-upload_storage = FileSystemStorage(location=UPLOAD_ROOT, base_url='/uploads')
 
-# Function to return the storage file path.
-# This function will return file path as article_library/Current_year/Current_month/day/file_name_with_extension
-# Any downloaded file will be stored like this.
-# http://localhost:8000/article_library/2024/2/8/resume.pdf
-        
+'''
+    Function to return the storage file path as string.
+    This function will return file path as article_library/Current_year/Current_month/day/file_name_with_extension
+    Any downloaded file will be stored at this path.
+'''     
 def get_file_path(instance, filename):
     return '{0}/{1}/{2}/{3}'.format(
         datetime.today().year, 
@@ -98,6 +123,8 @@ class URL_to_be_accessed(models.Model):
     def __str__(self):
         return self.download_URL
 
+
+# model to keep download history
 class Download_history(models.Model):
     url = models.ForeignKey(URL_to_be_accessed, on_delete=models.CASCADE)
     status = models.CharField(max_length=12)
@@ -127,7 +154,7 @@ class Download_history_view(ModelViewSet):
 
 
 
-# this function will make entry to URL_to_be_accessed against each downloaded json file
+# this function will make entry to URL_to_be_accessed against each record from the downloaded json file
 def make_entry_of_urls(response, resource_instance, bureau_code):
     json_data_1 = json.loads(response._content.decode('utf-8'))
     data = json_data_1["dataset"]
@@ -177,17 +204,26 @@ def make_entry_of_urls(response, resource_instance, bureau_code):
 # this function will downlod source json and will save the file to local storge
 # once saved this will iterate through the content and list all the required url and will internally call the make_entry_of_urls function
 @api_view(['GET'])
-def read_from_source_json(request):
-    bureau_code = "005:12"
-    # bureau_code = request.GET.get("bureau_code")
+def download_and_read_source_json(request):
+    # if bureau_code received as query parameter assign to variables for further query else assign default bureau_code
+    if request.GET.get("bureau_code", None):
+        bureau_code = request.GET.get("bureau_code")
+    else:
+        bureau_code = "005:12"
+
+    # accesse the source file 
     response = requests.get(settings.JSON_SOURCE, verify=False)
     if response.status_code == 200:
+
         # Retrieve file name and file size from response headers
         content_disposition = response.headers.get('content-disposition')
         if content_disposition:
             file_name = content_disposition.split('filename=')[1]
         else:
             file_name =  (response.url).split('/')[-1]  # Use URL as filename if content-disposition is not provided
+
+        # decode the url to get the exact file name
+        file_name = urllib.parse.unquote(file_name)
         file_size = int(response.headers.get('content-length', 0))
         file_type = os.path.splitext(file_name)[1]
 
@@ -198,16 +234,17 @@ def read_from_source_json(request):
             processed_on = datetime.today(),
             status = 'success',
             file_size = file_size,
-            file_type = "json"
+            file_type = file_type
         )
         # save file
         resource_instance.file_content.save(file_name, ContentFile(response.content))
-
+        '''
+        refer this function. This function will read the downloaded file, 
+        query the bureau code and make the entry in the URL_to_be_accessed table
+        '''
         res = make_entry_of_urls(response, resource_instance, bureau_code)
         if res:
             return Response("success")
-        else:
-            return Response("failed")
 
     else:
         Sync_from_source.objects.create(

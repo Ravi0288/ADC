@@ -11,6 +11,7 @@ This page provides Research_document, and it's serializer and view.
 '''
 
 
+from django.conf import settings
 from django.db import models
 from django.core.files.storage import FileSystemStorage
 import os
@@ -37,10 +38,20 @@ This class will ensure to overwrite the existing file in case of same file is up
 '''
 class Over_write_storage(FileSystemStorage):
     def get_replace_or_create_file(self, name, max_length=None):
-        print(self.location, "######################")
+        file_name = self.file_name.replace(' ', '_')
         if self.exists(name):
             os.remove(os.path.join(self.location, name))
             return super(Over_write_storage, self).get_replace_or_create_file(name, max_length)
+
+
+'''
+function to remove file
+'''
+def remove_existing_file(upload_folder_instance):
+    if upload_folder_instance.id:
+        file_name = upload_folder_instance.file_name.replace(' ', '_')
+        path = str(settings.MEDIA_ROOT) + '\\' + file_name
+        os.remove(path)
 
 
 '''
@@ -133,7 +144,7 @@ def download_research_documents(request):
 
                 # query to check if the same record exists
                 qs = Research_document.objects.filter(file_name=file_name)
-
+                print(qs[0].file_size, qs[0].file_name)
                 # if record exists and the size is also same, dont do anything
                 if qs.exists() and qs[0].file_size == file_size:
                     pass
@@ -142,6 +153,7 @@ def download_research_documents(request):
                 # if record exists but the size is different, update the file
                 elif qs.exists() and not qs[0].file_size == file_size:
                     qs[0].file_size = file_size
+                    remove_existing_file(qs[0])
                     qs[0].file_content.save(file_name, ContentFile(response.content))
                     # continue               
                     
@@ -174,13 +186,3 @@ def download_research_documents(request):
 
     return Response("successfully executed")
 
-
-
-#It will activate whenever you will save file in uploadfolder model
-@receiver(pre_save, sender=Research_document)
-def file_update(sender, **kwargs):
-    upload_folder_instance = kwargs['instance']
-    if upload_folder_instance.id:
-        path = 'media_library/' + upload_folder_instance.file_name
-        print(path, "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4")
-        os.remove(path)

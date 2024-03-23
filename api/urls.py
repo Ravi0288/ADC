@@ -9,7 +9,7 @@ router = DefaultRouter()
 router.register('fetch', SyncFromSourceView)
 router.register('url-to-be-accessed', URL_to_be_accessed_view)
 router.register('documents', research_docs_view)
-router.register('download-history', Download_history_view)
+router.register('downloaded-history', Download_history_view)
 
 urlpatterns = [
     path('', include(router.urls)),

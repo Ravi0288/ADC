@@ -12,12 +12,15 @@ This page has three models, related serializers and views.
 
 
  sequence of actions:
- localhost:8000/api/download-and-read-source-json => download the source.json file, read it, query the concerned bureau code records, and make 
-    entry in URL_to_be_accessed.
+    download the source.json => store, read and find all the records related to bureau_code => make entry of these records to URL_to_accessed model
+    => (research_documents.py) accesse these URL's and store the downloaded files.
+
+    download the source.json file, read it, query the concerned bureau code records, and make 
+    entry in URL_to_be_accessed. Access the url localhost:8000/api/download-and-read-source-json
 
     source_json history can be accessed from the link localhost:8000/api/fetch
     all the bureau_code links can be accessed from the link localhost:8000/api/url-to-be-accessed
-    hisrtory of url accessed can be fetched from localhost:8000/api/download-history
+    history of url accessed can be fetched from localhost:8000/api/downloaded-history
 
 '''
 
@@ -116,8 +119,10 @@ class URL_to_be_accessed(models.Model):
     contact_point_fn = models.TextField(null=True)
     license = models.TextField(null=True)
 
+    added_on = models.DateTimeField(auto_now_add=True)
+
     last_accessed_status = models.CharField(max_length=10, default='initial')
-    last_accessed_at = models.DateTimeField(default=datetime.now())
+    last_accessed_at = models.DateTimeField(auto_now=True)
     next_due_date = models.DateTimeField(null=True)
 
     def __str__(self):
@@ -226,7 +231,6 @@ def download_and_read_source_json(request):
         file_name = urllib.parse.unquote(file_name)
         file_size = int(response.headers.get('content-length', 0))
         file_type = os.path.splitext(file_name)[1]
-
 
         resource_instance = Sync_from_source.objects.create(
             file_name = file_name,

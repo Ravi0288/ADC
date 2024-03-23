@@ -1,5 +1,5 @@
 '''
-########################################## INTRODUCTIO TO THE PAGE ############################################
+########################################## INTRODUCTION TO THE PAGE ############################################
 This page has three models, related serializers and views.
 1 Sync_from_source : This model will store the history each time the source.json will be accssed.
 
@@ -34,13 +34,14 @@ from rest_framework.serializers import ModelSerializer
 from datetime import datetime
 
 import json
-from economy_research_service.settings import UPLOAD_ROOT
 from rest_framework.decorators import api_view
 from django.conf import settings
 import requests
 from rest_framework.response import Response
 from django.core.files.base import ContentFile
 import urllib.parse
+from django.dispatch import receiver
+from django.db.models.signals import post_save
 
 
 '''
@@ -123,6 +124,7 @@ class URL_to_be_accessed(models.Model):
 
     last_accessed_status = models.CharField(max_length=10, default='initial')
     last_accessed_at = models.DateTimeField(auto_now=True)
+    last_error_message = models.TextField(default='N/A')
     next_due_date = models.DateTimeField(null=True)
 
     def __str__(self):
@@ -133,6 +135,7 @@ class URL_to_be_accessed(models.Model):
 class Download_history(models.Model):
     url = models.ForeignKey(URL_to_be_accessed, on_delete=models.CASCADE)
     status = models.CharField(max_length=12)
+    error_message = models.TextField(default="N/A")
     timestamp = models.DateTimeField(auto_now_add=True)
 
 
@@ -261,3 +264,17 @@ def download_and_read_source_json(request):
         )
 
     return Response("failed")
+
+
+# Triggers to update history. This function to be called automatically to update history of each accesss to API's
+@receiver(post_save, sender=URL_to_be_accessed)
+def update_history(sender, instance, created, **kwargs):
+    # if record is updated
+    if not created:
+        # create fetch_history for log purposes
+        Download_history.objects.create(
+            url = instance,
+            status = instance.last_accessed_status,
+            error_message = instance.last_error_message
+        )
+        return True

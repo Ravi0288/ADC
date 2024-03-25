@@ -8,7 +8,7 @@ Research_document Model: URLS from URLs_to_be_downloaded model will be accessed 
 
  sequence of actions:
     localhost:8000/api/download-research-docs => download the file, and store in Research_document model.
-    localhost:8000/api/documents => all the downloaded files can be viewed from this link
+    localhost:8000/api/downloaded-documents => all the downloaded files can be viewed from this link
 '''
 
 

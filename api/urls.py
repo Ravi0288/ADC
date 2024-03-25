@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 router = DefaultRouter()
 router.register('source-json', SyncFromSourceView)
 router.register('url-to-be-accessed', URL_to_be_accessed_view)
-router.register('documents', research_docs_view)
+router.register('downloaded-documents', research_docs_view)
 router.register('downloaded-history', Download_history_view)
 
 urlpatterns = [

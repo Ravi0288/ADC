@@ -1,13 +1,14 @@
 '''
-########################################## INTRODUCTION TO THE PAGE ############################################
-This page provides Research_document, and it's serializer and view.
-1 Research_document : URLS from URLs_to_be_downloaded model will be accessed and the downloade file will be kept in this model.
-    and the accessed satatus will be update in URL_to_be_accessed model as last access status.
+########################################## BRIEF OF THE PAGE ############################################
+This page provides Research_document model, it's serializer and view.
+download_research_documents function that will download the documents.
+
+Research_document Model: URLS from URLs_to_be_downloaded model will be accessed and the downloade file will be kept in this model.
+    and the accessed status will be updated in URL_to_be_accessed model as last access status.
 
  sequence of actions:
     localhost:8000/api/download-research-docs => download the file, and store in Research_document model.
-
-    these files can be accessed from the link localhost:8000/api/documents
+    localhost:8000/api/documents => all the downloaded files can be viewed from this link
 '''
 
 
@@ -45,7 +46,7 @@ class Over_write_storage(FileSystemStorage):
 
 
 '''
-function to remove file
+function to remove old file in case of update
 '''
 def remove_existing_file(upload_folder_instance):
     if upload_folder_instance.id:
@@ -127,33 +128,35 @@ def download_research_documents(request):
 
     # iterate through the urls in query
     for item in urls:
-        try:
-            response = requests.get(item.download_URL, verify=False)
-            if response.status_code == 200:
-                # Retrieve file name and file size from response headers
-                content_disposition = response.headers.get('content-disposition')
-                if content_disposition:
-                    file_name = content_disposition.split('filename=')[1]
-                else:
-                    file_name = item.download_URL.split('/')[-1]  # Use URL as filename if content-disposition is not provided
-                # decode the url to get the exact file name
-                file_name = urllib.parse.unquote(file_name)
+        response = requests.get(item.download_URL, verify=False)
+        if response.status_code == 200:
+            # Retrieve file name and file size from response headers
+            content_disposition = response.headers.get('content-disposition')
+            if content_disposition:
+                file_name = content_disposition.split('filename=')[1]
+            else:
+                file_name = item.download_URL.split('/')[-1]  # Use URL as filename if content-disposition is not provided
+            # decode the url to get the exact file name
+            file_name = urllib.parse.unquote(file_name)
 
-                file_size = int(response.headers.get('content-length', 0))
-                file_type = os.path.splitext(file_name)[1]
+            file_size = int(response.headers.get('content-length', 0))
+            file_type = os.path.splitext(file_name)[1]
 
-                # query to check if the same record exists
-                qs = Research_document.objects.filter(file_name=file_name)
-                print(qs[0].file_size, qs[0].file_name)
+            # query to check if the same record exists
+            qs = Research_document.objects.filter(file_name=file_name)
+
+            try:
                 # if record exists and the size is also same, dont do anything
                 if qs.exists() and qs[0].file_size == file_size:
-                    pass
-                    # continue
+                    # finally update the last accessed success status
+                    item.last_accessed_status = 'success'
+                    item.save()
 
                 # if record exists but the size is different, update the file
                 elif qs.exists() and not qs[0].file_size == file_size:
                     qs[0].file_size = file_size
                     remove_existing_file(qs[0])
+                    item.last_accessed_status = 'success'
                     qs[0].file_content.save(file_name, ContentFile(response.content))
                     # continue               
                     
@@ -170,18 +173,14 @@ def download_research_documents(request):
                     # save file
                     x.file_content.save(file_name, ContentFile(response.content))
 
-                # finally update the last accessed success status
-                item.last_accessed_status = 'success'
-                item.save()
-            else:
+            # in case any error occures log the error 
+            except Exception as e:
                 item.last_accessed_status = 'failed'
-                item.last_error_message = html2text.html2text(response.text)
-                item.save()                
-
-        except Exception as e:
-            # update the failed status
+                item.last_error_message = e
+                item.save()                    
+        else:
             item.last_accessed_status = 'failed'
-            item.last_error_message = e
+            item.last_error_message = html2text.html2text(response.text)
             item.save()
 
     return Response("successfully executed")

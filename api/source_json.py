@@ -13,14 +13,19 @@ This page has three models, related serializers and views.
 
  sequence of actions:
     download the source.json => store, read and find all the records related to bureau_code => make entry of these records to URL_to_accessed model
-    => (research_documents.py) accesse these URL's and store the downloaded files.
+    => (research_documents.py) accesse these URL's to downloaded the files, store these files in local storage and make entry in 
+        download_research_documents models.
 
-    download the source.json file, read it, query the concerned bureau code records, and make 
-    entry in URL_to_be_accessed. Access the url localhost:8000/api/download-and-read-source-json
+    (i) localhost:8000/api/download-and-read-source-json/?bureau_code='5.3.5' => download the source.json file, read it, query the concerned bureau code records, and make 
+    entry of all the URLS that has bureau_code='as provided' in URL_to_be_accessed.
 
-    source_json history can be accessed from the link localhost:8000/api/fetch
-    all the bureau_code links can be accessed from the link localhost:8000/api/url-to-be-accessed
-    history of url accessed can be fetched from localhost:8000/api/downloaded-history
+    (ii) localhost:8000/api/source-json => View source_json access history and stored files.
+
+    (iii) localhost:8000/api/url-to-be-accessed => all the links can be accessed from this link.
+        localhost:8000/api/url-to-be-accessed/?bureau_code='5.3.5' => provide bureau_code to see links related to bureau_code.
+
+    (iv) localhost:8000/api/downloaded-history => See history of urls accessed to download the research documents
+    
 
 '''
 
@@ -217,7 +222,9 @@ def download_and_read_source_json(request):
     if request.GET.get("bureau_code", None):
         bureau_code = request.GET.get("bureau_code")
     else:
-        bureau_code = "005:12"
+        # bureau_code = "005:12"
+        print("######################", request.build_absolute_uri(), "######################")
+        raise KeyError("Provide bureau_code. For example : " + str(request.build_absolute_uri()) + '?bureau_code=xxxxxx')
 
     # accesse the source file 
     response = requests.get(settings.JSON_SOURCE, verify=False)

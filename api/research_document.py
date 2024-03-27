@@ -12,7 +12,7 @@ Research_document Model: URLS from URLs_to_be_downloaded model will be accessed 
 '''
 
 
-from django.conf import settings
+from django.conf import Settings
 from django.db import models
 from django.core.files.storage import FileSystemStorage
 import os
@@ -28,7 +28,7 @@ from rest_framework.response import Response
 from django.core.files.base import ContentFile
 import requests
 import os
-from .source_json import URL_to_be_accessed
+# from .source_json import URL_to_be_accessed
 import urllib.parse
 from django.db.models.signals import pre_save
 
@@ -68,7 +68,7 @@ def get_file_path(instance, filename):
 
 # Model to record logs of downloaded files/folders from API's
 class Research_document(models.Model):
-    source = models.ForeignKey(URL_to_be_accessed, on_delete=models.CASCADE, related_name="documents")
+    # source = models.ForeignKey(URL_to_be_accessed, on_delete=models.CASCADE, related_name="documents", blank=True, null=True)
     source_name = models.CharField(max_length=30)
     file_content = models.FileField(upload_to=get_file_path, blank=True, null=True, storage=Over_write_storage)
     file_name = models.CharField(max_length=500)
@@ -77,7 +77,7 @@ class Research_document(models.Model):
     received_on = models.DateTimeField(auto_now_add=True)
     processed_on = models.DateTimeField(null=True)
     status = models.CharField(max_length=12)
-    bureau_code = models.CharField(max_length=20)
+    bureau_code = models.CharField(max_length=20, blank=True, null=True)
 
 
     def __str__(self) -> str:
@@ -97,7 +97,6 @@ class research_docs_view(ModelViewSet):
     serializer_class = Research_document_serializer
 
 
-
 # function to download file from the queried links
 @api_view(['GET'])
 def download_research_documents(request):
@@ -110,21 +109,22 @@ def download_research_documents(request):
      'initial' is for first time accessed. 'Failed' shows the last time it was accessed but operation  was failed.
      'next_due_date' is the due date to be accessed whether last status of access was failed or success.
     '''
-    if bureau_code:
-        urls = URL_to_be_accessed.objects.filter(
-            Q(last_accessed_status__in = ('failed', 'initial')) |
-            Q(next_due_date__lte = datetime.today()
-            ).filter(bureau_code=bureau_code)
-        ) 
+    # if bureau_code:
+    #     urls = URL_to_be_accessed.objects.filter(
+    #         Q(last_accessed_status__in = ('failed', 'initial')) |
+    #         Q(next_due_date__lte = datetime.today()
+    #         ).filter(bureau_code=bureau_code)
+    #     ) 
 
-    # bureau_code not provide, filter all the query that are being accessed first time or last status was failed or due for download today
-    else:
-        urls = URL_to_be_accessed.objects.filter(
-            Q(last_accessed_status__in = ('failed', 'initial')) |
-            Q(next_due_date__lte = datetime.today())
-            )
+    # # bureau_code not provide, filter all the query that are being accessed first time or last status was failed or due for download today
+    # else:
+    #     urls = URL_to_be_accessed.objects.filter(
+    #         Q(last_accessed_status__in = ('failed', 'initial')) |
+    #         Q(next_due_date__lte = datetime.today())
+    #         )
 
-    urls = URL_to_be_accessed.objects.all()
+    # urls = URL_to_be_accessed.objects.all()
+    urls = []
 
     # iterate through the urls in query
     for item in urls:
@@ -184,4 +184,56 @@ def download_research_documents(request):
             item.save()
 
     return Response("successfully executed")
+
+
+
+# this function will download the file from the list of urls as provided
+def functionToDownloadFromListOfWebsitesDirectly(urls):
+    # iterate through the urls in query
+    for item in urls:
+        response = requests.get(item, verify=False)
+        if response.status_code == 200:
+            # Retrieve file name and file size from response headers
+            content_disposition = response.headers.get('content-disposition')
+            if content_disposition:
+                file_name = content_disposition.split('filename=')[1]
+            else:
+                file_name = item.split('/')[-1]  # Use URL as filename if content-disposition is not provided
+            # decode the url to get the exact file name
+            file_name = urllib.parse.unquote(file_name)
+
+            file_size = int(response.headers.get('content-length', 0))
+            file_type = os.path.splitext(file_name)[1]
+
+            # query to check if the same record exists
+            qs = Research_document.objects.filter(file_name=file_name)
+
+            try:
+                # if record exists and the size is also same, dont do anything
+                if qs.exists() and qs[0].file_size == file_size:
+                    # finally update the last accessed success status
+                    pass
+
+                # if record exists but the size is different, update the file
+                elif qs.exists() and not qs[0].file_size == file_size:
+                    qs[0].file_size = file_size
+                    remove_existing_file(qs[0])
+                    qs[0].file_content.save(file_name, ContentFile(response.content))              
+                    
+                # if record not found create new record
+                else:
+                    x = Research_document.objects.create(
+                        file_name = file_name,
+                        processed_on = datetime.today(),
+                        status = 'success',
+                        file_size = file_size,
+                        file_type = file_type
+                    )
+                    # save file
+                    x.file_content.save(file_name, ContentFile(response.content))
+            except Exception as e:
+                print(e)
+    return Response("successfully executed")
+
+
 

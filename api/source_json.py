@@ -47,6 +47,7 @@ from django.core.files.base import ContentFile
 import urllib.parse
 from django.dispatch import receiver
 from django.db.models.signals import post_save
+from .research_document import functionToDownloadFromListOfWebsitesDirectly
 
 
 '''
@@ -166,7 +167,7 @@ class Download_history_view(ModelViewSet):
     serializer_class = Download_history_serializer
 
 
-
+''''''
 # this function will make entry to URL_to_be_accessed against each record from the downloaded json file
 def make_entry_of_urls(response, resource_instance, bureau_code):
     json_data_1 = json.loads(response._content.decode('utf-8'))
@@ -191,25 +192,29 @@ def make_entry_of_urls(response, resource_instance, bureau_code):
             if codes == bureau_code:
                 obj.bureau_code = bureau_code
                 for distribution in item['distribution']:
-                    obj.distribution_title = distribution.get("title", None)
-                    obj.distribution_type = distribution.get("@type", None)
-                    obj.media_type = distribution.get("mediaType", None)
-                    obj.download_URL = distribution["downloadURL"]
-                    if not (
-                        URL_to_be_accessed.objects.filter(
-                            download_URL=distribution["downloadURL"], 
-                            modified_on=item["modified"]
-                            ).exists()
-                        ):
-                        result.append(obj)
+                    try:
+                        obj.distribution_title = distribution.get("title", None)
+                        obj.distribution_type = distribution.get("@type", None)
+                        obj.media_type = distribution.get("mediaType", None)
+                        obj.download_URL = distribution["downloadURL"]
+                        if not (
+                            URL_to_be_accessed.objects.filter(
+                                download_URL=distribution["downloadURL"], 
+                                modified_on=item["modified"]
+                                ).exists()
+                            ):
+                            result.append(obj)
+                    except:
+                        pass
 
     try:
-        URL_to_be_accessed.objects.bulk_create(result)
-        return True
+        # URL_to_be_accessed.objects.bulk_create(result)
+        functionToDownloadFromListOfWebsitesDirectly(result)
     except Exception as e:
         resource_instance.status="failed"
         resource_instance.save()
-        return False
+        print(e)
+        return Response("failed")
 
 
 
@@ -223,7 +228,6 @@ def download_and_read_source_json(request):
         bureau_code = request.GET.get("bureau_code")
     else:
         # bureau_code = "005:12"
-        print("######################", request.build_absolute_uri(), "######################")
         raise KeyError("Provide bureau_code. For example : " + str(request.build_absolute_uri()) + '?bureau_code=xxxxxx')
 
     # accesse the source file 

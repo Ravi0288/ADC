@@ -1,0 +1,70 @@
+{
+    "boards" : [
+  {
+    "governanceBoardName":"Farm Production and Conservation (FPAC) Investment Review Board",
+    "bureauCode":49,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Farm Production and Conservation (FPAC)"
+  },
+  {
+    "governanceBoardName":"Information Technology Executive Investment Review Board",
+    "bureauCode":55,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Rural Development (RD)"
+  },
+  {
+    "governanceBoardName":"Investment Advisory Committee",
+    "bureauCode":55,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Rural Development (RD)"
+  },
+  {
+    "governanceBoardName":"Agriculture Marketing Service Investment Review Board",
+    "bureauCode":32,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Marketing and Regulatory Programs (MRP)"
+  },
+  {
+    "governanceBoardName":"Animal and Plant Health Inspection Service (APHIS) Investment Review",
+    "bureauCode":32,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Marketing and Regulatory Programs (MRP)"
+  },
+  {
+    "governanceBoardName":"Information Technology Executive Investment Review Board",
+    "bureauCode":68,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Trade and Foreign Agricultural Service (TFAA)"
+  },
+  {
+    "governanceBoardName":"Executive Investment Review Board",
+    "bureauCode":18,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Research, Education, and Economics (REE)"
+  },
+  {
+    "governanceBoardName":"Departmental Administration Information Technology Investment Review Board",
+    "bureauCode":3,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Departmental Administration and Staff Offices (DASO)"
+  },	
+  {
+    "governanceBoardName":"Food, Nutrition and Consumer Services IT Investment Review Board",
+    "bureauCode":84,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Food, Nutrition and Consumer Services (FNCS)"
+  },
+  {
+    "governanceBoardName":"Natural Resources and Environment Investment Review Board",
+    "bureauCode":96,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Natural Resources and Environment (NRE), Forest Service (FS)"
+  },
+  {
+    "governanceBoardName":"Food Safety and Inspection Services Management Council",
+    "bureauCode":13,
+    "cioInvolvementDescription":"The OCIO is a voting member.",
+    "agencyName":"Food Safety (FS)"
+  }
+]
+}

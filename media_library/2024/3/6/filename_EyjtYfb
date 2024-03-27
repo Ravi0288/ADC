@@ -1,0 +1,142 @@
+{"leaders": [
+         {
+            "bureauCode": "12",
+            "bureauName": "Office of Chief Information Officer",
+            "employmentType": "SES",
+            "evaluationRatingOfficialTitle": "Deputy Secretary",
+            "evaluationReviewingOfficialTitle": "Secretary",
+            "firstName": "Gary",
+            "keyBureauCIO": "No",
+            "lastName": "Washington",
+            "typeOfAppointment": "career"
+            },
+     	   {
+     		"bureauCode": "12",
+            "bureauName": "Office of Chief Information Officer",
+            "employmentType": "SES",
+            "employmentTypeOther": "Deputy CIO",
+            "evaluationRatingOfficialTitle": "CIO",
+            "evaluationReviewingOfficialTitle": "Deputy Secretary",
+            "firstName": "Kimberly",
+            "keyBureauCIO": "No",
+            "lastName": "Jackson",
+            "typeOfAppointment": "career"
+        
+        },
+        {
+
+           "bureauCode": "12",
+            "bureauName": "Departmental Administration",
+            "employmentType": "GS",
+            "evaluationRatingOfficialTitle": "Assistant CIO",
+            "evaluationReviewingOfficialTitle": "CIO",
+            "firstName": "Cedric",
+            "keyBureauCIO": "Yes",
+            "lastName": "Bragg",
+            "typeOfAppointment": "career"
+        },
+        {
+        	"bureauCode": "49",
+            "bureauName": "Farm Production and Conservation",
+            "employmentType": "SES",
+            "evaluationRatingOfficialTitle": "Deputy Chief Operating Officer",
+            "evaluationReviewingOfficialTitle": "Chief Operating Officer",
+            "firstName": "Tonye",
+            "keyBureauCIO": "Yes",
+            "lastName": "Gross",
+            "typeOfAppointment": "career"
+         },
+        {
+            "bureauCode": "84",
+            "bureauName": "Food, Nutrition  and Consumer Services",
+            "employmentType": "SES",
+            "evaluationRatingOfficialTitle": "Deputy Administrator OIT",
+            "evaluationReviewingOfficialTitle": "Associate Administrator/COO",
+            "firstName": "Renee",
+            "keyBureauCIO": "Yes",
+            "lastName": "Gore",
+            "typeOfAppointment": "career"
+        },
+        {
+            "bureauCode": "35",
+            "bureauName": "Food Safety ",
+            "employmentType": "SES",
+            "evaluationRatingOfficialTitle": "Chief Operating Officer",
+            "evaluationReviewingOfficialTitle": "Administrator",
+            "firstName": "Carl",
+            "keyBureauCIO": "Yes",
+            "lastName": "Mayes",
+            "typeOfAppointment": "career"
+        },
+        {
+            "bureauCode": "68",
+            "bureauName": "Foreign Agricultural Service",
+            "employmentType": "GS",
+            "evaluationRatingOfficialTitle": "Senior Advisor",
+            "evaluationReviewingOfficialTitle": "Chief Operating Officer",
+            "firstName": "David",
+            "keyBureauCIO": "Yes",
+            "lastName": "Nulph",
+            "typeOfAppointment": "career"
+        },
+        {
+            "bureauCode": "96",
+            "bureauName": "Forest Service",
+            "employmentType": "SES",
+            "evaluationRatingOfficialTitle": "Deputy Chief, Business Operations",
+            "evaluationReviewingOfficialTitle": "Chief",
+            "firstName": "Laura",
+            "keyBureauCIO": "Yes",
+            "lastName": "Hill",
+            "typeOfAppointment": "career"
+       },
+        {
+		"bureauCode": "45",
+            "bureauName": " Marketing  and Regulatory Programs",
+            "employmentType": "SES",
+            "evaluationRatingOfficialTitle": "Associate Deputy Administrator",
+            "evaluationReviewingOfficialTitle": "Deputy Administrator",
+            "firstName": "Sergio",
+            "keyBureauCIO": "Yes",
+            "lastName": "McKenzie",
+            "typeOfAppointment": "career"
+        },
+        {
+
+  		"bureauCode": "08",
+            "bureauName": "Office of Inspector General",
+            "employmentType": "GS",
+            "evaluationRatingOfficialTitle": "Deputy Assistant Inspector General for OM",
+            "evaluationReviewingOfficialTitle": "Assistant Inspector General for OM",
+            "firstName": "John",
+            "keyBureauCIO": "Yes",
+            "lastName": "Trifiletti",
+            "typeOfAppointment": "career"
+
+	},
+        {           
+ 		"bureauCode": "18",
+            "bureauName": " Research, Education and Economics",
+            "employmentType": "SES",
+            "evaluationRatingOfficialTitle": "Chief Operating Officer",
+            "evaluationReviewingOfficialTitle": "Deputy Administrator",
+            "firstName": "Lorna",
+            "keyBureauCIO": "Yes",
+            "lastName": "Drennen",
+            "typeOfAppointment": "career"
+        
+        },
+        {
+            "bureauCode": "55",
+            "bureauName": "Rural Development",
+            "employmentType": "SES",
+            "evaluationRatingOfficialTitle": "Chief Operating Officer",
+            "evaluationReviewingOfficialTitle": "Deputy Undersecretary",
+            "firstName": "Tim",
+            "keyBureauCIO": "Yes",
+            "lastName": "McCrosson",
+            "typeOfAppointment": "career"
+
+        }
+    ]
+}

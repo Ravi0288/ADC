@@ -12,7 +12,7 @@ Research_document Model: URLS from URLs_to_be_downloaded model will be accessed 
 '''
 
 
-from django.conf import Settings
+from django.conf import settings
 from django.db import models
 from django.core.files.storage import FileSystemStorage
 import os
@@ -191,14 +191,14 @@ def download_research_documents(request):
 def functionToDownloadFromListOfWebsitesDirectly(urls):
     # iterate through the urls in query
     for item in urls:
-        response = requests.get(item, verify=False)
+        response = requests.get(item.download_URL, verify=False)
         if response.status_code == 200:
             # Retrieve file name and file size from response headers
             content_disposition = response.headers.get('content-disposition')
             if content_disposition:
                 file_name = content_disposition.split('filename=')[1]
             else:
-                file_name = item.split('/')[-1]  # Use URL as filename if content-disposition is not provided
+                file_name = item.download_URL.split('/')[-1]  # Use URL as filename if content-disposition is not provided
             # decode the url to get the exact file name
             file_name = urllib.parse.unquote(file_name)
 

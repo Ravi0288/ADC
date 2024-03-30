@@ -55,21 +55,14 @@ def save_to_file(data):
     for item in data:
         # write each data to file and name the file as identifier.json
         file_name = os.path.join(settings.STAKEHOLDERS_URL , item['identifier'] + '.json')
-        with open(file_name,'w') as f:
-            json.dump(item,f)
+
+        # if file already exist continue else write new file
+        if os.path.exists(file_name):
+            continue
+        else:
+            with open(file_name,'w') as f:
+                json.dump(item,f)
     return True
-
-
-# function to 
-def need_update(data, bureauCode):
-    file_name = bureauCode.replace(':', '') + '.json'
-    if not os.path.exists(file_name):
-        return True
-    else:
-        with open(file_name, 'r') as f:
-            existing_data = json.load(f)
-            return data != existing_data
-        
 
 
 # main function to be accessed from the url
@@ -80,7 +73,7 @@ def read_json_and_write_in_file(request):
     # get bureauCode from url 
     bureauCode = request.GET.get('bureauCode')
 
-    # if bureauCode is not provided than assign the default
+    # if bureauCode is not provided than assign the default bureauCode
     if not bureauCode:
         bureauCode = '005:13'
 
@@ -89,8 +82,7 @@ def read_json_and_write_in_file(request):
 
     # if data is received filter out the dataset by bureauCode
     if data:
-        filtered_data = filter_data(data, bureauCode)
-        if filtered_data:
-            save_to_file(filtered_data)
+        save_to_file(filter_data(data, bureauCode))
+
     return Response("done")
 

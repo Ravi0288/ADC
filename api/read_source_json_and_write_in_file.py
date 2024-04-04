@@ -46,7 +46,9 @@ def filter_data(data, bureauCode):
             for codes in item['bureauCode']:
                 if codes == bureauCode:
                     result.append(item)
+    print(len(result))
     return result
+    
 
 
 #  function to write filtered data to file
@@ -55,13 +57,12 @@ def save_to_file(data):
     for item in data:
         # write each data to file and name the file as identifier.json
         file_name = os.path.join(settings.STAKEHOLDERS_URL , item['identifier'] + '.json')
-
         # if file already exist continue else write new file
-        if os.path.exists(file_name):
-            continue
-        else:
+
+        if not os.path.exists(file_name):
             with open(file_name,'w') as f:
                 json.dump(item,f)
+
     return True
 
 

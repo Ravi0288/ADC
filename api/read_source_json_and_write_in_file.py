@@ -46,19 +46,37 @@ def filter_data(data, bureauCode):
             for codes in item['bureauCode']:
                 if codes == bureauCode:
                     result.append(item)
-    print(len(result))
     return result
     
 
 
 #  function to write filtered data to file
-def save_to_file(data):
+def save_to_file(data, bureauCode):
+    # create folder if not availabe already
+    path = os.path.join(settings.STAKEHOLDERS_URL, bureauCode.replace(':',''))
+    if not os.path.isdir(path):
+        os.makedirs(path)
+
     # iterate through the data
     for item in data:
         # write each data to file and name the file as identifier.json
-        file_name = os.path.join(settings.STAKEHOLDERS_URL , item['identifier'] + '.json')
+        file_name = os.path.join(path, item['identifier'] + '.json')
         # if file already exist continue else write new file
 
+        # if file exists read the content
+        if os.path.exists(file_name):
+            with open(file_name,'r') as f:
+                data = json.load(f)
+            
+            # compare the file data with incoming data
+            if (data == item):
+                # if data are same continue to next iteration
+                continue
+            else:
+                # if data are found mismatched remove the file and go to next if condition
+                os.remove(file_name)
+        
+        # create new file and save the content
         if not os.path.exists(file_name):
             with open(file_name,'w') as f:
                 json.dump(item,f)
@@ -83,7 +101,7 @@ def read_json_and_write_in_file(request):
 
     # if data is received filter out the dataset by bureauCode
     if data:
-        save_to_file(filter_data(data, bureauCode))
+        save_to_file(filter_data(data, bureauCode), bureauCode)
 
     return Response("done")
 

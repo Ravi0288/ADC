@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'economy_research_service.wsgi.application'
 # DATABASES = {
 #     'default': {
 #     'ENGINE': 'django.db.backends.mysql',
-#     'NAME': 'ers',
+#     'NAME': 'adc',
     # 'USER':get_env_variable('DBUSER'),
     # 'PASSWORD':get_env_variable('DBPSWD'),
 #     'HOST':'localhost',

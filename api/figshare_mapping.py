@@ -70,9 +70,12 @@ def create_figshare_articles(data):
         }
         response = requests.post('https://api.figshare.com/v2/private_articles', json=figshare_json, headers=headers)
         if response.status_code == 201:
-            print(f"Article '{record['title']}' created successfully on Figshare.")
+            # print(f"Article '{record['title']}' created successfully on Figshare.")
+            return True
         else:
-            print(f"Failed to create article '{record['title']}' on Figshare. Error: {response.text}")
+            # print(f"Failed to create article '{record['title']}' on Figshare. Error: {response.text}")
+            return False
+
 
 # 4. Update Figshare Corresponding Record if Record Already Exists
 

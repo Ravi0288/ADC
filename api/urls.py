@@ -5,6 +5,7 @@ from .research_document import download_research_documents, research_docs_view
 from django.conf import settings
 from django.conf.urls.static import static
 from .read_source_json_and_write_in_file import read_json_and_write_in_file
+from .figshare_mapping import push_to_figshare
 
 router = DefaultRouter()
 # router.register('source-json', SyncFromSourceView)
@@ -16,6 +17,7 @@ urlpatterns = [
     path('', include(router.urls)),
     # path('download-and-read-source-json/', download_and_read_source_json),
     path('download-and-read-source-json/', read_json_and_write_in_file),
+    path('push-to-figshare/', push_to_figshare),
     # path('download-research-docs/', download_research_documents),
 ]
 

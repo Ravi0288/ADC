@@ -53,7 +53,7 @@ def filter_data(data, bureauCode):
 #  function to write filtered data to file
 def save_to_file(data, bureauCode):
     # create folder if not availabe already
-    path = os.path.join(settings.STAKEHOLDERS_URL, bureauCode.replace(':',''))
+    path = os.path.join(settings.STAKEHOLDERS_ROOT, bureauCode.replace(':',''))
     if not os.path.isdir(path):
         os.makedirs(path)
 

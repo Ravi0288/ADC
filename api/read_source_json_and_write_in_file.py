@@ -3,8 +3,8 @@
 This page will read source_json file, filter out the dataset by provided bureauCode and 
 each data set will be saved in separate file.
 
-url =>                                  localhost:8000/apidownload-and-read-source-json/
-url to provide bureauCode =>            localhost:8000/apidownload-and-read-source-json/?bureauCode=500:13
+url =>                                  localhost:8000/api/download-and-read-source-json/
+url to provide bureauCode =>            localhost:8000/api/download-and-read-source-json/?bureauCode=500:13
 
 '''
 

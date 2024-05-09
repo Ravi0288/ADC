@@ -47,7 +47,7 @@ from django.core.files.base import ContentFile
 import urllib.parse
 from django.dispatch import receiver
 from django.db.models.signals import post_save
-from .research_document import functionToDownloadFromListOfWebsitesDirectly
+from .research_document import Download_From_List_Of_Websites_Directly
 
 
 '''
@@ -209,7 +209,7 @@ def make_entry_of_urls(response, resource_instance, bureau_code):
 
     try:
         # URL_to_be_accessed.objects.bulk_create(result)
-        functionToDownloadFromListOfWebsitesDirectly(result)
+        Download_From_List_Of_Websites_Directly(result)
     except Exception as e:
         resource_instance.status="failed"
         resource_instance.save()

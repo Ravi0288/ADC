@@ -1,7 +1,7 @@
 '''
 ########################################## BRIEF OF THE PAGE ############################################
 This page provides Research_document model, it's serializer and view.
-download_research_documents function that will download the documents.
+download_research_documents function will download the documents.
 
 Research_document Model: URLS from URLs_to_be_downloaded model will be accessed and the downloade file will be kept in this model.
     and the accessed status will be updated in URL_to_be_accessed model as last access status.
@@ -188,7 +188,7 @@ def download_research_documents(request):
 
 
 # this function will download the file from the list of urls as provided
-def functionToDownloadFromListOfWebsitesDirectly(urls):
+def Download_From_List_Of_Websites_Directly(urls):
     # iterate through the urls in query
     for item in urls:
         response = requests.get(item.download_URL, verify=False)

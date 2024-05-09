@@ -57,6 +57,8 @@ def map_to_figshare_json(record):
     }
     return figshare_json
 
+
+
 # 3. Push to Figshare using API for Newly Created Records
 
 # Function to create articles on Figshare
@@ -77,6 +79,8 @@ def create_figshare_articles(data):
             return False
 
 
+
+
 # 4. Update Figshare Corresponding Record if Record Already Exists
 
 # Function to check if an article exists on Figshare
@@ -94,6 +98,8 @@ def check_if_article_exists(title):
             return articles[0]['id']  # Assuming we return the ID of the first matching article
     return False
 
+
+
 # Function to update an existing article on Figshare
 def update_figshare_article(article_id, data):
     figshare_json = map_to_figshare_json(data)
@@ -108,6 +114,7 @@ def update_figshare_article(article_id, data):
         print(f"Failed to update article '{data['title']}' on Figshare. Error: {response.text}")
 
 
+
 # Function to handle the entire process
 def process_data_and_push_to_figshare(record, directory_path):
     # Create or update articles on Figshare
@@ -117,8 +124,6 @@ def process_data_and_push_to_figshare(record, directory_path):
         update_figshare_article(existing_article_id, record)
     else:
         create_figshare_articles([record])
-
-
 
 
 

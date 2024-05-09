@@ -50,7 +50,7 @@ MIDDLEWARE = [
 
 
 # Root URL file path
-ROOT_URLCONF = 'economy_research_service.urls'
+ROOT_URLCONF = 'configurations.urls'
 
 
 
@@ -74,7 +74,7 @@ TEMPLATES = [
 # ..................#####################
 
 
-WSGI_APPLICATION = 'economy_research_service.wsgi.application'
+WSGI_APPLICATION = 'configurations.wsgi.application'
 
 
 

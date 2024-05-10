@@ -9,18 +9,6 @@ from rest_framework.response import Response
 
 # 1. Read from Local Directory/Database
 
-# Function to read data from a local directory
-# def read_data_from_local_directory(directory_path):
-#     data = []
-#     # Iterate over files in the directory
-#     for filename in os.listdir(directory_path):
-#         # Assuming each file contains JSON data
-#         with open(os.path.join(directory_path, filename), 'r') as file:
-#             file_data = json.load(file)
-#             data.extend(file_data)
-#     return data
-
-
 # 2. Map Source File into Figshare JSON Format
 # Function to map data to Figshare JSON format
 def map_to_figshare_json(record, is_update):
@@ -159,5 +147,5 @@ def push_to_figshare(request):
                 print("error occure while processing", file_name, e)
                 continue
 
-    return Response({'status': 'success', 'message': 'Data pushed to Figshare successfully'})
+    return Response('Process executed successfully')
 

@@ -16,9 +16,15 @@ def map_to_figshare_json(record, is_update):
     figshare_json = {
 
         "title": record['title'],
-        "authors": [{"author":"USDA Economic Research Service"}],
-        # "categories": ["ECONOMICS > Applied Economics > Agricultural economics"],
-        "categories": [1],
+        "description": record['description'],
+        "authors": [{"name":"USDA Economic Research Service"}],
+        "categories": record.get('categories',  [31314]),
+        # "timeline": {
+        # "firstOnline": "2019-09-19",
+        # "posted": "2019-09-19",
+        # "revision": "2020-07-18"
+        # },
+        # "tags" : record.get('tags', None),
         "item_Type":"Dataset",
         "keyword": record.get("Keyword", ""),
         "description": record.get("description", ""),
@@ -26,8 +32,7 @@ def map_to_figshare_json(record, is_update):
         "funding":"Economic Research Service",
         "related_material_identifier": record.get("references", ""),
         "relation_type": "IsSupplementTo",
-        # "license": record.get("license",""),
-        "license": 1000,
+        # "license": record.get("license", None),
         "contactPoint": {
             "fn": record.get("contactPoint", None).get("fn", None),
             "hasEmail": record.get("contactPoint", None).get("hasEmail", None)
@@ -35,8 +40,6 @@ def map_to_figshare_json(record, is_update):
         "publisher": {
             "name": record.get("publisher", "")
         },
-        # "Temporal Extent Start Date": record.get("temporal", ""),
-        # "Temporal_End_Date": datetime.now(),
         "Frequency": record.get("accrualPeriodicity", ""),
         "Theme": "Not specifiled",
         "Geographic_Coverage": record.get("Geographic Coverage", ""),
@@ -67,7 +70,7 @@ def create_figshare_articles(data):
             "Authorization": settings.TOKEN
         }
         try:
-            response = requests.post('https://api.figshare.com/v2/account/articles', json=figshare_json, headers=headers)
+            response = requests.post('https://api.figsh.com/v2/account/articles', json=figshare_json, headers=headers)
         except Exception as e:
             print(e)
         if response.status_code == 201:
@@ -91,7 +94,7 @@ def check_if_article_exists(title):
     params = {
         "title": title
     }
-    response = requests.get('https://api.figshare.com/v2/private_articles/', params=params, headers=headers)
+    response = requests.get('https://api.figsh.com/v2/private_articles/', params=params, headers=headers)
     if response.status_code == 200:
         articles = response.json()
         if articles:
@@ -107,7 +110,7 @@ def update_figshare_article(article_id, data):
         "Content-Type": "application/json",
         "Authorization": settings.TOKEN
     }
-    response = requests.put(f'https://api.figshare.com/v2/account/articles/{article_id}', json=figshare_json, headers=headers)
+    response = requests.put(f'https://api.figsh.com/v2/account/articles/{article_id}', json=figshare_json, headers=headers)
     if response.status_code == 200:
         print(f"Article '{data['title']}' updated successfully on Figshare.")
     else:

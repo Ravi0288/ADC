@@ -165,8 +165,8 @@ STATICFILES_DIRS = [BASE_DIR / 'static',]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media_library'
-UPLOAD_ROOT = BASE_DIR / 'uploads'
 STAKEHOLDERS_ROOT = BASE_DIR / 'DOCUMENTS'
+ARTICLES = BASE_DIR / 'ARTICLES'
 LOGS = BASE_DIR / 'logs'
 
 # Default primary key field type

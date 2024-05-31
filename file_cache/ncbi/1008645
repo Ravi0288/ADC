@@ -1,0 +1,47 @@
+<DocumentSummary uid="1008645">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA1008645" archive="NCBI" id="1008645"/>
+            <LocalID>bp0</LocalID>
+            <LocalID>bp0</LocalID>
+        </ProjectID>
+        <ProjectDescr>
+            <Title>Transcriptomic profiles of Mannheimia haemolytica planktonic and biofilm associated cells</Title>
+            <Description>Bacterial biofilms are organized communities of bacterial cells which grow by attaching to surfaces, each other, and are covered by a film-like substance called matrix. Bacteria form biofilms to protect from the host immune response and also due to the limitation of nutrients. Bacteria in the biofilms showed increased resistance to antibiotics. Mannheimia haemolytica, which is the predominant cause of bovine respiratory disease complex (BRD), is also known to form biofilms. We selected three M. haemolytica serotypes associated with BRD for biofilm transcriptomic study. The transcriptomic analysis would be important to understand the effects of media on biofilm development and identify candidate genes to design new vaccines.</Description>
+            <Grant GrantId="441196">
+                <Title>Host-pathogen interactions and control strategies for bacterial respiratory pathogens in cattle</Title>
+                <Agency abbr="USDA">United States Dept of Agriculture</Agency>
+            </Grant>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMultispecies"/>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eRawSequenceReads"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>raw sequence reads</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>raw sequence reads</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2023-08-23" submission_id="SUB13735269" submitted="2023-08-23">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute" url="https://www.ars.usda.gov">
+                <Name>National Animal Disease Center</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB13735269-bp0"/>
+    </Submission>
+</DocumentSummary>
+

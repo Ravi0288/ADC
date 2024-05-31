@@ -1,0 +1,42 @@
+{
+    "identifier": "USDA-FSA-00002",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:askfsa@usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Website Administrator"
+    },
+    "programCode": [
+        "005:012"
+    ],
+    "description": "\"The U.S. Department of Agriculture's (USDA) Farm Service Agency (FSA) provides emergency loans to help farmers and ranchers who own or operate a farm\/ranch located in a county declared by the President or designated by the Secretary of Agriculture as a primary disaster area or quarantine area.\r\n\r\nEmergency loan funds may be used to:\r\nRestore or replace essential property\r\nPay all or part of production costs associated with the disaster year\r\nPay essential family living expenses\r\nReorganize the farming operation\r\nRefinance certain debts, excluding real estate\r\n\r\nLoan applicants may borrow up to 100 percent of their total actual production and\/or physical losses. The maximum loan amount is $500,000.\r\n\r\nLoans for crops, livestock, and non-real estate losses have a repayment term usually between 1 to 7 years depending upon the loan purpose, collateral, and repayment ability. Loans for physical losses to real estate normally have a 30-year repayment term, not to exceed 40 years.\"",
+    "title": "Farm Emergency Loans",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/www.fsa.usda.gov\/programs-and-services\/farm-loan-programs\/emergency-farm-loans\/index",
+            "mediaType": "text\/html",
+            "title": "Farm Emergency Loans"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:49"
+    ],
+    "modified": "2014-04-25",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Farm Service Agency, Department of Agriculture"
+    },
+    "keyword": [
+        "Disaster Relief",
+        "agriculture",
+        "disaster assistance",
+        "loans"
+    ],
+    "author": "USDA Farm Service Agency",
+    "fundref": "Farm Service Agency",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

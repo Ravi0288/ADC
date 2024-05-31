@@ -1,0 +1,77 @@
+{
+    "title": "Acyrthosiphon pisum strain:LSR1 Transcriptome or Gene expression",
+    "description": "To further understand the metabolic interaction between aphids and their obligate nutritional symbionts. In this study aphids fed on different host plants that vary in essential amino acid concentrations.",
+    "authors": [
+        {
+            "name": "University of Illinois, Champaign-Urbana"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2013-07-22",
+        "postedDate": "2013-07-22",
+        "revision": "2013-07-22"
+    },
+    "tags": [
+        "Acyrthosiphon pisum",
+        "LSR1",
+        "eEukaryotes",
+        "transcriptome"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2013-07-22"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA213008"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "transcriptome;gene expression"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "U.S. Department of Agriculture, 2011-67012-30707"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/213008",
+            "title": "Acyrthosiphon pisum strain:LSR1 Transcriptome or Gene expression",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

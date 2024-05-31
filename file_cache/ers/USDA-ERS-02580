@@ -1,0 +1,55 @@
+{
+    "references": [
+        "https:\/\/www.ers.usda.gov\/data-products\/arms-farm-financial-and-crop-production-practices\/documentation\/"
+    ],
+    "contactPoint": {
+        "hasEmail": "mailto:armsteam@ers.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "ARMS Team"
+    },
+    "description": "The annual Agricultural Resource Management Survey (ARMS) is USDA's primary source of information on the financial condition, production practices, and resource use of America's farm businesses and the economic well-being of America's farm households. ARMS data are essential to USDA, congressional, administration, and industry decision makers when weighing alternative policies and programs that touch the farm sector or affect farm families.\r\n\r\nThe ERS content and data APIs (including our pre-made widgets for embedding charts) are currently out of service while we redesign our site. Check back here for updates--we'll keep you informed as to the progress. Contact us at webadmin@ers.usda.gov with questions.",
+    "title": "ARMS Farm Financial and Crop Production Practices",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/www.ers.usda.gov\/data-products\/arms-farm-financial-and-crop-production-practices\/tailored-reports-farm-structure-and-finance.aspx",
+            "mediaType": "text\/html",
+            "title": "Query tool - Farm structure and finance"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/www.ers.usda.gov\/data-products\/arms-farm-financial-and-crop-production-practices\/tailored-reports-crop-production-practices.aspx",
+            "mediaType": "text\/html",
+            "title": "Query tool - Crop production practices"
+        }
+    ],
+    "bureauCode": [
+        "005:13"
+    ],
+    "modified": "2020-07-07",
+    "describedBy": "http:\/\/www.ers.usda.gov\/data-products\/arms-farm-financial-and-crop-production-practices\/documentation.aspx",
+    "keyword": [
+        "Agricultural Resource Management Survey",
+        "crop production practices",
+        "farm structure",
+        "finance"
+    ],
+    "spatial": "United States",
+    "issued": "2019-12-10",
+    "identifier": "USDA-ERS-02580",
+    "accessLevel": "public",
+    "programCode": [
+        "005:041"
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Economic Research Service, Department of Agriculture"
+    },
+    "accrualPeriodicity": "R\/P1Y",
+    "author": "USDA Economic Research Service",
+    "fundref": "Economic Research Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

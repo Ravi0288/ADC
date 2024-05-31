@@ -1,0 +1,77 @@
+{
+    "title": "Avena sativa Transcriptome Analysis and Annotation",
+    "description": "Comprehensive seed transcriptome analysis of oat, a major hexaploid crop. Derived from a single plant reselection with several rounds of selfing from the cultivar 'Ogle'.",
+    "authors": [
+        {
+            "name": "USDA-ARS"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2013-05-09",
+        "postedDate": "2013-05-09",
+        "revision": "2013-05-09"
+    },
+    "tags": [
+        "Avena sativa",
+        "Ogle",
+        "eEukaryotes",
+        "transcriptome"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2013-05-09"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA202304"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "transcriptome;gene expression"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "Agricultural Research Service, CRIS 3640-21000-025-00D"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/202304",
+            "title": "Avena sativa Transcriptome Analysis and Annotation",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "identifier": "USDA-26311",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:oliver.flake@fas.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Oliver Flake"
+    },
+    "programCode": [
+        "005:000"
+    ],
+    "description": "USDA quarterly forecasts for U.S. agricultural exports, in value and volume, by commodity and region",
+    "title": "Quarterly Agricultural Export Forecast",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/usda.mannlib.cornell.edu\/MannUsda\/viewDocumentInfo.do?documentID=1196",
+            "mediaType": "text\/html",
+            "title": "Web Page"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/licenses\/by\/4.0",
+    "bureauCode": [
+        "005:68"
+    ],
+    "modified": "2014-12-23",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Foreign Agricultural Service, Department of Agriculture"
+    },
+    "accrualPeriodicity": "R\/P3M",
+    "keyword": [
+        "U S agricultural exports",
+        "export outlook",
+        "trade surplus"
+    ],
+    "spatial": "Global",
+    "author": "USDA Foreign Agricultural Service",
+    "fundref": "Foreign Agricultural Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

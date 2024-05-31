@@ -1,0 +1,56 @@
+<DocumentSummary uid="972640">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA972640" archive="NCBI" id="972640"/>
+            <LocalID>bp0</LocalID>
+            <LocalID>bp0</LocalID>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Phaeobacter inhibens strain:S4Sm</Name>
+            <Title>Phaeobacter inhibens strain:S4Sm Genome sequencing</Title>
+            <Description>PacBio HiFi read assembly of Phaeobacter inhibens S4Sm</Description>
+            <Grant GrantId="2019-67016-29868">
+                <Title>Molecular mechanisms of interspecies interactions in mitigating aquaculture diseases</Title>
+                <Agency abbr="USDA">United States Dept of Agriculture National Institute of Food and Agriculture</Agency>
+            </Grant>
+            <ProjectReleaseDate>2023-05-22T00:00:00Z</ProjectReleaseDate>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+            <LocusTagPrefix biosample_id="SAMN35084613">QMZ01</LocusTagPrefix>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMonoisolate">
+                    <Organism species="221822" taxID="221822">
+                        <OrganismName>Phaeobacter inhibens</OrganismName>
+                        <Strain>S4Sm</Strain>
+                        <Supergroup>eBacteria</Supergroup>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eSequence"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>genome sequencing</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>genome sequencing</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2023-05-15" submission_id="SUB12233912" submitted="2023-05-15">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>University of Rhode Island</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB12233912-bp0"/>
+    </Submission>
+</DocumentSummary>
+

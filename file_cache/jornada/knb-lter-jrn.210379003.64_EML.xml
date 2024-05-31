@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.210379003.64" system="https://pasta.edirepository.org" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="d210379003">
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/f85805a9e8171e2b466697faec1acd87</alternateIdentifier><title>Locally verified evaporation data from a NOAA evaporation pan at USDA Jornada Experimental Range headquarters, southern New Mexico USA, 1953-1979</title>
+    <creator>
+      <individualName>
+        <givenName>Fred</givenName>
+        <surName>Ares</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <surName>National Weather Service</surName>
+      </individualName>
+      <organizationName>NOAA</organizationName>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>David</givenName>
+        <surName>Thatcher</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>John</givenName>
+        <surName>Anderson</surName>
+      </individualName>
+      <organizationName>Jornada Basin LTER/New Mexico State University</organizationName>
+      <positionName>Jornada Research Site Manager</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>janderso@jornada.nmsu.edu</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-6417-8022</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Kris</givenName>
+        <surName>Havstad</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <userId directory="ORCID">0000-0002-0133-8519</userId>
+    </creator>
+    <metadataProvider>
+      <organizationName>Jornada Basin LTER/New Mexico State University</organizationName>
+      <positionName>Jornada Basin LTER program</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>jornada.lter@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://lter.jornada.nmsu.edu</onlineUrl>
+    </metadataProvider>
+    <pubDate>2022-05-02</pubDate>
+    <language>English</language>
+    <abstract>
+      <para>
+    This data package contains locally verified monthly total pan
+    evaporation data from a NOAA National Weather Service station
+    located at the USDA Jornada Experimental Range headquarters in
+    southern New Mexico, USA. The evaporation pan measurements commenced
+    in 1953 and ended in 1979 when the instrument was decommissioned.
+    Pan evaporation observations were made using standard U.S.
+    climatological service instrumentation and procedures. The included
+    data were verified and transcribed directly from records retrieved
+    from NOAA in ~1995 and have since undergone quality control and
+    assurance procedures different than those in place at NOAA. These
+    data therefore differ from those directly downloadable from NOAA
+    servers. There is no further data from this decommissioned
+    instrument, so this dataset is now complete and data will no longer
+    be updated here.
+  </para>
+      <para>
+    All observations from this weather station have also undergone NOAA
+    QA/QC procedures and those data are available by accessing the
+    Jornada Experimental Range, NM US GHCN station through the National
+    Climatic Data Center portal
+    (https://www.ncdc.noaa.gov/cdo-web/datasets/GSOM/stations/GHCND:USC00294426/detail
+    - monthly pan evaporation data are available back to 1930, but there
+    may be data issues prior to 1953).
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">Disturbance</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Disturbance</keyword>
+      <keyword keywordType="theme">atmospheric processes</keyword>
+      <keyword keywordType="theme">climate</keyword>
+      <keyword keywordType="theme">deserts</keyword>
+      <keyword keywordType="theme">evaporation</keyword>
+      <keyword keywordType="theme">evapotranspiration</keyword>
+      <keyword keywordType="theme">hydrologic processes</keyword>
+      <keyword keywordType="theme">hydrology</keyword>
+      <keyword keywordType="theme">long term</keyword>
+      <keyword keywordType="theme">meteorology</keyword>
+      <keyword keywordType="theme">water balance</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary v1</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keyword keywordType="theme">NOAA</keyword>
+      <keyword keywordType="theme">NWS</keyword>
+      <keyword keywordType="theme">meteorology</keyword>
+      <keyword keywordType="theme">monthly</keyword>
+      <keyword keywordType="theme">weather station</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Hydrology</keyword>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keyword keywordType="theme">USDA</keyword>
+      <keyword keywordType="theme">long-term</keyword>
+      <keywordThesaurus>Jornada Basin LTER dataset keywords</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">study 379</keyword>
+      <keywordThesaurus>Jornada Basin project names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">HQ</keyword>
+      <keyword keywordType="place">JER</keyword>
+      <keywordThesaurus>Jornada Basin place names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keywordThesaurus>USDA National Ag Library's Agricultural Thesaurus</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license - Attribution - CC BY 
+  (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" 
+  herein) is required to cite it appropriately in any publication that results from its 
+  use. The Data User should realize that these data may be actively used by others for 
+  ongoing research and that coordination may be necessary to prevent duplicate 
+  publication. The Data User is urged to contact the authors of these data if any 
+  questions about methodology or results occur. Where appropriate, the Data User is 
+  encouraged to consider collaboration or co-authorship with the authors. The Data User 
+  should realize that misinterpretation of data may occur if used out of context of the 
+  original study. While substantial efforts are made to ensure the accuracy of data and 
+  associated documentation, complete accuracy of data sets cannot be guaranteed. All data 
+  are made available "as is." The Data User should be aware, however, that data are updated 
+  periodically and it is the responsibility of the Data User to check for new versions of 
+  the data. The data authors and the repository where these data were obtained shall not be 
+  liable for damages resulting from any use or misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">https://jrn.lternet.edu</url>
+      </online>
+    </distribution>
+    <distribution id="10.6073/pasta/f85805a9e8171e2b466697faec1acd87" scope="system" system="https://pasta.edirepository.org"><online><url function="information">https://doi.org/10.6073/pasta/f85805a9e8171e2b466697faec1acd87</url></online></distribution><coverage>
+      <geographicCoverage>
+        <geographicDescription>Headquarters or unspecified: Jornada Experimental Range Headquarters. These generic coordinates may not necessarily specify  the location of the study. More precise geographic coordinates for this study may be requested from the JRN LTER Data Manager (jornada.data@nmsu.edu).</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-106.740997</westBoundingCoordinate>
+          <eastBoundingCoordinate>-106.740997</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.617001</northBoundingCoordinate>
+          <southBoundingCoordinate>32.617001</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1953-01-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>1979-09-01</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>complete</description>
+      <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <organizationName>Jornada Basin LTER/New Mexico State University</organizationName>
+      <positionName>Jornada Basin LTER Information Manager</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>575-646-1739</phone>
+      <electronicMailAddress>jornada.data@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://lter.jornada.nmsu.edu/information-management/</onlineUrl>
+    </contact>
+    
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@environmentaldatainitiative.org</electronicMailAddress><onlineUrl>https://environmentaldatainitiative.org</onlineUrl><userId directory="https://ror.org">0330j0z60</userId></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>History and description</title>
+            <para>
+      This data package contains monthly evaporation observations
+      collected at an evaporation pan instrument located at USDA Jornada
+      Experimental Range (JER) Headquarters. The evaporation pan was a
+      National Weather Service (NWS) instrument and is part of the NOAA
+      Global Historical Climate Network (GHCN). Monthly observations of
+      evaporation in inches of water were collected by USDA JER staff
+      and sent to the local National Weather Service office from around
+      1953 until the instrument was decommissioned in 1979. These
+      observations were made using standard U.S. climatological service
+      instrumentation and recording procedures. The data sent to the
+      local NWS office was subsequently quality controlled and assured
+      and made available on NOAA servers.
+    </para>
+            <para>
+      This dataset contains monthly evaporation data that are based on
+      observations stored in the JER database, which were ultimately
+      derived from floppy disks obtained from a NOAA office in Maryland.
+      Since this time, these JER data have undergone quality control and
+      assurance procedures different than those in place at NOAA (see
+      below), and the data therefore differ from what is available
+      currently from NOAA servers. There are far fewer missing
+      observations in this dataset than the NOAA dataset (see
+      "Additional documents" below).
+    </para>
+            <para>
+      All data from this evaporation pan that have undergone NOAA QA/QC
+      procedures are available by accessing the Jornada Experimental
+      Range, NM US GHCN station through the National Climatic Data
+      Center portal
+      (https://www.ncdc.noaa.gov/cdo-web/datasets/GSOM/stations/GHCND:USC00294426/detail).
+      Evaporation data going back to 1930 is retrievable from NOAA
+      servers, but there appear to be data issues prior to 1953.
+    </para>
+          </section>
+          <section>
+            <title>Data evaluation by USDA and LTER staff</title>
+            <para>
+      Discrepancies between this data set and data now available from
+      NOAA suggest that data entry errors or additional data filtering
+      has occurred at NOAA. This resulted in a higher frequency of
+      missing data in the data directly downloadable from NOAA servers.
+      This data package remains to document those discrepancies, but is
+      now considered complete and will not be updated in the future.
+    </para>
+          </section>
+          <section>
+            <title>Additional documents</title>
+            <para>
+      The attached history text file
+      "NOAA_JERHQ_ws_panevap_his.txt" describes the procedures
+      for identifying discrepancies between NOAA data and JER
+      headquarters data and the subsequent changes made in the included
+      data file.
+    </para>
+            <para>
+      The summary figures "local_vs_noaa_monthlyevap_diff.png"
+      and "local_vs_noaa_cumulative_monthlyevap.png" plot the
+      discrepancies between the local JER data and NOAA server data from
+      the most recent data request.
+    </para>
+          </section>
+          <section>
+            <title>Related datasets</title>
+            <para>
+      Daily temperature and precipitation observations from the JER
+      headquarters NOAA weather station (which the evaporation pan was
+      co-located with) are found in EDI package knb-lter-jrn.210379001.
+    </para>
+            <para>
+      Monthly temperature and precipitation summary data from this
+      weather station is found on EDI in package knb-lter-jrn.210379002.
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Jornada Basin LTER</title>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Niall</givenName>
+          <surName>Hanan</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-3335</phone>
+        <electronicMailAddress>nhanan@nmsu.edu</electronicMailAddress>
+        <role>Principal Investigator</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Jornada Basin Long-Term Ecological Research (LTER) program is part of a 
+          national network of long-term ecological research sites funded by the US National 
+          Science Foundation (NSF). The Jornada LTER program has been continuously funded
+          since 1982 to develop general principles governing changes between grassland 
+          and shrubland ecosystems based on long-term data collected in the Chihuahuan 
+          Desert. We translate our findings to dryland ecosystems around the world, and 
+          forecast the dynamics of future ecosystem states in response to changing climate 
+          and land use.</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>JRN LTER is funded by the National Science Foundation under award DEB 2025166.</para>
+        </section>
+      </funding>
+    </project>
+    <dataTable id="5700b72e5928ffe6ff264fccfefb6b9e" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Monthly pan evaporation</entityName>
+      <entityDescription>Monthly pan evaporation values in inches, 1953-1979</entityDescription>
+      <physical>
+        <objectName>JRN379003_NOAA_JERHQ_panevap_monthly_adj.csv</objectName>
+        <size unit="byte">9739</size>
+        <authentication method="MD5">098cda84398814e6b4a1d119b0284a83</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210379003/64/5700b72e5928ffe6ff264fccfefb6b9e</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d210379003-e1-att1">
+          <attributeName>date</attributeName>
+          <attributeLabel>Date</attributeLabel>
+          <attributeDefinition>Date of observation (year-month)</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210379003-e1-att2">
+          <attributeName>evap</attributeName>
+          <attributeLabel>Evaporation (in)</attributeLabel>
+          <attributeDefinition>Total evaporation for the month (inches)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>inch</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value, see comment</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210379003-e1-att3">
+          <attributeName>evap_days</attributeName>
+          <attributeLabel>Evaporation days</attributeLabel>
+          <attributeDefinition>Number of days used in evaporation calculation</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value, see comment</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210379003-e1-att4">
+          <attributeName>missing_local</attributeName>
+          <attributeLabel>Missing local record</attributeLabel>
+          <attributeDefinition>Boolean value indicating absence of observation in the local dataset (0 = observation in local record, 1 = not in local record)</attributeDefinition>
+          <storageType>boolean</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>True</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>False</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210379003-e1-att5">
+          <attributeName>missing_at_noaa</attributeName>
+          <attributeLabel>Missing at NOAA</attributeLabel>
+          <attributeDefinition>Boolean value indicating absence of observation in NOAA dataset (0 = observation in NOAA record, 1 = not in NOAA record)</attributeDefinition>
+          <storageType>boolean</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>True</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>False</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210379003-e1-att6">
+          <attributeName>evap_noaa_diff</attributeName>
+          <attributeLabel>Evap difference</attributeLabel>
+          <attributeDefinition>Difference between local JER evaporation values and NOAA values (local-noaa)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>inch</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value, see comment</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>320</numberOfRecords>
+    </dataTable>
+    <otherEntity id="09286d9db969b18b54a2b43f38fe6ff0" scope="document" system="https://pasta.edirepository.org">
+      <entityName>History file documenting local data verification</entityName>
+      <entityDescription>Jornada staff comments, corrections, and historical documentation regarding NOAA weather station observations in this dataset</entityDescription>
+      <physical>
+        <objectName>NOAA_JERHQ_ws_panevap_his.txt</objectName>
+        <size unit="byte">648</size>
+        <authentication method="MD5">380052ca4bb2263b7ac15db8c0f72aaa</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>text/plain</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210379003/64/09286d9db969b18b54a2b43f38fe6ff0</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+    <otherEntity id="263332ca39daa1908d9771e4127caf44" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Summary figure 1 of local and NOAA records</entityName>
+      <entityDescription>Summary figure comparing timeseries of local JER data records to NOAA records. The JER records are adjusted relative to NOAA and differences are shown.</entityDescription>
+      <physical>
+        <objectName>local_vs_noaa_monthlyevap_diff.png</objectName>
+        <size unit="byte">242608</size>
+        <authentication method="MD5">4ecda28530755f48937fc02a25f2407a</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PNG</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210379003/64/263332ca39daa1908d9771e4127caf44</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+    <otherEntity id="537f7355802c278ed6a2f61a30ac9fb1" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Summary figure 2 of local and NOAA records</entityName>
+      <entityDescription>Summary figure comparing cumulative local JER data records to NOAA records. The JER records are adjusted relative to NOAA.</entityDescription>
+      <physical>
+        <objectName>local_vs_noaa_cumulative_monthlyevap.png</objectName>
+        <size unit="byte">77249</size>
+        <authentication method="MD5">84aec8334a1db1e2024c7fe08fd3ed7a</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PNG</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210379003/64/537f7355802c278ed6a2f61a30ac9fb1</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit abbreviation="in" id="inch" multiplierToSI="0.0254" name="inch" parentSI="meter">
+          <description>unit of length in the (British) imperial and United States systems 
+      usually understood as 1/12 f a foot.</description>
+        </unit>
+        <unit id="number" name="number" unitType="dimensionless">
+          <description>a quantity or amount</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

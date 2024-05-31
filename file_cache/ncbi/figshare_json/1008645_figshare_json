@@ -1,0 +1,74 @@
+{
+    "title": "Transcriptomic profiles of Mannheimia haemolytica planktonic and biofilm associated cells",
+    "description": "Bacterial biofilms are organized communities of bacterial cells which grow by attaching to surfaces, each other, and are covered by a film-like substance called matrix. Bacteria form biofilms to protect from the host immune response and also due to the limitation of nutrients. Bacteria in the biofilms showed increased resistance to antibiotics. Mannheimia haemolytica, which is the predominant cause of bovine respiratory disease complex (BRD), is also known to form biofilms. We selected three M. haemolytica serotypes associated with BRD for biofilm transcriptomic study. The transcriptomic analysis would be important to understand the effects of media on biofilm development and identify candidate genes to design new vaccines.",
+    "authors": [
+        {
+            "name": "National Animal Disease Center"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2023-08-23",
+        "postedDate": "2023-08-23",
+        "revision": "2023-08-23"
+    },
+    "tags": [
+        "raw sequence reads"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2023-08-23"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA1008645"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "sequence analysis"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "U.S. Department of Agriculture, 441196"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/1008645",
+            "title": "Transcriptomic profiles of Mannheimia haemolytica planktonic and biofilm associated cells",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

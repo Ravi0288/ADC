@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.200047001.3" system="https://pasta.edirepository.org" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="d200047001">
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/ad172f22b0abb8fad0998e34bca1b3b6</alternateIdentifier><shortName>Jornada state map</shortName>
+    <title>Map of ecological sites and ecological states for the USDA Jornada Experimental Range</title>
+    <creator>
+      <individualName>
+        <givenName>Laura M</givenName>
+        <surName>Burkett</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>laura.burkett@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-6655-1863</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Brandon T</givenName>
+        <surName>Bestelmeyer</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>brandon.bestelmeyer@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0001-5060-9955</userId>
+    </creator>
+    <metadataProvider>
+      <organizationName>Jornada Basin LTER</organizationName>
+      <positionName>Jornada Basin LTER program</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>jornada.lter@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://lter.jornada.nmsu.edu</onlineUrl>
+      <userId directory="ROR">05976ta47</userId>
+    </metadataProvider>
+    <associatedParty>
+      <individualName>
+        <givenName>Eldon</givenName>
+        <surName>Ayers</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range (retired)</organizationName>
+      <address>
+        <deliveryPoint/>
+        <city/>
+        <administrativeArea/>
+        <postalCode/>
+        <country/>
+      </address>
+      <onlineUrl/>
+      <role>state mapping technician</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Kirsten B</givenName>
+        <surName>Romig</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>kirsten.romig@usda.gov</electronicMailAddress>
+      <role>state mapping technician</role>
+    </associatedParty>
+    <pubDate>2023-02-03</pubDate><language>English</language>
+    <abstract>
+      <para>
+    This data package includes an ArcMap geodatabase: a polygon feature
+    class, associated attribute table and metadata. The spatial data,
+    JERStateMap_v1.gdb.zip, represents the ecological sites and states
+    on the Jornada Experimental Range. The attribute table for the
+    spatial data, JERStateMap.csv, and a summary of the spatial
+    metadata, JERStateMapMetadata.pdf, are also included.
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">plant communities</keyword>
+      <keyword keywordType="theme">vegetation dynamics</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary v1</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">Jornada Experimental Range</keyword>
+      <keyword keywordType="theme">SSURGO soil map unit</keyword>
+      <keyword keywordType="theme">ecological site</keyword>
+      <keyword keywordType="theme">ecological state</keyword>
+      <keyword keywordType="theme">state mapping</keyword>
+      <keyword keywordType="theme">state-and-transition model (STM)</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTER</keyword>
+      <keywordThesaurus>Jornada Basin project names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keyword keywordType="theme">ecological site descriptions (ESD)</keyword>
+      <keyword keywordType="theme">soil surveys</keyword>
+      <keyword keywordType="theme">vegetation maps</keyword>
+      <keywordThesaurus>USDA National Ag Library's Agricultural Thesaurus</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license - Attribution - CC BY 
+  (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" 
+  herein) is required to cite it appropriately in any publication that results from its 
+  use. The Data User should realize that these data may be actively used by others for 
+  ongoing research and that coordination may be necessary to prevent duplicate 
+  publication. The Data User is urged to contact the authors of these data if any 
+  questions about methodology or results occur. Where appropriate, the Data User is 
+  encouraged to consider collaboration or co-authorship with the authors. The Data User 
+  should realize that misinterpretation of data may occur if used out of context of the 
+  original study. While substantial efforts are made to ensure the accuracy of data and 
+  associated documentation, complete accuracy of data sets cannot be guaranteed. All data 
+  are made available "as is." The Data User should be aware, however, that data are updated 
+  periodically and it is the responsibility of the Data User to check for new versions of 
+  the data. The data authors and the repository where these data were obtained shall not be 
+  liable for damages resulting from any use or misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">https://jrn.lternet.edu</url>
+      </online>
+    </distribution>
+    <distribution id="10.6073/pasta/ad172f22b0abb8fad0998e34bca1b3b6" scope="system" system="https://pasta.edirepository.org"><online><url function="information">https://doi.org/10.6073/pasta/ad172f22b0abb8fad0998e34bca1b3b6</url></online></distribution><coverage>
+      <geographicCoverage>
+        <geographicDescription>Jornada Experimental Range: USDA Jornada Experimental Range</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-106.868125</westBoundingCoordinate>
+          <eastBoundingCoordinate>-106.592781</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.778734</northBoundingCoordinate>
+          <southBoundingCoordinate>32.473162</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2014-01-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2021-03-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>complete</description>
+      <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <organizationName>Jornada Basin LTER</organizationName>
+      <positionName>Information Manager</positionName>
+      <phone>575-322-2430</phone>
+      <electronicMailAddress>jornada.data@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://lter.jornada.nmsu.edu/information-management/</onlineUrl>
+    </contact>
+    
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@edirepository.org</electronicMailAddress><onlineUrl>https://edirepository.org</onlineUrl><userId directory="https://ror.org">0330j0z60</userId></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>METHODS</title>
+            <para>
+      To create this map, existing Soil Survey Geographi Database
+      (SSURGO) soil map units were sub-divided based on imagery (Digital
+      Orthophoto Quarter Quads, DOQQ), knowledge of ecological site
+      descriptions (ESDs) and state-and-transition models (STMs),
+      existing spatial data layers, georeferenced ground data and field
+      traverse data. Each child polygon was attributed with an
+      ecological site and three-digit state code. A more detailed
+      description of the state mapping process is provided here:
+      https://jornada.nmsu.edu/esd/state-mapping.
+    </para>
+            <para>
+      Soil map units were obtained from the Dona Ana County Area, New
+      Mexico (NM690) and White Sands Missile Range, New Mexico (NM688)
+      SSURGO Soil Surveys:
+      https://websoilsurvey.sc.egov.usda.gov/App/WebSoilSurvey.aspx
+    </para>
+            <para>
+      The ecological site descriptions describing each ecological site,
+      and associated states, are found on the Ecosystem Dynamics
+      Interpretive Tool (EDIT): Ecological Site Descriptions for MLRA
+      042B (Southern Rio Grande Rift), Desert Shrub (R042BB***NM)
+      https://edit.jornada.nmsu.edu/catalogs/esd/042B.
+    </para>
+            <para>
+      Resources for Major Land Resource Area (MLRA) and Land Resource
+      Unit (LRU):
+      https://www.nrcs.usda.gov/resources/education-and-teaching-materials/defining-lrr-mlra-and-lru
+      https://web.nmsu.edu/~hbw3/what-is-a-land-resource-unit.html
+    </para>
+          </section>
+          <section>
+            <title>State Codes</title>
+            <para>
+      State codes consist of two or three digits.
+    </para>
+            <para>
+      Two digit codes are as follows: 10 = exotic dominated 11 = Roads
+      12 = Tanks/Water hole 13 = Agricultural field. Three digit codes
+      are composed of the following: 1 = Grassland (HCPC state) 2 =
+      Altered grassland / Altered savanna 3 = Shrub or Tree savanna
+      (HCPC state) 4 = Shrub / Tree invaded grassland 5 = Shrub / Tree
+      dominated 6 = Shrubland / Woodland 7 = Bare Annuals 8 = Gallery
+      forest (HCPC state) 9 = Exotic invaded.
+    </para>
+            <para>
+      State code example: 124 = reference grassland (1) is the dominant
+      state; secondary state is altered grassland (2) and the polygon
+      contains patches of shrub-invaded grassland (4).think of a sandy
+      soil that is mostly black grama grassland with very sparse (&lt;3%
+      cover) mesquite, but has patches with low/no black grama (&lt;5%
+      cover), with or without dropseeds and three-awns; and to a lesser
+      extent has patches of higher density mesquite (5% cover or more)
+    </para>
+          </section>
+          <section>
+            <title>Dominant Species</title>
+            <para>
+      For the dominant species variables, plant codes are from USDA NRCS
+      Plants Database: https://plants.sc.egov.usda.gov/java/. Functional
+      group codes are: AG = annual grasses; PG = perennial grasses; AF =
+      annual forbs; PF = perennial forbs; SH = shrubs; SS = sub-shrubs;
+      CAC = cactus, yucca, other succulents; TR = tree
+    </para>
+          </section>
+          <section>
+            <title>Versions</title>
+            <para>
+      Data within the Jornada State Map geodatabse are identical in
+      versions 1-3. Versioning is a result of metadata edits within EDI.
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Long-term research (LTER and LTAR) at Jornada Basin</title>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Brandon</givenName>
+          <surName>Bestelmeyer</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-4842</phone>
+        <electronicMailAddress>brandon.bestelmeyer@usda.gov</electronicMailAddress>
+        <role>Research Leader (USDA LTAR)</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Niall</givenName>
+          <surName>Hanan</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-3335</phone>
+        <electronicMailAddress>nhanan@nmsu.edu</electronicMailAddress>
+        <role>Principal Investigator (LTER)</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Jornada Basin is home to multiple long-term research networks, including the
+          Jornada Experimental Range Long-Term Agroecosystems Research program (JER LTAR) and the
+          Jornada Basin Long-Term Ecological Research program (JRN LTER). The JER LTAR program
+          is part of a national network of long-term agricultural and rangeland ecology research
+          sites funded by the US Department of Agriculture (USDA). The Jornada Experimental Range is
+          administered by the USDA-ARS (USDA Agricultural Research Service). JRN LTER is part of a
+          national network of long-term ecological research sites funded by the US National Science 
+          Foundation (NSF). The JRN LTER program has been continuously funded since 1982 to develop
+          general principles governing changes between grassland and shrubland ecosystems based on
+          long-term data collected in the Chihuahuan Desert.</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>The JER LTAR program is supported by the USDA Long-Term Agroecosystem Research
+          Network (CRIS# 3050-11210-009-00D). The JRN LTER program is funded by the National Science
+          Foundation under award DEB 2025166. </para>
+        </section>
+      </funding>
+    </project>
+    <dataTable id="0f0e1d2bf059f4e18faa943540a4007b" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Attribute table for JER ecological sites and states map</entityName>
+      <entityDescription>Attribute table for file geodatabase containing map of ecological sites and states for JER</entityDescription>
+      <physical>
+        <objectName>JERStateMap_v1.csv</objectName>
+        <size unit="byte">694927</size>
+        <authentication method="MD5">2682a8f4c62be5d5b45f8d490bf17679</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200047001/3/0f0e1d2bf059f4e18faa943540a4007b</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d200047001-e2-att1">
+          <attributeName>OBJECTID</attributeName>
+          <attributeLabel>Record identifier</attributeLabel>
+          <attributeDefinition>Unique identifier for rows assigned by ArcGIS</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att2">
+          <attributeName>soil_mu</attributeName>
+          <attributeLabel>Soil survey soil map unit</attributeLabel>
+          <attributeDefinition>NRCS soil survey soil map unit symbol</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att3">
+          <attributeName>SSURGO_dat</attributeName>
+          <attributeLabel>SSURGO soil survey area symbol</attributeLabel>
+          <attributeDefinition>Soil Survey Geographic Database (SSURGO) soil survey area symbol</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>NM688</code>
+                    <definition>White Sands Missile Range, NM Soil Survey area symbol</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>NM690</code>
+                    <definition>Dona Ana County Area, NM Soil Survey area symbol</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att4">
+          <attributeName>MLRA</attributeName>
+          <attributeLabel>Major land resource area code </attributeLabel>
+          <attributeDefinition>Major land resource area code </attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>42B</code>
+                    <definition>MLRA code for the Southern Rio Grande Rift</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att5">
+          <attributeName>LRU</attributeName>
+          <attributeLabel>Land resource unit</attributeLabel>
+          <attributeDefinition>Land resource unit</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>42BB</code>
+                    <definition>LRU code for the Desert Shrub LRU of the Southern Rio Grande Rift MLRA</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att6">
+          <attributeName>esite</attributeName>
+          <attributeLabel>Ecological site code</attributeLabel>
+          <attributeDefinition>Dominant ecological site in the polygon, attributed by the state mapping technician</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att7">
+          <attributeName>esite_alt</attributeName>
+          <attributeLabel>Second most common ecological site</attributeLabel>
+          <attributeDefinition>Second most common ecological site for the polygon, attributed by the state mapping technician; used when there is uncertainty as to ecological site or is the second dominant ecological site where more than one ecological site occurs within the polygon</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att8">
+          <attributeName>esite_alt2</attributeName>
+          <attributeLabel>Third most common ecological site</attributeLabel>
+          <attributeDefinition>Third most common ecological site for the polygon, attributed by the state mapping technician; used when there is uncertainty as to ecological site or is the third dominant ecological site where more than one ecological site occurs within the polygon</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att9">
+          <attributeName>state_code</attributeName>
+          <attributeLabel>Ecological state code</attributeLabel>
+          <attributeDefinition>Two or three-digit ecological state code attributed by the state mapping technician</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att10">
+          <attributeName>dom1</attributeName>
+          <attributeLabel>Dominant plant species</attributeLabel>
+          <attributeDefinition>Dominant plant species or lifeform (by cover), obtained from field data</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att11">
+          <attributeName>dom2</attributeName>
+          <attributeLabel>Second most dominant plant species</attributeLabel>
+          <attributeDefinition>Second most dominant plant species or lifeform (by cover), obtained from field data</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att12">
+          <attributeName>dom3</attributeName>
+          <attributeLabel>Third most dominant plant species</attributeLabel>
+          <attributeDefinition>Third most dominant plant species or lifeform (by cover), obtained from field data</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att13">
+          <attributeName>dom4</attributeName>
+          <attributeLabel>Fourth most dominant plant species</attributeLabel>
+          <attributeDefinition>Fourth most dominant plant species or lifeform (by cover), obtained from field data</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att14">
+          <attributeName>grass_dur</attributeName>
+          <attributeLabel>Annual or perennial grasses</attributeLabel>
+          <attributeDefinition>The duration of dominant grass species within the polygon. Determined from field surveys.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>perennial</code>
+                    <definition>Perennial grass</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att15">
+          <attributeName>ration</attributeName>
+          <attributeLabel>Basis for ecosite or state</attributeLabel>
+          <attributeDefinition>Basis for attributing ecological site and/or ecological state</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>existing point inventory</code>
+                    <definition>identified based on existing point inventory</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>photo interpreation</code>
+                    <definition>identified based on georeferenced landscape or plot photos</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>site visit</code>
+                    <definition>state mapping technician conducted a field inventory to determine esite /state_code</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att16">
+          <attributeName>Shape_Length</attributeName>
+          <attributeLabel>Length of polygon</attributeLabel>
+          <attributeDefinition>Assigned by ArcGIS; length of the state map polygon</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200047001-e2-att17">
+          <attributeName>Shape_Area</attributeName>
+          <attributeLabel>Area of polygon</attributeLabel>
+          <attributeDefinition>Assigned by ArcGIS; area of the state map polygon</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>squareMeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>7053</numberOfRecords>
+    </dataTable>
+    <otherEntity id="a409f6c9e88ac6e4f1c1e6ac14326163" scope="document" system="https://pasta.edirepository.org">
+      <entityName>JER ecological sites and states file geodatabase</entityName>
+      <entityDescription>File geodatabase containing map of ecological sites and states for JER</entityDescription>
+      <physical>
+        <objectName>JERStateMap_v1.gdb.zip</objectName>
+        <size unit="byte">5122687</size>
+        <authentication method="MD5">24155cb70c279b4138ded67c9298fb84</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>application/zip</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200047001/3/a409f6c9e88ac6e4f1c1e6ac14326163</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+    <otherEntity id="53256c01939b3076002636fe773cec31" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Metadata summary for JER ecological sites and states map geodatabase</entityName>
+      <entityDescription>Metadata summary from geodatabase file containing map of ecological sites and states for JER</entityDescription>
+      <physical>
+        <objectName>JERStateMapMetadata.pdf</objectName>
+        <size unit="byte">124192</size>
+        <authentication method="MD5">b1644bcbbe7b486f9fa085a7a93bf2b2</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PDF</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200047001/3/53256c01939b3076002636fe773cec31</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit abbreviation="m" id="meter" multiplierToSI="1" name="meter" unitType="length">
+          <description>SI unit of length</description>
+        </unit>
+        <unit id="number" name="number" unitType="dimensionless">
+          <description>a quantity or amount</description>
+        </unit>
+        <unit abbreviation="m²" id="squareMeter" multiplierToSI="1" name="squareMeter" unitType="area">
+          <description>square meters</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

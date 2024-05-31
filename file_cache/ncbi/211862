@@ -1,0 +1,68 @@
+<DocumentSummary uid="211862">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA211862" archive="NCBI" id="211862"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Campylobacter jejuni</Name>
+            <Title>The complete Campylobacter jejuni transcriptome during colonization of a natural host determined by RNAseq</Title>
+            <Description>Campylobacter jejuni is a major human pathogen and a leading cause of bacterial derived gastroenteritis worldwide. C. jejuni regulates gene expression under various environmental conditions and stresses, indicative of its ability to survive in diverse niches. Despite this ability to highly regulate gene transcription, C. jejuni encodes few transcription factors and its genome lacks many canonical transcriptional regulators. Here we report the complete transcriptome of C. jejuni during colonization of the chicken cecum and in two different in vitro growth phases using strand-specific RNAseq. Through this study, we identified over 250 genes differentially expressed in vivo and in vitro and have identified numerous putative regulatory RNAs, including trans-acting non-coding RNAs and anti-sense transcripts. Our results provide new insights into how C. jejuni responds and adapts to the cecal environment and reveals new functions involved in colonization of its natural host.</Description>
+            <ExternalLink label="C. jejuni in vivo RNAseq Transcriptome Browser">
+                <URL>http://www.broadinstitute.org/software/genomeview/supplemental/CjVJD13/</URL>
+            </ExternalLink>
+            <Grant GrantId="2012-67012-19704">
+                <Title>Characterizing in vivo regulatory mechanisms of Campylobacter jejuni</Title>
+                <Agency abbr="USDA">U.S. Department of Agriculture</Agency>
+            </Grant>
+            <Grant GrantId="R01 AI069383">
+                <Title>Colonization and pathogenicity determinants of Campylobacter jejuni</Title>
+                <Agency abbr="NIAID">National Institute of Allergy and Infectious Diseases</Agency>
+            </Grant>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eTranscriptome" sample_scope="eEnvironment">
+                    <Organism species="197" taxID="197">
+                        <OrganismName>Campylobacter jejuni</OrganismName>
+                        <Supergroup>eBacteria</Supergroup>
+                        <BiologicalProperties>
+                            <Morphology>
+                                <Gram>eNegative</Gram>
+                                <Shape>eCurvedShaped</Shape>
+                                <Endospores>eNo</Endospores>
+                                <Motility>eYes</Motility>
+                            </Morphology>
+                        </BiologicalProperties>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eRawSequenceReads"/>
+                    <Data data_type="eSequence"/>
+                    <Data data_type="eExpression"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-07-12" submitted="2013-07-12" submission_id="SUB288140">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>University of Michigan</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB288140-1"/>
+    </Submission>
+</DocumentSummary>
+

@@ -1,0 +1,43 @@
+{
+    "identifier": "SDA-NIFA-RV-0006",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:mark.easter@colostate.edu",
+        "@type": "vcard:Contact",
+        "fn": "Mark Easter"
+    },
+    "programCode": [
+        "005:037"
+    ],
+    "description": "COMET-FARM is a whole farm and ranch carbon and greenhouse gas accounting system.",
+    "title": "COMET-FARM",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/cometfarm.nrel.colostate.edu\/",
+            "description": "COMET-FARM is a whole farm and ranch carbon and greenhouse gas accounting system.",
+            "mediaType": "text\/html",
+            "title": "COMET-FARM"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:53"
+    ],
+    "rights": "Public",
+    "modified": "2014-10-01",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Natural Resources Conservation Service, Colorado State University"
+    },
+    "keyword": [
+        "best management practices",
+        "carbon footprint",
+        "greenhouse gas emissions"
+    ],
+    "author": "USDA Natural Resources Conservation Service",
+    "fundref": "Natural Resources Conservation Service",
+    "catagories": "31922",
+    "nalt": "Natural Resources Conservation Service",
+    "isoTopic": "environment"
+}

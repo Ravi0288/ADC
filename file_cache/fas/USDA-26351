@@ -1,0 +1,44 @@
+{
+    "identifier": "USDA-26351",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:esr@fas.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Pete Burr"
+    },
+    "programCode": [
+        "005:000"
+    ],
+    "description": "Information on US export sales, by commodity and country of destination, updated weekly.",
+    "title": "Export Sales Reporting",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/apps.fas.usda.gov\/esrquery\/esrq.aspx",
+            "mediaType": "text\/html",
+            "title": "Export Sales Query System Query Page"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/licenses\/by\/4.0",
+    "bureauCode": [
+        "005:68"
+    ],
+    "modified": "2015-03-12",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Foreign Agricultural Service, Department of Agriculture"
+    },
+    "accrualPeriodicity": "R\/P1D",
+    "keyword": [
+        "International trade",
+        "commodities",
+        "export sales"
+    ],
+    "spatial": "Global",
+    "issued": "1999-01-01",
+    "author": "USDA Foreign Agricultural Service",
+    "fundref": "Foreign Agricultural Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

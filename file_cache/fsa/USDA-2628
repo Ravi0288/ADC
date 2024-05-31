@@ -1,0 +1,51 @@
+{
+    "references": [
+        "http:\/\/www.fsa.usda.gov\/Internet\/FSA_File\/sugar_data_user_manual.pdf",
+        "http:\/\/www.fsa.usda.gov\/FSA\/webapp?area=home&subject=ecpa&topic=dsa"
+    ],
+    "contactPoint": {
+        "hasEmail": "mailto:ed.rall@wdc.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Ed Rall"
+    },
+    "description": "Sweetener Market Data (SMD) report - beet and cane processors and cane refiners in the U.S. are required by the FAIR Act of 1996, as amended, to report data on physical quantities of stocks, production, imports, sales, and deliveries to FSA on a monthly basis.",
+    "title": "Sweetener Market Data Report FY 2008",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/www.fsa.usda.gov\/Internet\/FSA_File\/september_08_smd_tables.xls",
+            "mediaType": "application\/vnd.ms-excel",
+            "title": "Web Page"
+        }
+    ],
+    "bureauCode": [
+        "005:49"
+    ],
+    "modified": "2014-02-27",
+    "describedBy": "http:\/\/www.fsa.usda.gov\/Internet\/FSA_File\/sugar_glossary.pdf",
+    "keyword": [
+        "beet",
+        "cane",
+        "sweetener",
+        "sweetener processor",
+        "sweetener refiner"
+    ],
+    "spatial": "United States",
+    "issued": "2009-10-08",
+    "identifier": "USDA-2628",
+    "accessLevel": "public",
+    "programCode": [
+        "005:013"
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Farm Service Agency, Department of Agriculture"
+    },
+    "accrualPeriodicity": "R\/P1M",
+    "author": "USDA Farm Service Agency",
+    "fundref": "Farm Service Agency",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

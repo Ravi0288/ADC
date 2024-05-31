@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.210351004.2" system="https://pasta.edirepository.org" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0  https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/cf6b1f5845078fbbf82053bb3594faef</alternateIdentifier><title>Quadrat-based monitoring of desert grassland vegetation at the Jornada Experimental Range, New Mexico, 1915-2016</title>
+    <creator>
+      <individualName>
+        <givenName>Kris</givenName>
+        <surName>Havstad</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-0133-8519</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Erica</givenName>
+        <surName>Christensen</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-5635-2502</userId>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>Darren</givenName>
+        <surName>James</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-9936-5549</userId>
+      <role>Contributor</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Amy</givenName>
+        <surName>Slaughter</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <role>Contributor</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Peter</givenName>
+        <givenName>B</givenName>
+        <surName>Adler</surName>
+      </individualName>
+      <organizationName>Utah State University</organizationName>
+      <role>Contributor</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Connie</givenName>
+        <surName>Maxwell</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <role>Contributor</role>
+    </associatedParty>
+    <pubDate>2021-02-12</pubDate>
+    <abstract>
+      <para>
+  The data set covers a 101-year period (1915-2016) of quadrat-based
+  plant sampling at the Jornada Experimental Range in southern New
+  Mexico. At each sampling event, a pantograph was used to record the
+  location and perimeter of living plants within permanent quadrats.
+  Basal area was recorded for perennial grass species, canopy cover area
+  was recorded for shrub species, and all other perennial species were
+  recorded as point data. The data set includes 122 1m by 1m permanent
+  quadrats, although not all quadrats were sampled in each year of the
+  study and there is a gap in monitoring from 1980-1995. These data
+  provide a unique opportunity to investigate changes in the plant
+  community over 100 years of variation in precipitation and other
+  environmental conditions. We provide the following data and data
+  formats: (1) the digitized maps in shapefile format; (2) data table
+  containing coordinates (x,y) of perennial species within quadrats,
+  including cover area for grasses and shrubs; (3) data table of counts
+  of annual plant individuals per quadrat; (4) species list indicating
+  growth form and habit of recorded species; (5) table of dates when
+  each quadrat was sampled; (6) table of the pasture each quadrat was
+  located within (note that pasture boundaries have changed over time).
+  Additional data to help characterize plant-scale factors related to
+  vegetation dynamics at the quadrat locations are: (7) data table of
+  depth to caliche layer; (8) data table of soil particle size analysis
+  and sand fractionation; and (9) data table of local and patch
+  topography. This data package was created to support a specific data
+  paper. Data are also available in data packages
+  knb-lter-jrn.210351001, knb-lter-jrn.210351002, and
+  knb-lter-jrn.210351003. Pantograph sampling is currently conducted at
+  5 year intervals by USDA-ARS staff, and new data will be added to
+  those data packages periodically.
+</para>
+    </abstract>
+    <keywordSet>
+      <keyword>JER</keyword>
+      <keywordThesaurus>Jornada Place Names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Permanent Quadrats</keyword>
+      <keyword>Study 351</keyword>
+      <keywordThesaurus>Jornada Project Names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>"Climate, Soils, and Atmosphere"</keyword>
+      <keywordThesaurus>JRN Dataset Keywords</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>desertification</keyword>
+      <keyword>sand</keyword>
+      <keyword>soil</keyword>
+      <keyword>soil properties</keyword>
+      <keyword>soil texture</keyword>
+      <keyword>substrates</keyword>
+      <keyword>grassland</keyword>
+      <keyword>shrubs</keyword>
+      <keyword>plant cover</keyword>
+      <keyword>basal area</keyword>
+      <keyword>populations</keyword>
+      <keyword>long term monitoring</keyword>
+      <keyword>plant community</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Disturbance</keyword>
+      <keyword>Land Use and Land Cover Change</keyword>
+      <keywordThesaurus>LTER Core Area</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>arid grasslands</keyword>
+      <keyword>clay</keyword>
+      <keyword>LTAR</keyword>
+      <keyword>silt</keyword>
+      <keyword>quadrat</keyword>
+      <keyword>rangeland</keyword>
+      <keyword>Chihuahuan Desert</keyword>
+      <keyword>plant populations</keyword>
+      <keyword>long-term research</keyword>
+      <keyword>New Mexico</keyword>
+      <keyword>particle size analysis</keyword>
+      <keyword>sand fractionation</keyword>
+      <keyword>Jornada Experimental Range</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <para>This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>"Jornada Experimental Range, Dona Ana County, New Mexico, USA.  For more detailed geographic locations of the Permanent Quadrats please contact the Data Manager."</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-106.926435</westBoundingCoordinate>
+          <eastBoundingCoordinate>-106.528942</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.737108</northBoundingCoordinate>
+          <southBoundingCoordinate>32.466879</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1915-06-04</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2020-02-07</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>completed</description>
+    </maintenance>
+    <contact>
+      <individualName>
+        <givenName>Data</givenName>
+        <surName>Manager</surName>
+      </individualName>
+      <organizationName>Jornada Basin LTER</organizationName>
+      <electronicMailAddress>datamanager.jrn.lter@gmail.com</electronicMailAddress>
+    </contact>
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@environmentaldatainitiative.org</electronicMailAddress><onlineUrl>https://environmentaldatainitiative.org</onlineUrl></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <para>Project Overview
+  </para>
+          <para>
+  Permanent chart quadrats were established as
+  an observational study to demonstrate the efficacy of science-based
+  grazing management for recovering and maintaining rangeland
+  productivity. More recently, the quadrats are used to investigate the
+  patterns and mechanisms of vegetation dynamics in response to static
+  variations in soils and landforms and temporal variations in climate
+  across the Jornada Experimental Range.
+  </para>
+          <para>
+  A total of 122 permanent quadrats are distributed across the Jornada Experimental
+  Range. Sometimes quadrats were organized in linear series at the time
+  of establishment (e.g. A1, A2, A3, etc.), with members of a series
+  placed at ½ or 1-mile intervals radiating out from a livestock
+  watering point. Quadrats were established between 1915 and 1934.
+  Initially, a subset quadrats were located within fenced exclosures to
+  prevent grazing by cattle, though some fences broke down over time and
+  ceased to effectively exclude cattle (see
+  Jornada_quadrat_pastures.csv).
+</para>
+          <para>
+  Vegetation Sampling
+</para>
+          <para>
+  Quadrats are 1m x 1m. Quadrats were mapped annually from 1915-1947.
+  From 1947-1979 a subset of the quadrats was sampled at irregular
+  intervals. In 1995, quadrats were relocated and sampling resumed at 5-
+  or 6-year intervals. Ongoing sampling (1995-present) occurs between
+  September and March. Historical sampling (pre-1995) was typically
+  conducted September-March as well, although there are exceptions. To
+  account for the fact that a single sampling event often spanned
+  several months, we include in the data table a column for
+  “project_year” as well as actual month and year of the sample, so that
+  data can be grouped appropriately. For example, the 1937 sampling
+  event data was collected from October 1937 to March 1938, and so these
+  data are labeled with project_year = 1937. In a small number of
+  instances during the early years of the project, quadrats were sampled
+  twice within a year. Information on dates each quadrat was sampled is
+  contained in Jornada_quadrat_sampling_dates.csv.
+</para>
+          <para>
+  Vegetation data collection consists of chart quadrat maps, in which
+  the locations and shapes of all living plants located within the
+  quadrat were mapped onto data sheets. Perennial grass species were
+  mapped as polygons representing the boundary of each individual grass
+  bunch at a point 1 inch above the soil surface (i.e. basal area);
+  shrubs were mapped as polygons representing the canopy cover of each
+  individual; and perennial forbs/subshrubs were mapped as point
+  locations only. As annual grasses and forbs were not initially a
+  primary focus of this study, it is unclear whether these species were
+  recorded consistently 1915-1979. From 1995-2016 all annual species
+  located within quadrats were identified, counted, and recorded as a
+  tally on data sheets (but not mapped). Information on which species
+  belong to each category (perennial grass, shrub, etc.) is contained in
+  Jornada_quadrat_species_list.csv. Chart maps are presented here as
+  shapefiles, with geolocation data removed to protect the integrity of
+  the study site. GPS locations can be obtained by request from the data
+  manager.
+</para>
+          <para>
+  Soil Sampling
+</para>
+          <para>
+  Knowledge of soil properties is crucial for understanding vegetation
+  dynamics in this system. Previous studies using this data have found
+  that cover of perennial grass species were significantly correlated to
+  soil texture and topography, both during drought and non-drought
+  conditions. Soil sampling at the permanent quadrat locations,
+  including soil particle size analysis and soil depth measurement, was
+  mostly done in Fall 2001, with a small number of samples collected in
+  2020. Soil cores for particle size analysis were taken from 1-4
+  locations around each quadrat at bare (non-vegetated) areas. The
+  number of soil cores varied based on availability of bare patches at
+  each quadrat. At each location cores were taken at two depths: 0-5cm
+  below surface and 5-20cm below surface. In 2001, the 0-5cm core had a
+  diameter of 6.1cm, and the 5-20cm core had a diameter of 4.6cm. In
+  2020, a 5.8cm-diameter core was used for both depths. If multiple
+  cores were taken from a quadrat, samples from each depth were combined
+  for analysis resulting in a single particle size analysis per quadrat
+  and depth layer. Soil samples were air dried at room temperature, then
+  hand sieved to 2mm to remove large inorganic material and the &gt;2mm
+  fraction. Particle size analysis by the hydrometer method was
+  performed on a 60g subsample. If the sand sample left over from the
+  hydrometer analysis (&gt;53µm) was sufficiently large (&gt;15g), sand
+  fractionation analysis was performed. The sand sample was washed
+  through a 53µm sieve, dried at 105C for 24 hours to remove moisture,
+  then separated into five sand size classes (53-106µm, 106-250µm,
+  250-500µm, 500-1000µm, and 1000-2000µm) in an ultrasonic sifter for 5
+  minutes, then weighed to determine percent sand fractionation. Sand
+  fractionation was not performed on the samples collected in 2020.
+</para>
+          <para>
+  Depth to petrocalcic horizon was measured outside the bounds of the
+  quadrat. In 2001, this was done at all four corners, close to the
+  quadrat, by pounding a steel rod into the ground until it met
+  resistance. If the rod reached its maximum depth of 125cm without
+  encountering the petrocalcic horizon at all four corners, the quadrat
+  received a “0” in the “pc_horizon_125cm” column and no depths are
+  reported. In some cases, the rod met significant resistance but there
+  was no evidence of white petrocalcic horizon on the tip, indicating
+  the rod may have hit rock instead. In these cases, or if the rod
+  reached its maximum depth of 125cm without encountering the
+  petrocalcic horizon on at least one but not all of the four
+  measurements, the data is marked with a flag in the “notes_pc” column
+  to indicate the measurements may be underestimates. In 2020, depth to
+  petrocalcic horizon was measured at points 2.7m away from quadrat
+  corners using a soil auger. At quadrats L3, L4, and Y7 soils are known
+  to be deep and so only one measurement was taken to confirm that there
+  was no petrocalcic horizon shallower than 125cm. If the soil was too
+  rocky or gravelly, depth measurements were not possible.
+</para>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>JER Permanent Quadrats</title>
+      <personnel>
+        <individualName>
+          <givenName>Brandon</givenName>
+          <surName>Bestelmeyer</surName>
+        </individualName>
+        <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-5060-9955</userId>
+        <role>Principal Investigator</role>
+      </personnel>
+      <funding>USDA-ARS</funding>
+    </project>
+    <dataTable>
+      <entityName>Perennial grass and shrub cover</entityName>
+      <entityDescription>Perennial grass and shrub cover</entityDescription>
+      <physical>
+        <objectName>Jornada_quadrat_perennials.csv</objectName>
+        <size unit="bytes">14284100</size>
+        <authentication method="MD5">656287b9e15ecbf66e6a58571bbc9754</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351004/2/bef8b97021b367852248c945cd7209b4</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>quadrat</attributeName>
+          <attributeDefinition>Permanent quadrat name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Permanent quadrat name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>project_year</attributeName>
+          <attributeDefinition>“Project year” data was collected.</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>year</attributeName>
+          <attributeDefinition>Year data was collected</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>month</attributeName>
+          <attributeDefinition>Month data was collected</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species_code</attributeName>
+          <attributeDefinition>Species code; see Jornada_quadrat_species_list.csv</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Species code; see Jornada_quadrat_species_list.csv</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>area</attributeName>
+          <attributeDefinition>Area  of individual plant (basal area for perennial grasses and canopy cover for shrubs)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>squareMeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">3.6e-06</minimum>
+                  <maximum exclusive="false">1.01010394</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not applicable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>length</attributeName>
+          <attributeDefinition>Perimeter length of individual plant</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.009241876</minimum>
+                  <maximum exclusive="false">10.17070474</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not applicable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>area_is_estimate</attributeName>
+          <attributeDefinition>Flag indicating if area and perimeter were estimated from point data</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>"individual was originally recorded as a polygon, area and perimeter are true measurements"</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>"individual was originally recorded as a point, area and perimeter are estimates"</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not applicable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>x_coordinate</attributeName>
+          <attributeDefinition>Location of individual plant within quadrat; centroids for polygon and line objects</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>individual was mistakenly recorded as a tally and not mapped</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>y_coordinate</attributeName>
+          <attributeDefinition>Location of individual plant within quadrat; centroids for polygon and line objects</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>individual was mistakenly recorded as a tally and not mapped</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>218254</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Annual plant abundance</entityName>
+      <entityDescription>Annual plant abundance</entityDescription>
+      <physical>
+        <objectName>Jornada_quadrat_annual_plant_counts.csv</objectName>
+        <size unit="bytes">104648</size>
+        <authentication method="MD5">b76b60dea901e99e4413e2343244742c</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351004/2/f6c7b40a7eab79c24e74a99d0809e271</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>quadrat</attributeName>
+          <attributeDefinition>Permanent quadrat name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Permanent quadrat name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>project_year</attributeName>
+          <attributeDefinition>“Project year” data was collected.</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>year</attributeName>
+          <attributeDefinition>Year data was collected</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>month</attributeName>
+          <attributeDefinition>Month data was collected</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species_code</attributeName>
+          <attributeDefinition>Species code; see Jornada_quadrat_species_list.csv</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Species code; see Jornada_quadrat_species_list.csv</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>count</attributeName>
+          <attributeDefinition>Abundance of the indicated species</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">919</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>notes</attributeName>
+          <attributeDefinition>Provides additional information about the record if needed</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>"abundance is an estimate, not exact"</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no additional information available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>3794</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Plant species list</entityName>
+      <entityDescription>Plant species list</entityDescription>
+      <physical>
+        <objectName>Jornada_quadrat_species_list.csv</objectName>
+        <size unit="bytes">13718</size>
+        <authentication method="MD5">827733d37a1b5287b1d6ca92f8971997</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351004/2/ee43da13ad7e52ac020a81c9cc8bd831</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>species_code</attributeName>
+          <attributeDefinition>Species code</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Species code</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>genus</attributeName>
+          <attributeDefinition>Genus</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Genus</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species</attributeName>
+          <attributeDefinition>Species</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Species</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>habit</attributeName>
+          <attributeDefinition>Growth habit of species</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>annual</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AB</code>
+                    <definition>can be annual or biennial</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ABP</code>
+                    <definition>"can be annual, biennial, or perennial"</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AP</code>
+                    <definition>can be annual or perennial</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>B</code>
+                    <definition>biennial</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BP</code>
+                    <definition>can be biennial or perennial</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>P</code>
+                    <definition>perennial</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>form</attributeName>
+          <attributeDefinition>Growth form of species</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Growth form of species</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>common_name</attributeName>
+          <attributeDefinition>Common name of species</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of species</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>category</attributeName>
+          <attributeDefinition>"Category species belongs to, i.e. in which data table the species_code can be found"</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>"Category species belongs to, i.e. in which data table the species_code can be found"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>"species_code represents an unidentified or incompletely identified plant, and therefore this code may be found in either table"</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>252</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Quadrat sampling dates</entityName>
+      <entityDescription>Quadrat sampling dates</entityDescription>
+      <physical>
+        <objectName>Jornada_quadrat_sampling_dates.csv</objectName>
+        <size unit="bytes">91578</size>
+        <authentication method="MD5">239a673b6648eca7ad504064012d27ee</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351004/2/42c771cbce99705677f56536fa816d60</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>quadrat</attributeName>
+          <attributeDefinition>Permanent quadrat name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Permanent quadrat name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>year</attributeName>
+          <attributeDefinition>Year data was collected</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>month</attributeName>
+          <attributeDefinition>Month data was collected</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>month not recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>day</attributeName>
+          <attributeDefinition>Day data was collected</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>day not recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>project_year</attributeName>
+          <attributeDefinition>“Project year” data was collected</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>4749</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Jornada pastures in which quadrats are located</entityName>
+      <entityDescription>Jornada pastures in which quadrats are located</entityDescription>
+      <physical>
+        <objectName>Jornada_quadrat_pastures.csv</objectName>
+        <size unit="bytes">58954</size>
+        <authentication method="MD5">300b8321eddba7901fdd91d25b100686</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351004/2/158b3bf35857e09ce332c648cfa49274</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>quadrat</attributeName>
+          <attributeDefinition>Permanent quadrat name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Permanent quadrat name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>year</attributeName>
+          <attributeDefinition>Year</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pasture</attributeName>
+          <attributeDefinition>Pasture name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Pasture name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>pasture is not known for the quadrat/year combination</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>exclosure</attributeName>
+          <attributeDefinition>Indicates whether or not quadrat is located within a fenced cattle exclosure</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>quadrat is not inside an exclosure</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>quadrat is inside a grazing exclosure</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>unknown whether quadrat is contained within a fenced exclosure</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>4298</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Depth to caliche layer at quadrat locations</entityName>
+      <entityDescription>Depth to caliche layer at quadrat locations</entityDescription>
+      <physical>
+        <objectName>Jornada_quadrat_soil_petrocalcic_depth.csv</objectName>
+        <size unit="bytes">2834</size>
+        <authentication method="MD5">e9873e4df63a4877cfb298d37f93d538</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351004/2/ac38a2dd4d68a258a23913c5a4c094ef</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>quadrat</attributeName>
+          <attributeDefinition>Name of permanent quadrat where soil sample was taken</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of permanent quadrat where soil sample was taken</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pc_horizon_125cm</attributeName>
+          <attributeDefinition>Indicates whether or not there was a measurable petrocalcic horizon &lt;125cm from soil surface</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>no petrocalcic horizon observed &lt;125cm</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>there was a measureable petrocalcic horizon at a minimum of 1 of the 4 corners of the quadrat that was &lt;125cm</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>depth_1</attributeName>
+          <attributeDefinition>Corner depth measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">26</minimum>
+                  <maximum exclusive="false">126.4</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>measurement not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>depth_2</attributeName>
+          <attributeDefinition>Corner depth measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">18.3</minimum>
+                  <maximum exclusive="false">131.6</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>measurement not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>depth_3</attributeName>
+          <attributeDefinition>Corner depth measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">15.9</minimum>
+                  <maximum exclusive="false">165</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>measurement not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>depth_4</attributeName>
+          <attributeDefinition>Corner depth measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">18.9</minimum>
+                  <maximum exclusive="false">142.2</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>measurement not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>mean_depth</attributeName>
+          <attributeDefinition>"Mean of four corner depth measurements, ignoring any missing values"</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">28.4</minimum>
+                  <maximum exclusive="false">128.25</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>measurement not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>notes_pc</attributeName>
+          <attributeDefinition>Provides additional note or comment about the record if needed</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>"reached hard layer but no evidence of caliche on rod tip, mean_depth should be considered an underestimate"</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>"reached maximum measurable depth of 125 cm at at least one corner, mean_depth should be considered an underestimate"</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no additional notes available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>79</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Soil particle size analysis</entityName>
+      <entityDescription>Soil particle size analysis</entityDescription>
+      <physical>
+        <objectName>Jornada_quadrat_soil_PSA.csv</objectName>
+        <size unit="bytes">24654</size>
+        <authentication method="MD5">f1b2ac7c45cd28504b7da47a14f2b3f1</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351004/2/c14be3123d39a0398814b351ed7d1404</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>quadrat</attributeName>
+          <attributeDefinition>Name of permanent quadrat where soil sample was taken</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of permanent quadrat where soil sample was taken</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>depth_layer</attributeName>
+          <attributeDefinition>Depth layer of soil core</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>deep</code>
+                    <definition>5-20cm below surface</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>shallow</code>
+                    <definition>0-5cm below surface</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pct_sand</attributeName>
+          <attributeDefinition>Percent sand</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">2.351996631</minimum>
+                  <maximum exclusive="false">95.39019134</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_silt</attributeName>
+          <attributeDefinition>Percent silt</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1.425890396</minimum>
+                  <maximum exclusive="false">64.05785549</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_clay</attributeName>
+          <attributeDefinition>Percent clay</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">2.094162486</minimum>
+                  <maximum exclusive="false">46.8</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_vfs</attributeName>
+          <attributeDefinition>Percent very fine sand (53-106 micrometer particles)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">5.949161709</minimum>
+                  <maximum exclusive="false">52.30263158</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_fs</attributeName>
+          <attributeDefinition>Percent fine sand (106 - 250 micrometer particles)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">23.53666051</minimum>
+                  <maximum exclusive="false">66.77333333</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_ms</attributeName>
+          <attributeDefinition>Percent medium sand (250 - 500 micrometer particles)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">3.398058252</minimum>
+                  <maximum exclusive="false">46.95459579</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_cos</attributeName>
+          <attributeDefinition>Percent coarse sand (0.5 – 1.0 millimeter particles)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.412583806</minimum>
+                  <maximum exclusive="false">21.27204703</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_vcs</attributeName>
+          <attributeDefinition>Percent very coarse sand (1.0 – 2.0 millimeter particles)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">19.30379747</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>notes_psa</attributeName>
+          <attributeDefinition>Provides additional note or comment about the record if needed</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>record contains missing or incomplete data</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>"small sand sample, percent sand fraction measurements may be suspect"</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>maximum depth of sample &lt; 20cm</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no additional notes available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>234</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Quadrat topography</entityName>
+      <entityDescription>Quadrat topography</entityDescription>
+      <physical>
+        <objectName>Jornada_quadrat_topography.csv</objectName>
+        <size unit="bytes">1705</size>
+        <authentication method="MD5">a34de0c743b3707d8d5f0148b835ebd4</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351004/2/39f713d869bd42537bb0942efd2f46e5</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>quadrat</attributeName>
+          <attributeDefinition>Permanent quadrat name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Permanent quadrat name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>topo_local</attributeName>
+          <attributeDefinition>Topography of the immediate 1m x 1m quadrat area</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>off</code>
+                    <definition>run-off; area is convex and water will tend to run off</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>on</code>
+                    <definition>run-on; area is concave and water will tend to run on</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>slope</code>
+                    <definition>"area is neither concave nor convex, water will tend to run on and run off"</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>topo_patch</attributeName>
+          <attributeDefinition>Topography of the 20m x 20m patch surrounding the quadrat</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>off</code>
+                    <definition>run-off; area is convex and water will tend to run off</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>on</code>
+                    <definition>run-on; area is concave and water will tend to run on</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>slope</code>
+                    <definition>"area is neither concave nor convex, water will tend to run on and run off"</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>120</numberOfRecords>
+    </dataTable>
+    <otherEntity>
+      <entityName>zipped directory containing shapefiles for all digitized chart quadrats</entityName>
+      <entityDescription>zipped directory containing shapefiles for all digitized chart quadrats</entityDescription>
+      <physical>
+        <objectName>Jornada_shapefiles.zip</objectName>
+        <size unit="bytes">47529732</size>
+        <authentication method="MD5">938d6a796815f29aca074e8a50bb1218</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>application/zip</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351004/2/f50e8c436b58a8e6950c42e6d7945bae</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>unknown</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

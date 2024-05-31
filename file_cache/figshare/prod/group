@@ -1,0 +1,275 @@
+[
+  {
+    "id": 51459,
+    "resource_id": "",
+    "name": "United States Department of Agriculture",
+    "association_criteria": "",
+    "parent_id": 0
+  },
+  {
+    "id": 51525,
+    "resource_id": "",
+    "name": "AgBioData",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51528,
+    "resource_id": "",
+    "name": "ARDN",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51531,
+    "resource_id": "",
+    "name": "ARS Culture Collection",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51534,
+    "resource_id": "",
+    "name": "Farm 2 Fly",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51540,
+    "resource_id": "",
+    "name": "i5k Workspace",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51543,
+    "resource_id": "",
+    "name": "Life Cycle Assessment",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51555,
+    "resource_id": "",
+    "name": "Long Term Agroecosystem Research",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51564,
+    "resource_id": "",
+    "name": "Central Mississippi River Basin",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51567,
+    "resource_id": "",
+    "name": "Central Plains Experiment Range",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51570,
+    "resource_id": "",
+    "name": "Eastern Corn Belt",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51573,
+    "resource_id": "",
+    "name": "Gulf Atlantic Coastal Range",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51576,
+    "resource_id": "",
+    "name": "Great Basin",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51579,
+    "resource_id": "",
+    "name": "Jornada Experimental Range",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51582,
+    "resource_id": "",
+    "name": "Kellog Biological Station",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51585,
+    "resource_id": "",
+    "name": "Lower Mississippi River Basin",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51588,
+    "resource_id": "",
+    "name": "Northern Plains",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51591,
+    "resource_id": "",
+    "name": "Platter River-High Plains Aquifer",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51594,
+    "resource_id": "",
+    "name": "Southern Plains",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51597,
+    "resource_id": "",
+    "name": "Texas Gulf",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51600,
+    "resource_id": "",
+    "name": "Upper Cheasapeake Bay",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51603,
+    "resource_id": "",
+    "name": "Upper Mississippi River Basin",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51606,
+    "resource_id": "",
+    "name": "Walnut Gultch Experimental Station",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51609,
+    "resource_id": "",
+    "name": "Lower Chesapeake Bay",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 51612,
+    "resource_id": "",
+    "name": "Long-Term Livestock Production",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51615,
+    "resource_id": "",
+    "name": "Veterinary Pest Genomics",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51618,
+    "resource_id": "",
+    "name": "Submissions",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51621,
+    "resource_id": "",
+    "name": "Repository",
+    "association_criteria": "",
+    "parent_id": 51618
+  },
+  {
+    "id": 51624,
+    "resource_id": "",
+    "name": "Catalog",
+    "association_criteria": "",
+    "parent_id": 51618
+  },
+  {
+    "id": 51627,
+    "resource_id": "",
+    "name": "Admins",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51630,
+    "resource_id": "",
+    "name": "Harvested records",
+    "association_criteria": "",
+    "parent_id": 51627
+  },
+  {
+    "id": 51636,
+    "resource_id": "",
+    "name": "FS Research Data Archive",
+    "association_criteria": "",
+    "parent_id": 51630
+  },
+  {
+    "id": 51639,
+    "resource_id": "",
+    "name": "NCBI",
+    "association_criteria": "",
+    "parent_id": 51630
+  },
+  {
+    "id": 51642,
+    "resource_id": "",
+    "name": "Users",
+    "association_criteria": "",
+    "parent_id": 51459
+  },
+  {
+    "id": 51645,
+    "resource_id": "",
+    "name": "Manual Catalog",
+    "association_criteria": "",
+    "parent_id": 51642
+  },
+  {
+    "id": 51648,
+    "resource_id": "",
+    "name": "Repository Records",
+    "association_criteria": "",
+    "parent_id": 51642
+  },
+  {
+    "id": 52366,
+    "resource_id": "",
+    "name": "EDI - Jornada",
+    "association_criteria": "",
+    "parent_id": 51630
+  },
+  {
+    "id": 52369,
+    "resource_id": "",
+    "name": "Archbold - University of Florida",
+    "association_criteria": "",
+    "parent_id": 51555
+  },
+  {
+    "id": 52372,
+    "resource_id": "",
+    "name": "R.J. Cook Agronomy Farm",
+    "association_criteria": "",
+    "parent_id": 51555
+  }
+]

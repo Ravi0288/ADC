@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.200021001.5" system="https://pasta.edirepository.org" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="d200021001">
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/6025924b89e313f25bddf1912c8ab07d</alternateIdentifier><shortName>Circular beef manureshed</shortName>
+    <title>Data to explore circular manureshed management in beef supply chains of the United States and western Canada</title>
+    <creator>
+      <individualName>
+        <givenName>Sheri</givenName>
+        <surName>Spiegal</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <positionName>Research Rangeland Management Specialist</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>sheri.spiegal@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-5489-9512</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>João M.B.</givenName>
+        <surName>Vendramini</surName>
+      </individualName>
+      <organizationName>University of Florida</organizationName>
+      <address>
+        <deliveryPoint>Range Cattle Research Experiment Station</deliveryPoint>
+        <city>Ona</city>
+        <administrativeArea>FL</administrativeArea>
+        <postalCode>33865</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>jv@ufl.edu</electronicMailAddress>
+      <userId directory="ORCID">0000-0003-3383-1620</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Shabtai</givenName>
+        <surName>Bittman</surName>
+      </individualName>
+      <organizationName>Agriculture and Agri-Food Canada</organizationName>
+      <address>
+        <deliveryPoint>Agassiz Research and Development Centre</deliveryPoint>
+        <city>Agassiz</city>
+        <administrativeArea>BC</administrativeArea>
+        <country>Canada</country>
+      </address>
+      <electronicMailAddress>shabtai.bittman@canada.ca</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-9999-0758</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Maria</givenName>
+        <surName>Silveira</surName>
+      </individualName>
+      <organizationName>University of Florida</organizationName>
+      <address>
+        <deliveryPoint>Range Cattle Research Experiment Station</deliveryPoint>
+        <city>Ona</city>
+        <administrativeArea>FL</administrativeArea>
+        <postalCode>33865</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>mlas@ufl.edu</electronicMailAddress>
+      <userId directory="ORCID">0000-0003-2166-3156</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Craig</givenName>
+        <surName>Gifford</surName>
+      </individualName>
+      <organizationName>New Mexico State University</organizationName>
+      <positionName/>
+      <electronicMailAddress>cgifford@nmsu.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Clarence Al</givenName>
+        <surName>Rotz</surName>
+      </individualName>
+      <organizationName>USDA-ARS, Pasture Systems and Watershed Mgmnt</organizationName>
+      <electronicMailAddress>al.rotz@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0001-6668-4319</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>John P</givenName>
+        <surName>Ragosta</surName>
+      </individualName>
+      <organizationName>New Mexico State University</organizationName>
+      <address>
+        <deliveryPoint>332 Knox Hall; MSC 3 I</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>jragosta@nmsu.edu</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-6117-4771</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Peter J.A.</givenName>
+        <surName>Kleinman</surName>
+      </individualName>
+      <organizationName>USDA-ARS, Soil Mgmt and Sugar Beet Research Unit</organizationName>
+      <electronicMailAddress>peter.kleinman@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-5093-3736</userId>
+    </creator>
+    <metadataProvider>
+      <organizationName>Jornada Experimental Range LTAR (USDA-ARS)</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <onlineUrl>https://jornada.nmsu.edu</onlineUrl>
+    </metadataProvider>
+    <pubDate>2023-01-04</pubDate>
+    <language>English</language>
+    <abstract>
+      <para>
+    Circular management of beef supply chains holds great promise for
+    improving sustainability from grazing agroecosystem to dinner plate.
+    In the United States and Canada, one approach to circularity entails
+    transporting manure nutrients from cattle produced in feedlots back
+    to the grazing agroecosystems where they originated to enrich
+    haylands for further grazing cattle production. We provide data to
+    assess this strategy centered around three grazing agroecosystems:
+    Florida, New Mexico, and the provincial assemblage of Manitoba,
+    Saskatchewan, Alberta, British Columbia. We describe four datasets
+    that can be used to estimate the potential nutrient utilization of
+    hay fed to grazing cattle in the three grazing agroecosystems and
+    the magnitudes of feedlot manure nutrients available for transport
+    back to them. We found that although biogeography and management
+    differ among the three grazing agroecosystems, the hay allocated for
+    grazing cattle represented approximately 65% of the total harvested
+    hay produced per agroecosystem after accounting for harvest losses,
+    and that on average all three areas exported about 450,000 cattle
+    annually for feedlot, pasture, and slaughter to states across the
+    US. Although we highlight only three grazingland settings, our
+    approach relies on methods that could ultimately be scaled
+    nationally and internationally, with applicability to other animal
+    industries for which circular management is an aspiration for
+    sustainability outcomes.
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">crop-livestock integration</keyword>
+      <keyword keywordType="theme">manureshed</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keyword keywordType="theme">animal production</keyword>
+      <keyword keywordType="theme">supply chain management</keyword>
+      <keyword keywordType="theme">sustainable agricultural intensification</keyword>
+      <keywordThesaurus>USDA National Ag Library's Agricultural Thesaurus</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license - Attribution - CC BY 
+  (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" 
+  herein) is required to cite it appropriately in any publication that results from its 
+  use. The Data User should realize that these data may be actively used by others for 
+  ongoing research and that coordination may be necessary to prevent duplicate 
+  publication. The Data User is urged to contact the authors of these data if any 
+  questions about methodology or results occur. Where appropriate, the Data User is 
+  encouraged to consider collaboration or co-authorship with the authors. The Data User 
+  should realize that misinterpretation of data may occur if used out of context of the 
+  original study. While substantial efforts are made to ensure the accuracy of data and 
+  associated documentation, complete accuracy of data sets cannot be guaranteed. All data 
+  are made available "as is." The Data User should be aware, however, that data are updated 
+  periodically and it is the responsibility of the Data User to check for new versions of 
+  the data. The data authors and the repository where these data were obtained shall not be 
+  liable for damages resulting from any use or misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">https://jornada.nmsu.edu</url>
+      </online>
+    </distribution>
+    <distribution id="10.6073/pasta/6025924b89e313f25bddf1912c8ab07d" scope="system" system="https://pasta.edirepository.org"><online><url function="information">https://doi.org/10.6073/pasta/6025924b89e313f25bddf1912c8ab07d</url></online></distribution><coverage>
+      <geographicCoverage>
+        <geographicDescription>Florida: Bounding box for the state of Florida.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-87.634938</westBoundingCoordinate>
+          <eastBoundingCoordinate>-80.031312</eastBoundingCoordinate>
+          <northBoundingCoordinate>31.000888</northBoundingCoordinate>
+          <southBoundingCoordinate>24.523096</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>New Mexico: Bounding box for the state of New Mexico</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-109.050170</westBoundingCoordinate>
+          <eastBoundingCoordinate>-103.001964</eastBoundingCoordinate>
+          <northBoundingCoordinate>37.000232</northBoundingCoordinate>
+          <southBoundingCoordinate>31.332301</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>western Canada: Bounding box for the four southwestern provinces of western Canada: Manitoba, Saskatchewan, Alberta, British Columbia </geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-138.955644</westBoundingCoordinate>
+          <eastBoundingCoordinate>-88.297815</eastBoundingCoordinate>
+          <northBoundingCoordinate>60.127206</northBoundingCoordinate>
+          <southBoundingCoordinate>49.132942</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2010-01-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2019-12-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>complete</description>
+      <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <positionName>Jornada Information Manager</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>575-646-1739</phone>
+      <electronicMailAddress>jornada.data@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://jornada.nmsu.edu/ltar/data/documentation</onlineUrl>
+    </contact>
+    
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@edirepository.org</electronicMailAddress><onlineUrl>https://edirepository.org</onlineUrl><userId directory="https://ror.org">0330j0z60</userId></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <para>
+    We acquired data from disparate sources including national
+    agricultural surveys and brand inspection records from state
+    agencies. We processed the data using original routines to estimate
+    the amount of harvested forages used to supplement grazing cattle in
+    three grazing-oriented agroecosystems, the nutrient demands of that
+    harvested forage, and the manure nutrients produced in feedlots by
+    the cattle that originated from the agroecosystems. We then
+    aggregated the processed data and made them available to allow
+    others to use. Those efforts resulted in four published datasets: 1.
+    Dataset 1: Hay intake by grazing cattle in three grazing
+    agroecosystems, 2. Dataset 2: Potential nutrient removal by hay fed
+    to grazing cattle in the three grazing agroecosystems, 3. Dataset 3:
+    Cattle flows from the three grazing agroecosystems to feedlots, and
+    4. Dataset 4: Feedlot manure nutrients from cattle originating from
+    the three grazing agroecosystems.
+  </para>
+          <para>
+    We focused on cattle and manure flows originating in the US states
+    of New Mexico and Florida, and an assemblage of the four westernmost
+    Canadian provinces (Manitoba, Saskatchewan, Alberta, British
+    Columbia) due to the social and economic importance of grazingland
+    production systems in those agroecosystems, as well as their
+    tendencies to export cattle from grazinglands to feedlots that are
+    geographically distant (Shields and Mathews 2003; Buhnerkempe et
+    al. 2013; Sheppard et al., 2015). We treat the four westernmost
+    provinces in Canada as a cohesive provincial assemblage because of
+    the structure of data available from Canadian sources.
+  </para>
+          <para>
+    A more detailed description of the methods can be found in the
+    dataset paper: [paper under review]
+  </para>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Jornada Experimental Range LTAR</title>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Brandon</givenName>
+          <surName>Bestelmeyer</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-4842</phone>
+        <electronicMailAddress>brandon.bestelmeyer@usda.gov</electronicMailAddress>
+        <role>Research Leader</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Jornada Experimental Range Long-Term Agroecosystems Research (LTAR) program
+          is part of a national network of long-term agricultural and rangeland ecology research
+          sites funded by the US Department of Agriculture (USDA). The Jornada Experimental Range is
+          administered by the USDA-ARS (USDA Agricultural Research Service).
+          </para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>The Jornada Experimental Range is supported by the USDA Long-Term Agroecosystem Research Network (CRIS# 3050-11210-009-00D)</para>
+        </section>
+      </funding>
+    </project>
+    <dataTable id="43ab9e4056a52ddadc81f80d693d3c7b" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Dataset 1: Hay intake by grazing cattle in three hay-grazing landscapes</entityName>
+      <entityDescription>Estimated amount of hay intake per cattle class per hay-grazing landscape.</entityDescription>
+      <physical>
+        <objectName>dataset1_hay_intake.csv</objectName>
+        <size unit="byte">1096</size>
+        <authentication method="MD5">91de9a370b58f3e066ae1f73b11636bb</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200021001/5/43ab9e4056a52ddadc81f80d693d3c7b</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d200021001-e1-att1">
+          <attributeName>location</attributeName>
+          <attributeLabel>location</attributeLabel>
+          <attributeDefinition>Location of the cattle consuming hay</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>NM</code>
+                    <definition>New Mexico</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>FL</code>
+                    <definition>Florida</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WCAN</code>
+                    <definition>western Canada</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e1-att2">
+          <attributeName>cattle_class</attributeName>
+          <attributeLabel>cattle_class</attributeLabel>
+          <attributeDefinition>Class of cattle</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e1-att3">
+          <attributeName>avg_weight</attributeName>
+          <attributeLabel>avg weight</attributeLabel>
+          <attributeDefinition>Average weight of a cattle class</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e1-att4">
+          <attributeName>inventory</attributeName>
+          <attributeLabel>inventory</attributeLabel>
+          <attributeDefinition>Number of cattle</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e1-att5">
+          <attributeName>dry_matter_intake</attributeName>
+          <attributeLabel>dry matter</attributeLabel>
+          <attributeDefinition>Daily dry matter intake</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>kilogramPerDay</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e1-att6">
+          <attributeName>diet_proportion</attributeName>
+          <attributeLabel>diet</attributeLabel>
+          <attributeDefinition>Proportion of cattle diet that is hay</attributeDefinition>
+          <storageType>decimal</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>percent</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e1-att7">
+          <attributeName>animal_proportion</attributeName>
+          <attributeLabel>animal proportion</attributeLabel>
+          <attributeDefinition>Proportion of a cattle class receiving hay</attributeDefinition>
+          <storageType>decimal</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>fraction</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e1-att8">
+          <attributeName>days</attributeName>
+          <attributeLabel>days</attributeLabel>
+          <attributeDefinition>Number of days fed hay per year per class</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e1-att9">
+          <attributeName>est_annual_hay_intake</attributeName>
+          <attributeLabel>estimated annual hay</attributeLabel>
+          <attributeDefinition>Total hay intake by grazing cattle annually</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>kilogramPerYear</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>16</numberOfRecords>
+    </dataTable>
+    <dataTable id="fe891529d573addedf6d960c937da0fa" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Dataset 2: Nutrient removal by hay fed to grazing cattle in three hay-grazing landscapes</entityName>
+      <entityDescription>Estimated potential N and P removed by hay produced for grazing cattle per hay-grazing landscape</entityDescription>
+      <physical>
+        <objectName>dataset2_hay_removal.csv</objectName>
+        <size unit="byte">514</size>
+        <authentication method="MD5">067182598dffce02fb4016f4c6b0f21c</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200021001/5/fe891529d573addedf6d960c937da0fa</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d200021001-e2-att1">
+          <attributeName>location</attributeName>
+          <attributeLabel>location</attributeLabel>
+          <attributeDefinition>Location of hay production</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>FL, low quality</code>
+                    <definition>Florida with low quality grass hay</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>FL, average quality</code>
+                    <definition>Florida with average quality grass hay</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WCAN</code>
+                    <definition>western Canada</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>NM</code>
+                    <definition>New Mexico</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>FL</code>
+                    <definition>Florida</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att2">
+          <attributeName>annual_hay_intake</attributeName>
+          <attributeLabel>annual hay intake</attributeLabel>
+          <attributeDefinition>Total hay intake by grazing cattle of all classes annually</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>kilogramPerYear</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att3">
+          <attributeName>hay_produced</attributeName>
+          <attributeLabel>hay produced</attributeLabel>
+          <attributeDefinition>Total amount of hay produced</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att4">
+          <attributeName>alfalfa_hay</attributeName>
+          <attributeLabel>alfalfa hay</attributeLabel>
+          <attributeDefinition>Amount of alfalfa hay produced</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att5">
+          <attributeName>grass_hay</attributeName>
+          <attributeLabel>grass hay</attributeLabel>
+          <attributeDefinition>Amount of grass hay produced</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att6">
+          <attributeName>alfalfa_hay_dry</attributeName>
+          <attributeLabel>alfalfa hay dry</attributeLabel>
+          <attributeDefinition>Amount of alfalfa hay produced after converstion to a dry matter basis at 90%</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att7">
+          <attributeName>grass_hay_dry</attributeName>
+          <attributeLabel>grass hay dry</attributeLabel>
+          <attributeDefinition>Amount of grass hay produced after converstion to a dry matter basis at 90%</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att8">
+          <attributeName>alfalfa_hay_N</attributeName>
+          <attributeLabel>alfalfa hay N</attributeLabel>
+          <attributeDefinition>Esitmated amount of N exported with alfalfa hay on a dry matter basis of 90%</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att9">
+          <attributeName>alfalfa_hay_P</attributeName>
+          <attributeLabel>alfalfa hay P</attributeLabel>
+          <attributeDefinition>Esitmated amount of P exported with alfalfa hay on a dry matter basis of 90%</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att10">
+          <attributeName>grass_hay_N</attributeName>
+          <attributeLabel>grass hay N</attributeLabel>
+          <attributeDefinition>Esitmated amount of N exported with grass hay on a dry matter basis of 90%</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e2-att11">
+          <attributeName>grass_hay_P</attributeName>
+          <attributeLabel>grass hay P</attributeLabel>
+          <attributeDefinition>Esitmated amount of P exported with grass hay on a dry matter basis of 90%</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilogram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>4</numberOfRecords>
+    </dataTable>
+    <dataTable id="623889623f4d9673d40ead4c64babf5b" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Dataset 3a: Beef cattle exports from the hay-grazing landscape of New Mexico</entityName>
+      <entityDescription>Number of beef cattle exported from New Mexico to U.S. counties for auction, feedlot, pasture, slaughter</entityDescription>
+      <physical>
+        <objectName>dataset3a_cattle_flows_NM.csv</objectName>
+        <size unit="byte">366236</size>
+        <authentication method="MD5">5e94c03ee723008a8dbd7208506b62cc</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200021001/5/623889623f4d9673d40ead4c64babf5b</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d200021001-e3-att1">
+          <attributeName>year</attributeName>
+          <attributeLabel>year</attributeLabel>
+          <attributeDefinition>Calendar year in which cattle export occurred</attributeDefinition>
+          <storageType>dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e3-att2">
+          <attributeName>month</attributeName>
+          <attributeLabel>month export</attributeLabel>
+          <attributeDefinition>Month in which cattle export occurred</attributeDefinition>
+          <storageType>dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e3-att3">
+          <attributeName>origin_district</attributeName>
+          <attributeLabel>origin district</attributeLabel>
+          <attributeDefinition>New Mexico LIvestock Board District of provenance for cattle exports</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e3-att4">
+          <attributeName>dest_state</attributeName>
+          <attributeLabel>destination state</attributeLabel>
+          <attributeDefinition>Destination state for New Mexico cattle exports</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e3-att5">
+          <attributeName>dest_county</attributeName>
+          <attributeLabel>destination county</attributeLabel>
+          <attributeDefinition>Destination county for New Mexico cattle exports</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e3-att6">
+          <attributeName>purpose</attributeName>
+          <attributeLabel>purpose</attributeLabel>
+          <attributeDefinition>The intended use for exported cattle</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>auction</code>
+                    <definition>Cattle exported for feedlots</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Feedlot</code>
+                    <definition>Cattle exported for feedlots</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Pasture</code>
+                    <definition>Cattle exported for pasture</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Slaughter</code>
+                    <definition>Cattle exported for slaughter</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e3-att7">
+          <attributeName>quantity</attributeName>
+          <attributeLabel>quantity</attributeLabel>
+          <attributeDefinition>Quantity of cattle head exported</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>8278</numberOfRecords>
+    </dataTable>
+    <dataTable id="88885e03bca447eebcced4b633eff5d4" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Dataset 3b: Beef cattle exports from the hay-grazing landscape of Florida</entityName>
+      <entityDescription>Number of beef cattle exported from Florida to U.S. counties for breeder, dairy, feedlot, stocker</entityDescription>
+      <physical>
+        <objectName>dataset3b_cattle_flows_FL.csv</objectName>
+        <size unit="byte">221159</size>
+        <authentication method="MD5">92f8e62f80ec4532d40b99372fa0ca44</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200021001/5/88885e03bca447eebcced4b633eff5d4</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d200021001-e4-att1">
+          <attributeName>year</attributeName>
+          <attributeLabel>year</attributeLabel>
+          <attributeDefinition>Year in which cattle export occurred</attributeDefinition>
+          <storageType>dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e4-att2">
+          <attributeName>month</attributeName>
+          <attributeLabel>month</attributeLabel>
+          <attributeDefinition>Month in which cattle export occurred</attributeDefinition>
+          <storageType>dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e4-att3">
+          <attributeName>origin_county</attributeName>
+          <attributeLabel>origin county</attributeLabel>
+          <attributeDefinition>Florida county of provenance for cattle exports</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e4-att4">
+          <attributeName>dest_state</attributeName>
+          <attributeLabel>destination state</attributeLabel>
+          <attributeDefinition>Destination state for Florida cattle exports</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e4-att5">
+          <attributeName>dest_county</attributeName>
+          <attributeLabel>destination county</attributeLabel>
+          <attributeDefinition>Destination county for Florida cattle exports</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e4-att6">
+          <attributeName>purpose</attributeName>
+          <attributeLabel>purpose</attributeLabel>
+          <attributeDefinition>The intended use for exported cattle</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>CATTLE-DAIRY</code>
+                    <definition>Cattle exported for dairy</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CATTLE-FEEDLOT</code>
+                    <definition>Cattle exported for feedlots</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CATTLE-STOCKER</code>
+                    <definition>Cattle exported for stocker</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CATTLE-BREEDER</code>
+                    <definition>Cattle exported for breeding</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e4-att7">
+          <attributeName>quantity</attributeName>
+          <attributeLabel>quantity</attributeLabel>
+          <attributeDefinition>Quantity of cattle head exported</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>3850</numberOfRecords>
+    </dataTable>
+    <dataTable id="7de66eaa0480e1f8655564dbc15b9bc4" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Dataset 3c: Beef cattle exports from the hay-grazing landscape of western Canada</entityName>
+      <entityDescription>Number of cattle exported from western Canada to U.S. states for fed for slaughter, non-fed for slaughter, feeder, slaughter</entityDescription>
+      <physical>
+        <objectName>dataset3c_cattle_flows_WCAN.csv</objectName>
+        <size unit="byte">5502</size>
+        <authentication method="MD5">e31df252e9cd92398a6528b3e5d8d64f</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200021001/5/7de66eaa0480e1f8655564dbc15b9bc4</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d200021001-e5-att1">
+          <attributeName>year</attributeName>
+          <attributeLabel>year</attributeLabel>
+          <attributeDefinition>Calendar year in which cattle export occurred</attributeDefinition>
+          <storageType>dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e5-att2">
+          <attributeName>dest_state</attributeName>
+          <attributeLabel>destination state</attributeLabel>
+          <attributeDefinition>Destination state in the United States for cattle exports from western Canada</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e5-att3">
+          <attributeName>purpose</attributeName>
+          <attributeLabel>purpose</attributeLabel>
+          <attributeDefinition>The intended use for exported cattle</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Feeder</code>
+                    <definition>Cattle exported for feedlots in the US</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Fed for Slaughter</code>
+                    <definition>Cattle fed in Canada &amp; exported to the US for slaughter</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Non-Fed for Slaughter</code>
+                    <definition>Culled cattle exported for slaughter in the US</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e5-att4">
+          <attributeName>quantity</attributeName>
+          <attributeLabel>quantity</attributeLabel>
+          <attributeDefinition>Quantity of cattle head exported</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>170</numberOfRecords>
+    </dataTable>
+    <dataTable id="711bbe306d641b736393d2949be1879f" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Dataset 4:Feedlot manure nutrients from cattle from 3 hay-grazing landscapes available for transport</entityName>
+      <entityDescription>Estimated manure nutrients produced by cattle exported from 3 hay-grazing landscapes for return to hayfields in Dataset 2</entityDescription>
+      <physical>
+        <objectName>dataset4_feedlot_manure.csv</objectName>
+        <size unit="byte">3503</size>
+        <authentication method="MD5">b6f3028d801ee8baf9089e6e27503a03</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200021001/5/711bbe306d641b736393d2949be1879f</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d200021001-e6-att1">
+          <attributeName>origin</attributeName>
+          <attributeLabel>origin</attributeLabel>
+          <attributeDefinition>State/region of origin for feedlot manure</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>FL</code>
+                    <definition>Florida</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WCAN</code>
+                    <definition>western Canada</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>NM</code>
+                    <definition>New Mexico</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att2">
+          <attributeName>destination</attributeName>
+          <attributeLabel>destination</attributeLabel>
+          <attributeDefinition>State/region of destination for feedlot manure</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att3">
+          <attributeName>orig_dest</attributeName>
+          <attributeLabel>origin_dest</attributeLabel>
+          <attributeDefinition>Origin state/region concatenated wtih destination state/region</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att4">
+          <attributeName>inventory</attributeName>
+          <attributeLabel>inventory</attributeLabel>
+          <attributeDefinition>Number of cattle</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att5">
+          <attributeName>animal_units</attributeName>
+          <attributeLabel>animal units</attributeLabel>
+          <attributeDefinition>Number of animal units</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>animal units</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att6">
+          <attributeName>wet_manure_Mg</attributeName>
+          <attributeLabel>wet manure</attributeLabel>
+          <attributeDefinition>Weight in megagrams of wet manure</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>megagram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att7">
+          <attributeName>wet_manure_recov_Mg</attributeName>
+          <attributeLabel>wet_manure_recov_Mg</attributeLabel>
+          <attributeDefinition>Weight in megagrams of wet manure that is recoverable</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>megagram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att8">
+          <attributeName>N_in_wet_manure_recov_Mg</attributeName>
+          <attributeLabel>N_in_wet_manure_recov_Mg</attributeLabel>
+          <attributeDefinition>Weight in megagrams of N in recoverable wet manure</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>megagram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att9">
+          <attributeName>P_in_wet_manure_recov_Mg</attributeName>
+          <attributeLabel>P_in_wet_manure_recov_Mg</attributeLabel>
+          <attributeDefinition>Weight in megagrams of P in recoverable wet manure</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>megagram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att10">
+          <attributeName>N_after_losses_Mg</attributeName>
+          <attributeLabel>N_after_losses_Mg</attributeLabel>
+          <attributeDefinition>Weight in megagrams of N in recoverable wet manure after accounting for losses from manure managment and handling</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>megagram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att11">
+          <attributeName>P_after_losses_Mg</attributeName>
+          <attributeLabel>P_after_losses_Mg</attributeLabel>
+          <attributeDefinition>Weight in megagrams of P in recoverable wet manure after accounting for losses from manure managment and handling</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>megagram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att12">
+          <attributeName>N_available_after_feedlot_spreading_Mg</attributeName>
+          <attributeLabel>N_available_after_feedlot_spreading_Mg</attributeLabel>
+          <attributeDefinition>Weight in megagrams of N available in recoverable wet manure after on-feedlot application</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>megagram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200021001-e6-att13">
+          <attributeName>P_available_after_feedlot_spreading_Mg</attributeName>
+          <attributeLabel>P_available_after_feedlot_spreading_Mg</attributeLabel>
+          <attributeDefinition>Weight in megagrams of P available in recoverable wet manure after on-feedlot application</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>megagram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>45</numberOfRecords>
+    </dataTable>
+    <otherEntity id="e3094902aee63849c556661b0ab745b8" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Primary data sources</entityName>
+      <entityDescription>List of data sources for the study.</entityDescription>
+      <physical>
+        <objectName>data_sources.pdf</objectName>
+        <size unit="byte">186248</size>
+        <authentication method="MD5">5e8294c29f213ce5fb71641e38cef12c</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PDF</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200021001/5/e3094902aee63849c556661b0ab745b8</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+    <otherEntity id="5e988dac4c8a2f6646aeca6237d560cc" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Map of New Mexico Counties and Livestock Board Districts</entityName>
+      <entityDescription>Map of New Mexico counties and Livestock Board Districts for Dataset 3a: Beef cattle exports from the hay-grazing landscape of New Mexico.</entityDescription>
+      <physical>
+        <objectName>nm_districts_counties.jpg</objectName>
+        <size unit="byte">856710</size>
+        <authentication method="MD5">7609fd78e99afb6f302d7de6ecaaf77b</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>JPG</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200021001/5/5e988dac4c8a2f6646aeca6237d560cc</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit abbreviation="AU" id="animal units" name="animal units">
+          <description>Table 5, Kellogg, R.L., D.C. Moffitt, and N. Gollehon. 2014. Estimates of Recoverable and Non-Recoverable Manure Nutrients Based on the Census of Agriculture. </description>
+        </unit>
+        <unit id="fraction" multiplierToSI="1" name="fraction" parentSI="dimensionless" unitType="dimensionless">
+          <description>a decimal ratio of a part to a whole</description>
+        </unit>
+        <unit abbreviation="kg" id="kilogram" multiplierToSI="1" name="kilogram" unitType="mass">
+          <description>SI unit of mass</description>
+        </unit>
+        <unit abbreviation="kg/day" id="kilogramPerDay" multiplierToSI="1" name="kilogramPerDay" unitType="massFlux">
+          <description>kilograms per day</description>
+        </unit>
+        <unit abbreviation="kg/year" id="kilogramPerYear" multiplierToSI="1" name="kilogramPerYear" unitType="mass">
+          <description>kilograms per year</description>
+        </unit>
+        <unit abbreviation="Mg" id="megagram" multiplierToSI="1000" name="megagram" parentSI="kilogram" unitType="mass">
+          <description>1000 kg</description>
+        </unit>
+        <unit id="number" name="number" unitType="dimensionless">
+          <description>a quantity or amount</description>
+        </unit>
+        <unit abbreviation="%" id="percent" multiplierToSI="1" name="percent" parentSI="dimensionless" unitType="dimensionless">
+          <description>percent, one part per hundred parts. a decimal ratio multipled by 100</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

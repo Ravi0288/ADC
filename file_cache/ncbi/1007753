@@ -1,0 +1,43 @@
+<DocumentSummary uid="1007753">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA1007753" archive="NCBI" id="1007753"/>
+            <LocalID>bp0</LocalID>
+            <LocalID>bp0</LocalID>
+        </ProjectID>
+        <ProjectDescr>
+            <Title>Salmonella enterica subsp. enterica Serovar Kentucky</Title>
+            <Description>Seven Salmonella enterica subsp. enterica Serovar Kentucky were isolated from cow feces. Whole genome sequencing was performed and genetic elements were were studied for their relationship between sequece types.</Description>
+            <Relevance>
+                <Environmental>yes</Environmental>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMultispecies"/>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eRawSequenceReads"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>raw sequence reads</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>raw sequence reads</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2023-08-21" submission_id="SUB13778405" submitted="2023-08-21">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>USDA</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB13778405-bp0"/>
+    </Submission>
+</DocumentSummary>
+

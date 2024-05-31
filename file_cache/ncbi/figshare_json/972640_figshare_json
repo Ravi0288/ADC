@@ -1,0 +1,77 @@
+{
+    "title": "Phaeobacter inhibens strain:S4Sm Genome sequencing",
+    "description": "PacBio HiFi read assembly of Phaeobacter inhibens S4Sm",
+    "authors": [
+        {
+            "name": "University of Rhode Island"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2023-05-22",
+        "postedDate": "2023-05-22",
+        "revision": "2023-05-15"
+    },
+    "tags": [
+        "Phaeobacter inhibens",
+        "S4Sm",
+        "eBacteria",
+        "genome sequencing"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2023-05-21"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA972640"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "genomics;sequence analysis;genome"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "U.S. Department of Agriculture, 2019-67016-29868"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/972640",
+            "title": "Phaeobacter inhibens strain:S4Sm Genome sequencing",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

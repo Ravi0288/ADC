@@ -1,0 +1,40 @@
+{
+    "identifier": "NRCS0057",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:eva.mitter@wdc.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Eva Mitter"
+    },
+    "programCode": [
+        "005:027"
+    ],
+    "description": "Conservation-related pictures for download",
+    "title": "PhotoGallery-A",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/photogallery.nrcs.usda.gov\/res\/sites\/photogallery\/",
+            "description": "Conservation-related pictures for download",
+            "mediaType": "application\/jpeg",
+            "title": "PhotoGallery"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:53"
+    ],
+    "modified": "2014-06-12",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "NRCS"
+    },
+    "keyword": [
+        "Conservation Outreach"
+    ],
+    "author": "USDA Natural Resources Conservation Service",
+    "fundref": "Natural Resources Conservation Service",
+    "catagories": "31922",
+    "nalt": "Natural Resources Conservation Service",
+    "isoTopic": "environment"
+}

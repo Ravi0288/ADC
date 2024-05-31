@@ -173,10 +173,16 @@ LOGS = BASE_DIR / 'logs'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-JSON_SOURCE = 'https://www.usda.gov/sites/default/files/documents/data.json'
+# JSON_SOURCE = 'https://www.usda.gov/sites/default/files/documents/data.json'
 TOKEN = 'Bearer fe5640f200496e3f789b395666665d817925eb13f40b00a239657d4a83f576fc01aa36bdacad9d12a27cd475edbeb8afd4604363611dd41ff0301ad7a2b8ee88'
 
-
+DATA_GOV_MAPPING={
+    "005:13":"ERS",
+    "005:68":"FAS",
+    "005:49":"FSA",
+    "005:53":"NRCS",
+    "005:96":"FSLM"
+}
 # logger to log errors in file
 LOGGING = {
     'version': 1,

@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.200030002.2" system="https://pasta.edirepository.org" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="d200030002">
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/3eea3acd4e873b8514d8261a4d69f0ee</alternateIdentifier><shortName>Grassfed beef map</shortName>
+    <title>Grass-fed beef producers and retailers map</title>
+    <creator>
+      <individualName>
+        <givenName>Skye</givenName>
+        <surName>Aney</surName>
+      </individualName>
+      <organizationName>NMSU, SW Climate Hub/Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>sierra25@nmsu.edu</electronicMailAddress>
+      <onlineUrl/>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Emile</givenName>
+        <surName>Elias</surName>
+      </individualName>
+      <organizationName>USDA-ARS SW Climate Hub/Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>emile.elias@ars.usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0001-9964-3177</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Paige</givenName>
+        <surName>Ramsey</surName>
+      </individualName>
+      <organizationName>NMSU, SW Climate Hub/Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>paramsey@nmsu.edu</electronicMailAddress>
+      <onlineUrl/>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Joel</givenName>
+        <surName>Cisneros</surName>
+      </individualName>
+      <organizationName>New Mexico State University</organizationName>
+      <address>
+        <deliveryPoint/>
+      </address>
+    </creator>
+    <metadataProvider>
+      <organizationName>Jornada Experimental Range LTAR (USDA-ARS)</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <onlineUrl>https://jornada.nmsu.edu</onlineUrl>
+    </metadataProvider>
+    <pubDate>2022-10-03</pubDate><language>English</language>
+    <abstract>
+      <para>
+    This data package includes two shapefiles and their associated
+    attribute tables. The two files, GFB_producers_2021-02-18.zip and
+    GFB_retailers_2021-02-18.zip, contain all internet-discoverable (at
+    the time of data collection, July-August 2020; with minor
+    edits/additions circa June 2022) grass-fed beef producers and
+    retailers in the Southwest and Southern Plains of the U.S. (Arizona,
+    California, Colorado, Kansas, Nevada, New Mexico, Oklahoma, Texas,
+    Utah), compiled through an internet search. The data were initially
+    collected in August of 2020 using publicly available information
+    from Google search engine and Google map searches with the intention
+    of informing members of the Sustainable Southwest Beef Project (USDA
+    NIFA grant #2019-69012-29853) team about existing grass-fed beef
+    producers and retailers in the study area.
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">beef retailers</keyword>
+      <keyword keywordType="theme">grass-fed beef</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keyword keywordType="place">Southern Plains States of USA</keyword>
+      <keyword keywordType="place">Southwestern United States</keyword>
+      <keyword keywordType="theme">beef production</keyword>
+      <keyword keywordType="theme">global positioning systems</keyword>
+      <keyword keywordType="theme">grass-fed livestock</keyword>
+      <keywordThesaurus>USDA National Ag Library's Agricultural Thesaurus</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license - Attribution - CC BY 
+  (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" 
+  herein) is required to cite it appropriately in any publication that results from its 
+  use. The Data User should realize that these data may be actively used by others for 
+  ongoing research and that coordination may be necessary to prevent duplicate 
+  publication. The Data User is urged to contact the authors of these data if any 
+  questions about methodology or results occur. Where appropriate, the Data User is 
+  encouraged to consider collaboration or co-authorship with the authors. The Data User 
+  should realize that misinterpretation of data may occur if used out of context of the 
+  original study. While substantial efforts are made to ensure the accuracy of data and 
+  associated documentation, complete accuracy of data sets cannot be guaranteed. All data 
+  are made available "as is." The Data User should be aware, however, that data are updated 
+  periodically and it is the responsibility of the Data User to check for new versions of 
+  the data. The data authors and the repository where these data were obtained shall not be 
+  liable for damages resulting from any use or misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">https://southwestbeef.org</url>
+      </online>
+    </distribution>
+    <distribution id="10.6073/pasta/3eea3acd4e873b8514d8261a4d69f0ee" scope="system" system="https://pasta.edirepository.org"><online><url function="information">https://doi.org/10.6073/pasta/3eea3acd4e873b8514d8261a4d69f0ee</url></online></distribution><coverage>
+      <geographicCoverage>
+        <geographicDescription>U.S. Southwest and Southern Plains: Bounding box for the U.S. Southwest and Southern Plains (AZ, CA, CO, KS, NV, NM, OK, TX, UT)</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-122.842238</westBoundingCoordinate>
+          <eastBoundingCoordinate>-94.619528</eastBoundingCoordinate>
+          <northBoundingCoordinate>41.441859</northBoundingCoordinate>
+          <southBoundingCoordinate>26.154626</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2020-07-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2020-08-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>complete</description>
+      <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <positionName>Jornada Information Manager</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>575-646-1739</phone>
+      <electronicMailAddress>jornada.data@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://jornada.nmsu.edu/ltar/data/documentation</onlineUrl>
+    </contact>
+    
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@edirepository.org</electronicMailAddress><onlineUrl>https://edirepository.org</onlineUrl><userId directory="https://ror.org">0330j0z60</userId></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Methods</title>
+            <para>
+      Information was gathered in July and August 2020 from Google
+      search engine and Google Maps web searches, Southwest Grassfed
+      Livestock Alliance (SWGLA) member information, and American
+      Grassfed Association member information, as posted on their
+      respective websites.
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Sustainable Southwest Beef Coordinated Agriculture Project (CAP)</title>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Sheri</givenName>
+          <surName>Spiegal</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-7018</phone>
+        <electronicMailAddress>sheri.spiegal@usda.gov</electronicMailAddress>
+        <role>SW Beef Project Director</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Glen</givenName>
+          <surName>Duff</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>Clayton Livestock Research Center</deliveryPoint>
+          <deliveryPoint>15 NMSU Ln</deliveryPoint>
+          <city>Clayton</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>84115</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="cell">575-644-0366</phone>
+        <electronicMailAddress>glennd@nmsu.edu</electronicMailAddress>
+        <role>SW Beef Project Director</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Brandon</givenName>
+          <surName>Bestelmeyer</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-4842</phone>
+        <electronicMailAddress>brandon.bestelmeyer@usda.gov</electronicMailAddress>
+        <role>Research Leader (USDA LTAR)</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Sustainable Southwest Beef Coordinated Agriculture Project (CAP) is a five
+           year (2019-2024) project that evaluates and promotes ranch and rangeland resilience
+           in the Southwestern US. The project is funded by the USDA’s National Institute of
+           Food and Agriculture (NIFA) and coordinated through New Mexico State University
+           and the Jornada Long-Term Agroecosystems Research program (JER-LTAR). JER-LTAR is
+           part of a national network of long-term agricultural and rangeland ecology research
+           sites funded by the US Department of Agriculture (USDA). The Jornada Experimental
+           Range is administered by the USDA-ARS (USDA Agricultural Research Service).</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>The Sustainable Southwest Beef CAP is supported by the USDA-NIFA
+          (USDA-NIFA-AFRI-Sustainable Agricultural Systems, Grant Number: 2019-69012-29853).
+          </para>
+        </section>
+        <section>
+          <para>The JER-LTAR program is supported by the USDA Long-Term Agroecosystem Research
+           Network (CRIS# 3050-11210-009-00D).
+           </para>
+        </section>
+      </funding>
+    </project>
+    <dataTable id="4a2c5a4bd0af423b05f45662d6e4e9ef" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Grassfed Beef Producers Attribute Table</entityName>
+      <entityDescription>Attribute table of GFB_producers_2021-02-18.zip</entityDescription>
+      <physical>
+        <objectName>GFB_producers_attributes.csv</objectName>
+        <size unit="byte">18775</size>
+        <authentication method="MD5">d54c30c4f3c4a25d00bf6a1f58c57d93</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200030002/2/4a2c5a4bd0af423b05f45662d6e4e9ef</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d200030002-e3-att1">
+          <attributeName>FID</attributeName>
+          <attributeLabel>FID</attributeLabel>
+          <attributeDefinition>Internal feature number. Sequential unique whole numbers that are automatically generated.</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att2">
+          <attributeName>Address</attributeName>
+          <attributeLabel>Full address</attributeLabel>
+          <attributeDefinition>Full address of producer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att3">
+          <attributeName>Addr_type</attributeName>
+          <attributeLabel>Address type</attributeLabel>
+          <attributeDefinition>Specific type of address</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Postal</code>
+                    <definition>Postal</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>PointAddress</code>
+                    <definition>Point address</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>StreetAddress</code>
+                    <definition>Street address</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Locality</code>
+                    <definition>Locality</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att4">
+          <attributeName>City</attributeName>
+          <attributeLabel>City</attributeLabel>
+          <attributeDefinition>City where the producer is located</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att5">
+          <attributeName>State</attributeName>
+          <attributeLabel>State</attributeLabel>
+          <attributeDefinition>State where the producer is located</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Colorado</code>
+                    <definition>Colorado, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Arizona</code>
+                    <definition>Arizona, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>California</code>
+                    <definition>California, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Kansas</code>
+                    <definition>Kansas, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>New Mexico</code>
+                    <definition>New Mexico, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Oklahoma</code>
+                    <definition>Oklahoma, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Texas</code>
+                    <definition>Texas, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Utah</code>
+                    <definition>Utah, U.S.A</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att6">
+          <attributeName>X</attributeName>
+          <attributeLabel>Longitude</attributeLabel>
+          <attributeDefinition>Longitude of location of producer</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att7">
+          <attributeName>Y</attributeName>
+          <attributeLabel>Latitude</attributeLabel>
+          <attributeDefinition>Latitude of location of producer</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att8">
+          <attributeName>RanchName</attributeName>
+          <attributeLabel>Ranch name</attributeLabel>
+          <attributeDefinition>Name of ranch</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att9">
+          <attributeName>Producer_N</attributeName>
+          <attributeLabel>Producer name</attributeLabel>
+          <attributeDefinition>Name of producer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att10">
+          <attributeName>Phone_Numb</attributeName>
+          <attributeLabel>Phone Number</attributeLabel>
+          <attributeDefinition>Phone number of producer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att11">
+          <attributeName>Email</attributeName>
+          <attributeLabel>Email</attributeLabel>
+          <attributeDefinition>Email of producer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att12">
+          <attributeName>Website</attributeName>
+          <attributeLabel>Website link</attributeLabel>
+          <attributeDefinition>Link to producer's Website</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att13">
+          <attributeName>WhereToBuy</attributeName>
+          <attributeLabel>Where to buy</attributeLabel>
+          <attributeDefinition>Where to buy product from the producer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e3-att14">
+          <attributeName>TypeCattle</attributeName>
+          <attributeLabel>Types of cattle</attributeLabel>
+          <attributeDefinition>Types of cattle produced</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Angus</code>
+                    <definition>Angus cattle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Corriente/Criollo</code>
+                    <definition>Mixed Corrient-Criollo cattle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Angus-Limousin</code>
+                    <definition>Limousin cows bred to Black Angus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Longhorn</code>
+                    <definition>Longhorn cattle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Texas Longhorns</code>
+                    <definition>Texas Longhorn cattle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Wagyu/Angus or Angus</code>
+                    <definition>Wagyu-Angus mixed or Angus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Hereford Cattle</code>
+                    <definition>Hereford cattle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Not specified</code>
+                    <definition>Cattle type not specified</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Red angus base</code>
+                    <definition>Red Angus base cattle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Angus, Limousin, and Corriente</code>
+                    <definition>Angus, Limousin, and Corriente cattle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Angus-Hereford</code>
+                    <definition>Mixed Angus-Hereford cattle</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>105</numberOfRecords>
+    </dataTable>
+    <dataTable id="0cf94753767adcbf19a6564bda6f225d" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Grassfed Beef Retailers Attribute Table</entityName>
+      <entityDescription>Attribute table of GFB_retailers_2021-02-18.zip</entityDescription>
+      <physical>
+        <objectName>GFB_retailers_attributes.csv</objectName>
+        <size unit="byte">6654</size>
+        <authentication method="MD5">3c3eb5ddbb1eb05dc32b4cfed44afd6f</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200030002/2/0cf94753767adcbf19a6564bda6f225d</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d200030002-e4-att1">
+          <attributeName>FID</attributeName>
+          <attributeLabel>FID</attributeLabel>
+          <attributeDefinition>Internal feature number. Sequential unique whole numbers that are automatically generated.</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att2">
+          <attributeName>Address</attributeName>
+          <attributeLabel>Full address</attributeLabel>
+          <attributeDefinition>Full address of retailer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att3">
+          <attributeName>Addr_type</attributeName>
+          <attributeLabel>Address type</attributeLabel>
+          <attributeDefinition>Specific type of address</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>PointAddress</code>
+                    <definition>Point address</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>StreetAddress</code>
+                    <definition>Street address</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Subaddress</code>
+                    <definition>Sub address</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att4">
+          <attributeName>City</attributeName>
+          <attributeLabel>City</attributeLabel>
+          <attributeDefinition>City of retailer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att5">
+          <attributeName>State</attributeName>
+          <attributeLabel>State</attributeLabel>
+          <attributeDefinition>State where retailer is located</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Texas</code>
+                    <definition>Texas, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>California</code>
+                    <definition>California, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Oklahoma</code>
+                    <definition>Oklahoma, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Kansas</code>
+                    <definition>Kansas, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Nevada</code>
+                    <definition>Nevada, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Utah</code>
+                    <definition>Utah, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>New Mexico</code>
+                    <definition>New Mexico, U.S.A</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Arizona</code>
+                    <definition>Arizona, U.S.A</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att6">
+          <attributeName>X</attributeName>
+          <attributeLabel>Longitude</attributeLabel>
+          <attributeDefinition>Longitude of location of retailer</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att7">
+          <attributeName>Y</attributeName>
+          <attributeLabel>Latitude</attributeLabel>
+          <attributeDefinition>Latitude of location of retailer</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att8">
+          <attributeName>Name</attributeName>
+          <attributeLabel>Retailer name</attributeLabel>
+          <attributeDefinition>Name of retailer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att9">
+          <attributeName>Phone_Numb</attributeName>
+          <attributeLabel>Phone Number</attributeLabel>
+          <attributeDefinition>Phone number of retailer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att10">
+          <attributeName>Email</attributeName>
+          <attributeLabel>Email</attributeLabel>
+          <attributeDefinition>Email of retailer</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d200030002-e4-att11">
+          <attributeName>Website</attributeName>
+          <attributeLabel>Website link</attributeLabel>
+          <attributeDefinition>Link to retailer's Website</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>37</numberOfRecords>
+    </dataTable>
+    <otherEntity id="c4e6112c263dd5bd012d699847aedadc" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Grassfed Beef Producers Shapefile</entityName>
+      <entityDescription>Zipped shapefile containing geolocation and associated metadata files for grassfed beef producers in the Southwest, Southern Plains, and Colorado</entityDescription>
+      <physical>
+        <objectName>GFB_producers_2022-07-21.zip</objectName>
+        <size unit="byte">25930</size>
+        <authentication method="MD5">89e42c8682ea6632e8eab1e38f9397ed</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>application/zip</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200030002/2/c4e6112c263dd5bd012d699847aedadc</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+    <otherEntity id="e034f0d9026b87e049bf8717028d8efc" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Grassfed Beef Retailers Shapefile</entityName>
+      <entityDescription>Zipped shapefile containing geolocation and associated metadata files for grassfed beef retailers in the Southwest, Southern Plains, and Colorado</entityDescription>
+      <physical>
+        <objectName>GFB_retailers_2022-07-21.zip</objectName>
+        <size unit="byte">18906</size>
+        <authentication method="MD5">8bbd1106d1aad7c603a853b92b22d5cb</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>application/zip</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200030002/2/e034f0d9026b87e049bf8717028d8efc</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit abbreviation="º" id="degree" multiplierToSI="0.0174532924" name="degree" parentSI="radian" unitType="angle">
+          <description>360 degrees comprise a unit circle</description>
+        </unit>
+        <unit id="number" name="number" unitType="dimensionless">
+          <description>a quantity or amount</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

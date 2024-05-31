@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.210379001.81" system="https://pasta.edirepository.org" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="d210379001">
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/185846a59ca4674b680357a4f5b71903</alternateIdentifier><title>Locally verified daily temperature and precipitation data from a NOAA weather station at USDA Jornada Experimental Range headquarters, southern New Mexico USA, 1914-2006</title>
+    <creator>
+      <individualName>
+        <givenName>Elmer</givenName>
+        <surName>Wooton</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <surName>National Weather Service</surName>
+      </individualName>
+      <organizationName>NOAA</organizationName>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>David</givenName>
+        <surName>Thatcher</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>John</givenName>
+        <surName>Anderson</surName>
+      </individualName>
+      <organizationName>Jornada Basin LTER/New Mexico State University</organizationName>
+      <positionName>Jornada Research Site Manager</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>janderso@jornada.nmsu.edu</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-6417-8022</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Kris</givenName>
+        <surName>Havstad</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <userId directory="ORCID">0000-0002-0133-8519</userId>
+    </creator>
+    <metadataProvider>
+      <organizationName>Jornada Basin LTER/New Mexico State University</organizationName>
+      <positionName>Jornada Basin LTER program</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>jornada.lter@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://lter.jornada.nmsu.edu</onlineUrl>
+    </metadataProvider>
+    <pubDate>2022-05-02</pubDate>
+    <language>English</language>
+    <abstract>
+      <para>
+    This data package contains locally verified daily meteorological
+    observations from a NOAA National Weather Service station located at
+    the USDA Jornada Experimental Range headquarters in southern New
+    Mexico, USA. Daily data has been collected there by USDA staff since
+    1914 for minimum and maximum air temperature and daily accumulated
+    precipitation using standard U.S. climatological service
+    instrumentation and procedures. The included data were verified and
+    transcribed directly from the original paper data sheets and have
+    undergone quality control and assurance procedures different than
+    those in place at NOAA. These data therefore differ from those
+    directly downloadable from NOAA servers. Local verification and
+    transcription of observations from the data sheets ceased in 2006
+    and data are now directly entered to the NOAA system. Therefore,
+    this dataset is complete and will no longer be added to.
+  </para>
+      <para>
+    All observations from this weather station have also undergone NOAA
+    QA/QC procedures and those data are available by accessing the
+    Jornada Experimental Range, NM US GHCN station through the National
+    Climatic Data Center portal
+    (https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail
+    - daily and monthly data are available).
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">Disturbance</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Disturbance</keyword>
+      <keyword keywordType="theme">air temperature</keyword>
+      <keyword keywordType="theme">atmospheric processes</keyword>
+      <keyword keywordType="theme">climate</keyword>
+      <keyword keywordType="theme">deserts</keyword>
+      <keyword keywordType="theme">hydrologic processes</keyword>
+      <keyword keywordType="theme">long term</keyword>
+      <keyword keywordType="theme">maximum temperature</keyword>
+      <keyword keywordType="theme">meteorology</keyword>
+      <keyword keywordType="theme">minimum temperature</keyword>
+      <keyword keywordType="theme">precipitation</keyword>
+      <keyword keywordType="theme">rain</keyword>
+      <keyword keywordType="theme">temperature</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary v1</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keyword keywordType="theme">NOAA</keyword>
+      <keyword keywordType="theme">NWS</keyword>
+      <keyword keywordType="theme">daily</keyword>
+      <keyword keywordType="theme">meteorology</keyword>
+      <keyword keywordType="theme">precipitation</keyword>
+      <keyword keywordType="theme">rain</keyword>
+      <keyword keywordType="theme">weather station</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keyword keywordType="theme">USDA</keyword>
+      <keyword keywordType="theme">long-term</keyword>
+      <keywordThesaurus>Jornada Basin LTER dataset keywords</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">study 379</keyword>
+      <keywordThesaurus>Jornada Basin project names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">HQ</keyword>
+      <keyword keywordType="place">JER</keyword>
+      <keywordThesaurus>Jornada Basin place names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keywordThesaurus>USDA National Ag Library's Agricultural Thesaurus</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license - Attribution - CC BY 
+  (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" 
+  herein) is required to cite it appropriately in any publication that results from its 
+  use. The Data User should realize that these data may be actively used by others for 
+  ongoing research and that coordination may be necessary to prevent duplicate 
+  publication. The Data User is urged to contact the authors of these data if any 
+  questions about methodology or results occur. Where appropriate, the Data User is 
+  encouraged to consider collaboration or co-authorship with the authors. The Data User 
+  should realize that misinterpretation of data may occur if used out of context of the 
+  original study. While substantial efforts are made to ensure the accuracy of data and 
+  associated documentation, complete accuracy of data sets cannot be guaranteed. All data 
+  are made available "as is." The Data User should be aware, however, that data are updated 
+  periodically and it is the responsibility of the Data User to check for new versions of 
+  the data. The data authors and the repository where these data were obtained shall not be 
+  liable for damages resulting from any use or misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">https://jrn.lternet.edu</url>
+      </online>
+    </distribution>
+    <distribution id="10.6073/pasta/185846a59ca4674b680357a4f5b71903" scope="system" system="https://pasta.edirepository.org"><online><url function="information">https://doi.org/10.6073/pasta/185846a59ca4674b680357a4f5b71903</url></online></distribution><coverage>
+      <geographicCoverage>
+        <geographicDescription>Headquarters or unspecified: Jornada Experimental Range Headquarters. These generic coordinates may not necessarily specify  the location of the study. More precise geographic coordinates for this study may be requested from the JRN LTER Data Manager (jornada.data@nmsu.edu).</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-106.740997</westBoundingCoordinate>
+          <eastBoundingCoordinate>-106.740997</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.617001</northBoundingCoordinate>
+          <southBoundingCoordinate>32.617001</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1914-06-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2006-12-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>complete</description>
+      <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <organizationName>Jornada Basin LTER/New Mexico State University</organizationName>
+      <positionName>Jornada Basin LTER Information Manager</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>575-646-1739</phone>
+      <electronicMailAddress>jornada.data@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://lter.jornada.nmsu.edu/information-management/</onlineUrl>
+    </contact>
+    
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@environmentaldatainitiative.org</electronicMailAddress><onlineUrl>https://environmentaldatainitiative.org</onlineUrl><userId directory="https://ror.org">0330j0z60</userId></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>History and description</title>
+            <para>
+      This data package contains locally verified daily climate data
+      collected at a weather station located at USDA Jornada
+      Experimental Range (JER) Headquarters. This weather station is a
+      National Weather Service (NWS) instrument and is part of the NOAA
+      Global Historical Climate Network (GHCN). Daily climate
+      observations have been collected by USDA JER staff and sent to the
+      local National Weather Service office since 1914, first manually,
+      and now automatically. These observations include minimum and
+      maximum air temperature and daily accumulated precipitation made
+      using standard U.S. climatological service instrumentation and
+      recording procedures. The data sent to the local NWS office are
+      subsequently quality controlled and assured and made available on
+      NOAA servers.
+    </para>
+            <para>
+      This dataset contains temperature and precipitation observations
+      that have been verified and transcribed directly from the original
+      paper data sheets stored at JER headquarters. Since this entry and
+      verification, these data have undergone quality control and
+      assurance procedures different than those in place at NOAA (see
+      below), and the data therefore differ from what is available
+      directly from NOAA servers (see details below). Most differences
+      are in the precipitation observations, and these are documented in
+      the history text file (see "Additional documents"
+      below). Transcription of the original data sheets ceased in 2006
+      because direct data entry to NOAA began at that time, and this
+      dataset therefore does not continue past that time.
+    </para>
+            <para>
+      All data from this station that have undergone NOAA QA/QC
+      procedures are available by accessing the Jornada Experimental
+      Range, NM US GHCN station through the National Climatic Data
+      Center portal
+      (https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail).
+      There is another, automated NOAA weather station at JER
+      Headquarters that began service in 2007 and has data available at
+      the same portal
+      (https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00003074/detail).
+    </para>
+          </section>
+          <section>
+            <title>Data evaluation by USDA and LTER staff</title>
+            <para>
+      Local USDA JER and Jornada Basin LTER staff have noted that daily
+      precipitation totals and temperatures at this station are total
+      precip and min/max temps AT THE TIME OF MEASUREMENT BY THE
+      OBSERVER. In a review of years 1914-1947 daily records, observer
+      time fell between 1530 and 1900 with most observer times being
+      between 1700 and 1800. Observer times changed to the morning
+      between 0700 and 0900 at an unknown date after this and currently
+      continue to be made in the morning. This local review also
+      revealed discrepancies between official data at NOAA and the local
+      datasheets that are most likely the result of incorrect data
+      entry. These discrepancies are described in detail in the attached
+      additional history document (see "Additional documents"
+      below).
+    </para>
+            <para>
+      Additionally, it appears that some data sheets may have never been
+      sent to, or posted by, the NOAA system. There are currently 985
+      daily observations in this dataset that do not appear in the
+      datasets that can be downloaded from NOAA. Over the 90+ year
+      record in this dataset, there is therefore a discrepancy of 49.22
+      inches of precipitation. There are figures illustrating these and
+      other discrepancies in the two datasets.
+    </para>
+            <para>
+      This data package remains to document those discrepancies, but is
+      now considered complete and will not be updated in the future.
+    </para>
+          </section>
+          <section>
+            <title>Additional documents</title>
+            <para>
+      The attached text file "NOAA_JERHQ_ws_daily_his.txt"
+      describes the procedures for identifying discrepancies between
+      NOAA data and the data located at JER headquarters and the
+      subsequent changes made in the included data file.
+    </para>
+            <para>
+      The summary figures "local_vs_noaa_daily_diff.png" and
+      "local_vs_noaa_cumulative_daily.png" plot the
+      discrepancies between the local JER data and NOAA server data from
+      the most recent data request.
+    </para>
+          </section>
+          <section>
+            <title>Related datasets</title>
+            <para>
+      Pan evaporation data from the same location (also NWS) was
+      collected from January 1956 through August 1979 and is found on
+      EDI in package knb-lter-jrn.210379003.
+    </para>
+            <para>
+      Monthly summaries of temperature and precipitation based on these
+      daily data are found in EDI package knb-lter-jrn.210379002.
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Jornada Basin LTER</title>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Niall</givenName>
+          <surName>Hanan</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-3335</phone>
+        <electronicMailAddress>nhanan@nmsu.edu</electronicMailAddress>
+        <role>Principal Investigator</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Jornada Basin Long-Term Ecological Research (LTER) program is part of a 
+          national network of long-term ecological research sites funded by the US National 
+          Science Foundation (NSF). The Jornada LTER program has been continuously funded
+          since 1982 to develop general principles governing changes between grassland 
+          and shrubland ecosystems based on long-term data collected in the Chihuahuan 
+          Desert. We translate our findings to dryland ecosystems around the world, and 
+          forecast the dynamics of future ecosystem states in response to changing climate 
+          and land use.</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>JRN LTER is funded by the National Science Foundation under award DEB 2025166.</para>
+        </section>
+      </funding>
+    </project>
+    <dataTable id="35591f36378d08675b347a710043a909" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Daily temperature and precipitation data</entityName>
+      <entityDescription>Daily temperature and precipitation at a NOAA weather station, 1914-2017</entityDescription>
+      <physical>
+        <objectName>JRN379001_NOAA_JERHQ_ws_daily_adj.csv</objectName>
+        <size unit="byte">1107054</size>
+        <authentication method="MD5">6d22d4e1deddfc9014374e4d123e5596</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210379001/81/35591f36378d08675b347a710043a909</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d210379001-e1-att1">
+          <attributeName>date</attributeName>
+          <attributeLabel>Date</attributeLabel>
+          <attributeDefinition>Date of observation</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210379001-e1-att2">
+          <attributeName>tmax</attributeName>
+          <attributeLabel>Max temperature F</attributeLabel>
+          <attributeDefinition>Maximum 24-hour air temperature (degrees F)</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>fahrenheit</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value - data not collected or otherwise unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210379001-e1-att3">
+          <attributeName>tmin</attributeName>
+          <attributeLabel>Min temperature F</attributeLabel>
+          <attributeDefinition>Minimum 24-hour air temperature (degrees F)</attributeDefinition>
+          <storageType>integer</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>fahrenheit</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value - data not collected or otherwise unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210379001-e1-att4">
+          <attributeName>prcp</attributeName>
+          <attributeLabel>Daily precipitation in</attributeLabel>
+          <attributeDefinition>Cumulative daily precipitation (inches)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>inch</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value, see comment</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210379001-e1-att5">
+          <attributeName>pc</attributeName>
+          <attributeLabel>Problem code</attributeLabel>
+          <attributeDefinition>Boolean value indicating a problem observed by John Anderson (1 = problem with data, 0 = no problem)</attributeDefinition>
+          <storageType>boolean</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>Discrepancy between JER and NOAA data sources. Precip value recorded is considered correct. See History Log for more information.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>No problem with precipitation measurement.</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210379001-e1-att6">
+          <attributeName>prcp_comment</attributeName>
+          <attributeLabel>Precip comment</attributeLabel>
+          <attributeDefinition>Comment about precipitation value (trace, next-day sums, etc)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>TND</code>
+                    <definition>Current day precip added to next day total</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>T</code>
+                    <definition>Trace of precipitation (not measurable)</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>No comment, quality flag, or additional information available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210379001-e1-att7">
+          <attributeName>missing_at_noaa</attributeName>
+          <attributeLabel>Missing at NOAA</attributeLabel>
+          <attributeDefinition>Boolean value indicating absence of observation in NOAA dataset (0 = observation in NOAA record, 1 = not in NOAA record)</attributeDefinition>
+          <storageType>boolean</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>True</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>False</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210379001-e1-att8">
+          <attributeName>tmax_noaa_diff</attributeName>
+          <attributeLabel>Tmax difference</attributeLabel>
+          <attributeDefinition>Difference between local JER tmax values and NOAA values (local-noaa)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>fahrenheit</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value - data not collected or otherwise unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210379001-e1-att9">
+          <attributeName>tmin_noaa_diff</attributeName>
+          <attributeLabel>Tmin difference</attributeLabel>
+          <attributeDefinition>Difference between local JER tmin values and NOAA values (local-noaa)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>fahrenheit</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value - data not collected or otherwise unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210379001-e1-att10">
+          <attributeName>prcp_noaa_diff</attributeName>
+          <attributeLabel>Prcp difference</attributeLabel>
+          <attributeDefinition>Difference between local JER prcp values and NOAA values (local-noaa)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>inch</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value, see comment</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>33817</numberOfRecords>
+    </dataTable>
+    <otherEntity id="09286d9db969b18b54a2b43f38fe6ff0" scope="document" system="https://pasta.edirepository.org">
+      <entityName>History file documenting local data verification</entityName>
+      <entityDescription>Jornada staff comments, corrections, and historical documentation regarding NOAA weather station observations in this dataset</entityDescription>
+      <physical>
+        <objectName>NOAA_JERHQ_ws_daily_his.txt</objectName>
+        <size unit="byte">3966</size>
+        <authentication method="MD5">56873ecd799058b592ff8ab74f426465</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>text/plain</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210379001/81/09286d9db969b18b54a2b43f38fe6ff0</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+    <otherEntity id="263332ca39daa1908d9771e4127caf44" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Summary figure 1 of local and NOAA records</entityName>
+      <entityDescription>Summary figure comparing timeseries of local JER data records to NOAA records. The JER records are adjusted relative to NOAA and differences are shown.</entityDescription>
+      <physical>
+        <objectName>local_vs_noaa_daily_diff.png</objectName>
+        <size unit="byte">305519</size>
+        <authentication method="MD5">f0543c41c76d5453201c2fae463b201b</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PNG</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210379001/81/263332ca39daa1908d9771e4127caf44</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+    <otherEntity id="537f7355802c278ed6a2f61a30ac9fb1" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Summary figure 2 of local and NOAA records</entityName>
+      <entityDescription>Summary figure comparing cumulative local JER data records to NOAA records. The JER records are adjusted relative to NOAA.</entityDescription>
+      <physical>
+        <objectName>local_vs_noaa_cumulative_daily.png</objectName>
+        <size unit="byte">156119</size>
+        <authentication method="MD5">ccf7b8a5088d7d3a4058699b654baf67</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PNG</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210379001/81/537f7355802c278ed6a2f61a30ac9fb1</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit abbreviation="F" constantToSI="255.402" id="fahrenheit" multiplierToSI="0.556" name="fahrenheit" parentSI="kelvin">
+          <description>unit for temperature on the scale in which water freezes at 32 and boils 
+      at 212 under standard conditions.</description>
+        </unit>
+        <unit abbreviation="in" id="inch" multiplierToSI="0.0254" name="inch" parentSI="meter">
+          <description>unit of length in the (British) imperial and United States systems 
+      usually understood as 1/12 f a foot.</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

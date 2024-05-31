@@ -1,0 +1,52 @@
+{
+    "identifier": "USDA-9361",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:paige.niederer@ftc.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Paige Niederer"
+    },
+    "programCode": [
+        "005:027"
+    ],
+    "description": "This site provides addresses, telephone numbers and other key information for USDA Service Center locations. These office locations will provide customers with information and assistance for available disaster programs. Agencies shown include the Farm Service Agency, Rural Development and the Natural Resources Conservation Service.",
+    "title": "USDA Service Center Locator",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/offices.sc.egov.usda.gov\/locator\/app",
+            "mediaType": "text\/csv",
+            "title": "Comma Seperated Values File"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/licenses\/by\/4.0",
+    "bureauCode": [
+        "005:53"
+    ],
+    "modified": "2014-12-23",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "NRCS"
+    },
+    "accrualPeriodicity": "R\/P1D",
+    "keyword": [
+        "Agriculture",
+        "FSA",
+        "NRCS",
+        "Office",
+        "RD",
+        "Service Center",
+        "USDA",
+        "conservation assistance",
+        "grants",
+        "loans",
+        "natural resources"
+    ],
+    "spatial": "United States and U.S. Territories",
+    "issued": "1998-08-01",
+    "author": "USDA Natural Resources Conservation Service",
+    "fundref": "Natural Resources Conservation Service",
+    "catagories": "31922",
+    "nalt": "Natural Resources Conservation Service",
+    "isoTopic": "environment"
+}

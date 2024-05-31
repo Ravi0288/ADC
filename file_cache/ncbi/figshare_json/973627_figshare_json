@@ -1,0 +1,79 @@
+{
+    "title": "Lipomyces tetrasporus strain:NRRL Y-64009 | isolate:NRRL Y-64009 RefSeq Genome sequencing and assembly",
+    "description": "The reference sequence (RefSeq) genome assembly is derived from the submitted GenBank assembly (see linked project PRJNA928472). Annotation on the RefSeq genomic records is propagated from the INSDC submission. RefSeq records may differ from the submitted annotation in format details, some protein names, and occasionally in feature location details.",
+    "authors": [
+        {
+            "name": "National Center for Biotechnology Information"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2023-03-31",
+        "postedDate": "2023-03-31",
+        "revision": "2023-01-26"
+    },
+    "tags": [
+        "Lipomyces tetrasporus",
+        "NRRL Y-64009",
+        "eEukaryotes",
+        "genome sequencing and assembly"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2023-03-30"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA973627"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "genomics;sequence analysis;genome assembly"
+        },
+        {
+            "name": "Ag Data Commons Group",
+            "value": [
+                "ARS Culture Collection"
+            ]
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/973627",
+            "title": "Lipomyces tetrasporus strain:NRRL Y-64009 | isolate:NRRL Y-64009 RefSeq Genome sequencing and assembly",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

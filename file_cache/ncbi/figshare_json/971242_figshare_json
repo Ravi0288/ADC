@@ -1,0 +1,70 @@
+{
+    "title": "Cacao pod response to Phytophthora palmivora inoculation",
+    "description": "The oomycete Phytophthora palmivora infects the fruit of cacao trees (Theobroma cacao) causing black pod rot and reducing yields. Cacao genotypes vary in their resistance levels to P. palmivora, yet our understanding of how cacao fruit respond to the pathogen at the molecular level during disease establishment is limited. To address this issue, a disease development and RNA-Seq study was conducted on pods of seven cacao genotypes to better understand their reactions to the post-penetration stage of P. palmivora infection.",
+    "authors": [
+        {
+            "name": "USDA ARS"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2023-05-10",
+        "postedDate": "2023-05-10",
+        "revision": "2023-05-10"
+    },
+    "tags": [
+        "raw sequence reads"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2023-05-10"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA971242"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "sequence analysis"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/971242",
+            "title": "Cacao pod response to Phytophthora palmivora inoculation",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

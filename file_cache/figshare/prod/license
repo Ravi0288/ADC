@@ -1,0 +1,47 @@
+[
+  {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "value": 2,
+    "name": "CC0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  {
+    "value": 8,
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "value": 74,
+    "name": "Copyright Undetermined",
+    "url": "https://rightsstatements.org/vocab/UND/1.0/"
+  },
+  {
+    "value": 96,
+    "name": "U.S. Public Domain",
+    "url": "https://www.usa.gov/publicdomain/label/1.0/"
+  },
+  {
+    "value": 122,
+    "name": "CC BY-NC-ND 3.0 US",
+    "url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/"
+  },
+  {
+    "value": 135,
+    "name": "GNU GPL",
+    "url": "http://www.gnu.org/licenses/gpl-3.0.html"
+  },
+  {
+    "value": 189,
+    "name": "GNU Free Documentation License",
+    "url": "https://www.gnu.org/licenses/fdl-1.3.en.html"
+  },
+  {
+    "value": 192,
+    "name": "Open Data Commons Public Domain Dedication and License (PDDL)",
+    "url": "https://opendefinition.org/licenses/odc-pddl/"
+  }
+]

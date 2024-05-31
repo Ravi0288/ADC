@@ -1,0 +1,50 @@
+<DocumentSummary uid="210935">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA210935" archive="NCBI" id="210935"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Malus domestica strain:Royal Gala</Name>
+            <Title>Malus domestica strain:Royal Gala Transcriptome or Gene expression</Title>
+            <Description>Genes up- and down-regulated in response to drought. Young apple trees (~ 1 m tall) were clonally replicated on their own roots and subjected to a 2 week drought (water deficit) treatment. Control trees were watered throughout.</Description>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eOther" material="eTranscriptome" sample_scope="eMultiisolate">
+                    <Organism species="3750" taxID="3750">
+                        <OrganismName>Malus domestica</OrganismName>
+                        <Strain>Royal Gala</Strain>
+                        <Supergroup>eEukaryotes</Supergroup>
+                        <Organization>eMulticellular</Organization>
+                        <Reproduction>eSexual</Reproduction>
+                    </Organism>
+                    <Description>Apple stems, leaves and bark under water deficit</Description>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eExpression"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-07-09" submission_id="SUB286541" submitted="2013-07-09">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>USDA, ARS</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB286541-1"/>
+    </Submission>
+</DocumentSummary>

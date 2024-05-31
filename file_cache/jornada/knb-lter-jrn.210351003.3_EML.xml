@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.210351003.3" system="https://pasta.edirepository.org" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1  http://nis.lternet.edu/schemas/EML/eml-2.1.1/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/a76529e2f82460c3f3cfa5d7b5f038eb</alternateIdentifier>
+    <title>Soil Particle Size Analysis at Permanent Quadrat locations, Jornada Experimental Range, 2001-2020</title>
+    <creator>
+      <individualName>
+        <givenName>Jin</givenName>
+        <surName>Yao</surName>
+      </individualName>
+      <organizationName>USDA-ARS</organizationName>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>Kris</givenName>
+        <surName>Havstad</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-0133-8519</userId>
+      <role>Former Principal Investigator</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Brandon</givenName>
+        <surName>Bestelmeyer</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0001-5060-9955</userId>
+      <role>Current Principal Investigator</role>
+    </associatedParty>
+    <pubDate>2020-04-16</pubDate>
+    <abstract>
+      <para>
+  This completed dataset, from samples collected in 2001 and 2020,
+  contains soil particle size analysis (PSA) and sand fractionation data
+  from soil cores collected at 117 quadrat locations that are part of
+  the Jornada Experimental Range's long-term Permanent Quadrats study.
+  The goal of this effort was to help characterize plant-scale factors
+  related to vegetation dynamics observed in the Permanent Quadrats. At
+  each quadrat location, 4 cores were collected at 2 depths (0-5cm and
+  5-20cm) and assessed for percent sand, silt and clay. The sand
+  fraction, if large enough, was then separated into 5 sand size classes
+  (53-106 micrometers, 106-250 micrometers, 250-500 micrometers,
+  500-1000 micrometers, 1000-2000 micrometers) to measure the percent
+  fraction of each. Long term vegetation data from this study are
+  available in data packages knb-lter-jrn.210351001 and
+  knb-lter-jrn.210351002.
+</para>
+    </abstract>
+    <keywordSet>
+      <keyword>JER</keyword>
+      <keywordThesaurus>Jornada Place Names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Permanent Quadrats</keyword>
+      <keyword>Study 351</keyword>
+      <keywordThesaurus>Jornada Project Names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Climate, Soils, and Atmosphere</keyword>
+      <keywordThesaurus>JRN Dataset Keywords</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>desertification</keyword>
+      <keyword>sand</keyword>
+      <keyword>soil</keyword>
+      <keyword>soil properties</keyword>
+      <keyword>soil texture</keyword>
+      <keyword>substrates</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Disturbance</keyword>
+      <keyword>Land Use and Land Cover Change</keyword>
+      <keywordThesaurus>LTER Core Area</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>arid grasslands</keyword>
+      <keyword>clay</keyword>
+      <keyword>LTAR</keyword>
+      <keyword>silt</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <para>This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Jornada Experimental Range, Dona Any County, New Mexico, USA.  More detailed geographic information can be requested from the Data Manager.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-106.926435</westBoundingCoordinate>
+          <eastBoundingCoordinate>-106.528942</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.737108</northBoundingCoordinate>
+          <southBoundingCoordinate>32.466879</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2001-01-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2020-02-07</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>completed</description>
+    </maintenance>
+    <contact>
+      <individualName>
+        <givenName>Data</givenName>
+        <surName>Manager</surName>
+      </individualName>
+      <organizationName>Jornada Basin LTER</organizationName>
+      <electronicMailAddress>datamanager.jrn.lter@gmail.com</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+  At each quadrat location, 4 cores were collected at bare
+  (non-vegetated) areas at 2 depths: 0-5cm and 5-20cm, stacked on top of
+  each other. The 0-5cm deep core had a diameter of 6.1cm and the 5-20cm
+  core had a diameter of 4.6cm. Samples were air dried at room
+  temperature, then hand sieved to 2mm to remove large organic material
+  and the &amp;gt;2mm fraction. Particle size analysis by the hydrometer
+  method was performed on a ~60g subsample. Sand left over from the
+  hydrometer analysis (&amp;gt;53µm fraction) was washed through a 53µm
+  sieve, dried at 105C for 24h to remove moisture, then separated into 5
+  sand size classes (53-106 micrometers, 106-250 micrometers, 250-500
+  micrometers, 500-1000 micrometers, 1000-2000 micrometers) in an
+  ultrasonic sifter for 5 minutes and weighed.
+</para>
+          <para>
+  Most soil samples were collected at various times throughout 2000.
+  Those collected in 2020 were all collected on February 7, 2020.
+</para>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable>
+      <entityName>Soil Particle Size Analysis and Sand Fractionation data at Permanent Quadrat locations, Jornada Experimental Range, 2001-2020</entityName>
+      <entityDescription>Soil Particle Size Analysis and Sand Fractionation data at Permanent Quadrat locations, Jornada Experimental Range, 2001-2020</entityDescription>
+      <physical>
+        <objectName>Permanent_Quadrats_PSA.csv</objectName>
+        <size unit="bytes">26884</size>
+        <authentication method="MD5">43f3568a34af5acc411cd71aaa184834</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351003/3/2a2f19908d2c4cab90c1371bb001144f</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>quadrat</attributeName>
+          <attributeDefinition>quadrat name</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>quadrat name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>year</attributeName>
+          <attributeDefinition>year of sampling</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>depth</attributeName>
+          <attributeDefinition>depth of soil core</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>depth of soil core</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pct_sand</attributeName>
+          <attributeDefinition>percent of soil sample comprised of sand</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">2.35</minimum>
+                  <maximum exclusive="false">95.39</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>.</code>
+            <codeExplanation>data unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_silt</attributeName>
+          <attributeDefinition>percent of soil sample comprised of silt</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1.43</minimum>
+                  <maximum exclusive="false">64.06</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>.</code>
+            <codeExplanation>data unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_clay</attributeName>
+          <attributeDefinition>percent of soil sample comprised of clay</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">2.09</minimum>
+                  <maximum exclusive="false">46.8</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>.</code>
+            <codeExplanation>data unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_vfs</attributeName>
+          <attributeDefinition>percent of sand fraction comprised of very fine sand (53-106 micrometers)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">5.95</minimum>
+                  <maximum exclusive="false">52.3</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>.</code>
+            <codeExplanation>data unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_fs</attributeName>
+          <attributeDefinition>percent of sand fraction comprised of fine sand (106-250 micrometers)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">23.54</minimum>
+                  <maximum exclusive="false">66.77</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>.</code>
+            <codeExplanation>data unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_ms</attributeName>
+          <attributeDefinition>percent of sand fraction comprised of medium sand (250-500 micrometers)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">3.4</minimum>
+                  <maximum exclusive="false">46.95</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>.</code>
+            <codeExplanation>data unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_cos</attributeName>
+          <attributeDefinition>percent of sand fraction comprised of coarse sand (500-1000 micrometers)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.41</minimum>
+                  <maximum exclusive="false">21.27</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>.</code>
+            <codeExplanation>data unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pct_vcs</attributeName>
+          <attributeDefinition>percent of sand fraction comprised of very coarse sand (1000-2000 micrometers)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">19.3</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>.</code>
+            <codeExplanation>data unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>comments</attributeName>
+          <attributeDefinition>comments</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>comments</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>.</code>
+            <codeExplanation>no comment</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>234</numberOfRecords>
+    </dataTable>
+    <otherEntity>
+      <entityName>A figure of the soil partical size analysis (PSA) data contained in this package</entityName>
+      <entityDescription>A figure of the soil partical size analysis (PSA) data contained in this package</entityDescription>
+      <physical>
+        <objectName>Quadrats_PSA.jpg</objectName>
+        <size unit="bytes">1659791</size>
+        <authentication method="MD5">8a5a5f6baf87dd3f80d3dfdf568bf568</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>unknown</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351003/3/a000020b210dc4a12949deffab7a649a</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>unknown</entityType>
+    </otherEntity>
+    <otherEntity>
+      <entityName>A figure of the Sand Fractionation data contained in this package</entityName>
+      <entityDescription>A figure of the Sand Fractionation data contained in this package</entityDescription>
+      <physical>
+        <objectName>Quadrats_Sand_Fractionation.jpg</objectName>
+        <size unit="bytes">997838</size>
+        <authentication method="MD5">787249a99efabe5b7e5b400a564f1158</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>unknown</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210351003/3/1c506663df0045f2a852ca5a1434b1b4</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>unknown</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

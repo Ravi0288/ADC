@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "django_browser_reload",
+    'django_browser_reload',
     'rest_framework',
     'api',
 ]
@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "django_browser_reload.middleware.BrowserReloadMiddleware",
+    'django_browser_reload.middleware.BrowserReloadMiddleware',
 ]
 # ..................#############
 
@@ -181,6 +181,21 @@ MEDIA_ROOT = BASE_DIR / 'media_library'
 STAKEHOLDERS_ROOT = BASE_DIR / 'DOCUMENTS'
 ARTICLES = BASE_DIR / 'ARTICLES'
 LOGS = BASE_DIR / 'logs'
+
+ERS_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/ERS/log/stage')
+ERS_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/ERS/log/prod')
+
+FAS_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/FAS/log/stage')
+FAS_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/FAS/log/prod')
+
+FSA_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/FSA/log/stage')
+FSA_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/FSA/log/prod')
+
+FSLM_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/FSLM/log/stage')
+FSLM_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/FSLM/log/prod')
+
+NRCS_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/NRCS/log/stage')
+NRCS_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/NRCS/log/prod')
 
 LOGIN_REDIRECT_URL = '/'
 

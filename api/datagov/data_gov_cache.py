@@ -123,6 +123,7 @@ def read_json_and_write_in_file(request):
     # if bureauCode is not provided than assign the default bureauCode
     if not bureauCode:
         bureauCode = '005:13'
+        
     if bureauCode not in settings.DATA_GOV_MAPPING:
         return Response("Harvester for this agent is not implemented yet!")
     agency=settings.DATA_GOV_MAPPING[bureauCode]

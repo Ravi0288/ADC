@@ -24,14 +24,16 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 # ..................######
 INSTALLED_APPS = [
+    # 'admin_black.apps.AdminBlackConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "django_browser_reload",
     'rest_framework',
-    'api'
+    'api',
 ]
 # ..................#######
 
@@ -39,19 +41,21 @@ INSTALLED_APPS = [
 # ..................#############
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 # ..................#############
 
 
 # Root URL file path
 ROOT_URLCONF = 'configurations.urls'
-
+HOME_TEMPLATES = os.path.join(BASE_DIR, 'templates')
 
 
 # Template for serving the result
@@ -59,7 +63,7 @@ ROOT_URLCONF = 'configurations.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [BASE_DIR, HOME_TEMPLATES],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -161,13 +165,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_DIRS = [BASE_DIR / 'static',]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    ]
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media_library'
 STAKEHOLDERS_ROOT = BASE_DIR / 'DOCUMENTS'
 ARTICLES = BASE_DIR / 'ARTICLES'
 LOGS = BASE_DIR / 'logs'
+
+LOGIN_REDIRECT_URL = '/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

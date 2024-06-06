@@ -21,12 +21,12 @@ urlpatterns = [
     path('datagov/push-to-figshare/', push_to_figshare),
 
     # ui endpoints
-    path('reports', report_view_index, name='home'),
-    path('ers', ERS, name='ers'),
-    path('fsa', FSA, name='fsa'),
-    path('fas', FAS, name='fas'),
-    path('fslm', FSLM, name='fslm'),
-    path('nrcs', NRCS, name='nrcs'),
+    path('reports/', report_view_index, name='reports'),
+    path('ers/', ERS, name='ers'),
+    path('fsa/', FSA, name='fsa'),
+    path('fas/', FAS, name='fas'),
+    path('fslm/', FSLM, name='fslm'),
+    path('nrcs/', NRCS, name='nrcs'),
 
 ]
 

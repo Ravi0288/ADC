@@ -3,19 +3,20 @@ from django.http import HttpResponse
 import json
 from django.conf import settings
 import os
-
+from django.core.paginator import Paginator
 
 # Function to start UI to view reports
 def report_view_index(request):
     context = {
         'title' : 'Welcome',
-        'messages' : ['Click on buttons on right side of navigation bar to see the report']
+        'page_obj' : ['Click on buttons on right side of navigation bar to see the report']
     }
     return render(request, 'pages/dashboard.html', context=context)
 
 
 # UI for ERS report
 def ERS(request):
+    page = request.GET.get('page')
     # set path based on production or development environment
     if settings.DEBUG:
         ERS_REPORT_PATH = os.path.join(settings.ERS_LOGS_STAGE, 'metadata_report.txt')
@@ -27,10 +28,18 @@ def ERS(request):
         # read lines of the file
         lines = f.readlines()
 
+        # reverse the list
+        lines = lines[::-1]
+
+    # Pagination
+    paginator = Paginator(lines, 10)  # Show 10 items per page
+    page_number = request.GET.get('page')  # Get the current page number
+    page_obj = paginator.get_page(page_number)  # Get the page object for the current page
+
     # prepare the date to be rendered on HTML page
     context = {
         'title' : 'ERS',
-        'messages' : lines
+        'page_obj' : page_obj
     }
 
     # render the HTML page
@@ -46,11 +55,22 @@ def FAS(request):
 
     with open(FAS_REPORT_PATH, 'r') as f:
         lines = f.readlines()
+        lines = lines[::-1]
 
-    return render(request, 'pages/dashboard.html', context={
+
+    # Pagination
+    paginator = Paginator(lines, 10)  # Show 10 items per page
+    page_number = request.GET.get('page')  # Get the current page number
+    page_obj = paginator.get_page(page_number)  # Get the page object for the current page
+
+    # prepare the date to be rendered on HTML page
+    context = {
         'title' : 'FAS',
-        'messages' : lines
-    })
+        'page_obj' : page_obj
+    }
+
+    # render the HTML page
+    return render(request, 'pages/dashboard.html', context=context)
 
 
 # UI for FSA report
@@ -61,12 +81,23 @@ def FSA(request):
         FSA_REPORT_PATH = os.path.join(settings.FSA_LOGS_PROD, 'metadata_report.txt')
 
     with open(FSA_REPORT_PATH, 'r') as f:
-        lines = f.readlines()
+        lines = f.readlines()        
+        lines = lines[::-1]
 
-    return render(request, 'pages/dashboard.html', context={
+
+    # Pagination
+    paginator = Paginator(lines, 10)  # Show 10 items per page
+    page_number = request.GET.get('page')  # Get the current page number
+    page_obj = paginator.get_page(page_number)  # Get the page object for the current page
+
+    # prepare the date to be rendered on HTML page
+    context = {
         'title' : 'FSA',
-        'messages' : lines
-    })
+        'page_obj' : page_obj
+    }
+
+    # render the HTML page
+    return render(request, 'pages/dashboard.html', context=context)
 
 
 # UI for NRCS reports
@@ -78,11 +109,22 @@ def NRCS(request):
 
     with open(NRCS_REPORT_PATH, 'r') as f:
         lines = f.readlines()
+        lines = lines[::-1]
 
-    return render(request, 'pages/dashboard.html', context={
+
+    # Pagination
+    paginator = Paginator(lines, 10)  # Show 10 items per page
+    page_number = request.GET.get('page')  # Get the current page number
+    page_obj = paginator.get_page(page_number)  # Get the page object for the current page
+
+    # prepare the date to be rendered on HTML page
+    context = {
         'title' : 'NRCS',
-        'messages' : lines
-    })
+        'page_obj' : page_obj
+    }
+
+    # render the HTML page
+    return render(request, 'pages/dashboard.html', context=context)
 
 
 # UI for FSLM report
@@ -94,8 +136,19 @@ def FSLM(request):
 
     with open(FSLM_REPORT_PATH, 'r') as f:
         lines = f.readlines()
+        lines = lines[::-1]
 
-    return render(request, 'pages/dashboard.html', context={
+
+    # Pagination
+    paginator = Paginator(lines, 10)  # Show 10 items per page
+    page_number = request.GET.get('page')  # Get the current page number
+    page_obj = paginator.get_page(page_number)  # Get the page object for the current page
+
+    # prepare the date to be rendered on HTML page
+    context = {
         'title' : 'FSLM',
-        'messages' : lines
-    })
+        'page_obj' : page_obj
+    }
+
+    # render the HTML page
+    return render(request, 'pages/dashboard.html', context=context)

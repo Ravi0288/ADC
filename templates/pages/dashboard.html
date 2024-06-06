@@ -1,76 +1,113 @@
 <!doctype html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0 minimal-ui" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0 minimal-ui" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
 
-    {% load static %}
-    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
+        {% load static %}
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
 
-    <title> {{title}} </title>
+        <title> {{title}} </title>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    {% block head %}{% endblock %}
-</head>
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        {% block head %}{% endblock %}
+    </head>
 
-<body>
+    <body>
 
-    <div class="navbar navbar-light" style="background-color: rgb(223, 176, 243);">
+        <div class="navbar navbar-light" style="background-color: rgb(223, 176, 243);">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{% url 'reports' %}"> ADC REPORTS VIEW INTERFACE </a>
+                </div>
+                <div id="navbar-main" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'ers' %}">ERS</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'fas' %}">FAS</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'fsa' %}">FSA</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'fslm' %}">FS Land Management</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'nrcs' %}">NRCS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="reports"> ADC REPORTS VIEW INTERFACE </a>
+
+            <div id="banner" class="page-header">
+                <h1>{% block title %}{{ title }}{% endblock %}</h1>
             </div>
-            <div id="navbar-main" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="ers">ERS</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="fas">FAS</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="fsa">FSA</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="fslm">FS Land Management</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="nrcs">NRCS</a></li>
-                </ul>
+
+
+            {% if page_obj %}
+            <div class="messages">
+                {% for obj in page_obj %}
+                <div class="alert" style="padding: 0px;">
+                    <button type="button" class="close" data-dismiss="alert" style="color: red;">×</button>
+                    {{ obj }}
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="messages">
+                NO REPORT FOUND
+            </div>
+
+            {% endif %}
+
+            {% block content %}{% endblock %}
+
+        </div>
+
+        <div class="container">
+            <div class="navbar navbar-light">
+                <div class="navbar-header">
+                    {% if page_obj.paginator.num_pages %}
+                    <a class="navbar-brand disabled" href="#"> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </a>
+                    {% endif %}
+                    
+                </div>
+                <div id="navbar-main" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            {% if page_obj.has_previous %}
+                                <a href="?page=1">&laquo; first</a>
+                            {% endif %}
+                        </li>
+                        <li>
+                            {% if page_obj.has_previous %}
+                                <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                            {% endif %}
+                        </li>
+
+                        <li> 
+                            {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}">next</a>
+                            {% endif %}
+                        </li>
+
+                        <li> 
+                            {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-
-        <div id="banner" class="page-header">
-            <h1>{% block title %}{{ title }}{% endblock %}</h1>
-        </div>
-
-
-        {% if messages %}
-        <div class="messages">
-            {% for message in messages %}
-            <div class="alert" style="padding: 0px;">
-                <button type="button" class="close" data-dismiss="alert" style="color: red;">×</button>
-                {{ message }}
-            </div>
-            {% endfor %}
-        </div>
-        {% else %}
-        <div class="messages">
-            NO REPORT FOUND
-        </div>
-
-        {% endif %}
-
-        {% block content %}{% endblock %}
-    </div>
-</body>
-
+    </body>
 </html>

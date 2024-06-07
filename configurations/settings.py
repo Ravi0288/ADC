@@ -231,7 +231,7 @@ LOGGING = {
         'logfile': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': "ADC.log",
+            'filename': "logs/ADC.log",
             'maxBytes': 100000,
             'backupCount': 2,
             'formatter': 'verbose',

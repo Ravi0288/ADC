@@ -11,7 +11,7 @@ def report_view_index(request):
         'title' : 'Welcome',
         'page_obj' : ['Click on buttons on right side of navigation bar to see the report']
     }
-    return render(request, 'pages/dashboard.html', context=context)
+    return render(request, 'data_gov/dashboard.html', context=context)
 
 
 # UI for ERS report
@@ -43,7 +43,7 @@ def ERS(request):
     }
 
     # render the HTML page
-    return render(request, 'pages/dashboard.html', context=context)
+    return render(request, 'data_gov/dashboard.html', context=context)
 
 
 # UI view for FAS report
@@ -70,7 +70,7 @@ def FAS(request):
     }
 
     # render the HTML page
-    return render(request, 'pages/dashboard.html', context=context)
+    return render(request, 'data_gov/dashboard.html', context=context)
 
 
 # UI for FSA report
@@ -97,7 +97,7 @@ def FSA(request):
     }
 
     # render the HTML page
-    return render(request, 'pages/dashboard.html', context=context)
+    return render(request, 'data_gov/dashboard.html', context=context)
 
 
 # UI for NRCS reports
@@ -124,7 +124,7 @@ def NRCS(request):
     }
 
     # render the HTML page
-    return render(request, 'pages/dashboard.html', context=context)
+    return render(request, 'data_gov/dashboard.html', context=context)
 
 
 # UI for FSLM report
@@ -151,4 +151,4 @@ def FSLM(request):
     }
 
     # render the HTML page
-    return render(request, 'pages/dashboard.html', context=context)
+    return render(request, 'data_gov/dashboard.html', context=context)

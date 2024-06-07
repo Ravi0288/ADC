@@ -47,19 +47,22 @@
         </div>
 
         <div class="container">
-
-            <div id="banner" class="page-header">
-                <h1>{% block title %}{{ title }}{% endblock %}</h1>
-            </div>
-
-
+ 
             {% if page_obj %}
             <div class="messages">
                 {% for obj in page_obj %}
-                <div class="alert" style="padding: 0px;">
-                    <button type="button" class="close" data-dismiss="alert" style="color: red;">×</button>
-                    {{ obj }}
-                </div>
+                    {% if forloop.counter0|divisibleby:2 %}
+                        <div class="alert" style="background-color: rgb(184, 214, 241); margin: 0px;">
+                            <button type="button" class="close" data-dismiss="alert" style="color: red;">X</button>
+                            {{ obj }}
+                        </div>
+                    {% else %}
+                        <div class="alert" style="background-color: aliceblue; margin: 0px;">
+                            <button type="button" class="close" data-dismiss="alert" style="color: red;">X</button>
+                            {{ obj }}
+                        </div>
+                    {% endif %}
+
                 {% endfor %}
             </div>
             {% else %}
@@ -70,16 +73,15 @@
             {% endif %}
 
             {% block content %}{% endblock %}
-
         </div>
 
+        <hr/>
         <div class="container">
             <div class="navbar navbar-light">
                 <div class="navbar-header">
                     {% if page_obj.paginator.num_pages %}
                     <a class="navbar-brand disabled" href="#"> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </a>
                     {% endif %}
-                    
                 </div>
                 <div id="navbar-main" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -109,5 +111,7 @@
                 </div>
             </div>
         </div>
+        <hr/>
+        <hr/>
     </body>
 </html>

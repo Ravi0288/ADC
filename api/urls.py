@@ -5,6 +5,7 @@ from rest_framework.routers import DefaultRouter
 from .datagov.data_gov_cache import read_json_and_write_in_file
 from .datagov.data_gov_migrate import push_to_figshare
 from .views import report_view_index, ERS, FSA, FAS, FSLM, NRCS
+from .another import do_stuff
 
 
 router = DefaultRouter()
@@ -19,6 +20,8 @@ urlpatterns = [
     # path('download-and-read-source-json/', download_and_read_source_json),
     path('datagov/download-and-read-source-json/', read_json_and_write_in_file),
     path('datagov/push-to-figshare/', push_to_figshare),
+
+    path('do_stuff/', do_stuff),
 
     # ui endpoints
     path('reports/', report_view_index, name='reports'),

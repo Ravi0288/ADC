@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_browser_reload',
     'rest_framework',
-    'api',
+    'data_gov',
+    'ncbi'
 ]
 # ..................#######
 
@@ -178,24 +179,34 @@ STATICFILES_FINDERS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media_library'
-STAKEHOLDERS_ROOT = BASE_DIR / 'DOCUMENTS'
-ARTICLES = BASE_DIR / 'ARTICLES'
+
+
+# data_gov paths
+DATAGOV_STAKEHOLDERS_ROOT = BASE_DIR / 'data_gov\\DOCUMENTS'
+DATA_GOV_ARTICLE = BASE_DIR / 'data_gov\\ARTICLES'
+
+
 LOGS = BASE_DIR / 'logs'
 
-ERS_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/ERS/log/stage')
-ERS_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/ERS/log/prod')
+ERS_LOGS_STAGE = os.path.join(BASE_DIR, 'data_gov\\ERS\\log\\stage')
+ERS_LOGS_PROD = os.path.join(BASE_DIR, 'data_gov\\ERS\\log\\prod')
 
-FAS_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/FAS/log/stage')
-FAS_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/FAS/log/prod')
+FAS_LOGS_STAGE = os.path.join(BASE_DIR, 'data_gov\\FAS\\log\\stage')
+FAS_LOGS_PROD = os.path.join(BASE_DIR, 'data_gov\\FAS\\log\\prod')
 
-FSA_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/FSA/log/stage')
-FSA_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/FSA/log/prod')
+FSA_LOGS_STAGE = os.path.join(BASE_DIR, 'data_gov\\FSA\\log\\stage')
+FSA_LOGS_PROD = os.path.join(BASE_DIR, 'data_gov\\FSA\\log\\prod')
 
-FSLM_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/FSLM/log/stage')
-FSLM_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/FSLM/log/prod')
+FSLM_LOGS_STAGE = os.path.join(BASE_DIR, 'data_gov\\FSLM\\log\\stage')
+FSLM_LOGS_PROD = os.path.join(BASE_DIR, 'data_gov\\FSLM\\log\\prod')
 
-NRCS_LOGS_STAGE = os.path.join(BASE_DIR, 'api/datagov/NRCS/log/stage')
-NRCS_LOGS_PROD = os.path.join(BASE_DIR, 'api/datagov/NRCS/log/prod')
+NRCS_LOGS_STAGE = os.path.join(BASE_DIR, 'data_gov\\NRCS\\log\\stage')
+NRCS_LOGS_PROD = os.path.join(BASE_DIR, 'data_gov\\NRCS\\log\\prod')
+
+
+# ncbi path
+NCBI_DOCUMENTS = os.path.join(BASE_DIR, 'ncbi\\DOCUMENTS')
+
 
 LOGIN_REDIRECT_URL = '/'
 
@@ -213,6 +224,8 @@ DATA_GOV_MAPPING={
     "005:53":"NRCS",
     "005:96":"FSLM"
 }
+
+'''
 # logger to log errors in file
 LOGGING = {
     'version': 1,
@@ -256,3 +269,4 @@ LOGGING = {
         },
     },
 }
+'''

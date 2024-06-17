@@ -15,9 +15,35 @@ from webdriver_manager.firefox import GeckoDriverManager
 import signal
 import psutil
 
+import platform
+
+def kill_process(process_name):
+    """
+    Kills all instances of a given process by name.
+
+    :param process_name: The name of the process to kill (without the extension)
+    """
+    system = platform.system()
+    if system == 'Windows':
+        os.system(f"taskkill /f /im {process_name}.exe /T")
+    elif system in ('Linux', 'Darwin'):  # Darwin is macOS
+        os.system(f"pkill -f {process_name}")
+    else:
+        print(f"Unsupported OS: {system}")
+
+
+# # Extra step to kill any lingering Chrome processes
+# def kill_process(process_name):
+#     for proc in psutil.process_iter():
+#         try:
+#             if process_name.lower() in proc.name().lower():
+#                 proc.kill()
+#         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+#             pass
 
 # Function to set up Chrome WebDriver
 def setup_chrome_driver(download_dir):
+    # from selenium.webdriver.chrome.options import Options
     chrome_options = webdriver.ChromeOptions()
     prefs = {
         "download.default_directory": download_dir,
@@ -25,8 +51,14 @@ def setup_chrome_driver(download_dir):
         "download.directory_upgrade": True,
         "safebrowsing.enabled": True
     }
+    # Initialize Chrome options
+    # chrome_options = Options()
+    chrome_options.add_experimental_option("prefs", prefs)
+    chrome_options.add_argument("--disable-popup-blocking")
+
     chrome_options.add_experimental_option("prefs", prefs)
     return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+
 
 # Function to set up Firefox WebDriver
 def setup_firefox_driver(download_dir):
@@ -48,20 +80,17 @@ def download_xml_file(request):
     # Define the download directory
     download_dir = settings.NCBI_DOCUMENTS
     # Try to set up Chrome WebDriver, fallback to Firefox if Chrome setup fails
-    try:
-        driver = setup_chrome_driver(download_dir)
-    except WebDriverException:
-        driver = setup_firefox_driver(download_dir)
+    # try:
+    #     driver = setup_chrome_driver(download_dir)
+    # except WebDriverException:
+        # driver = setup_firefox_driver(download_dir)
 
-    print("#### 56")
+    driver = setup_chrome_driver(download_dir)
     pid = driver.service.process.pid
-    print("pid", pid)
 
     try:
         # Visit the specified URL
         driver.get('https://www.ncbi.nlm.nih.gov/bioproject?term=(USDA*%5BFunding%20Agency%5D%20OR%20NIFAX%5BFunding%20Agency%5D%20OR%20APHIS%5BFundin')
-
-        # driver.get("https://www.w3schools.com/")
 
         # Wait for the settings element to be clickable and click it
         wait = WebDriverWait(driver, 10)
@@ -90,34 +119,30 @@ def download_xml_file(request):
             setTimeout(() => { location.reload(); }, 1000);
         """)
 
+        wait = WebDriverWait(driver, 2)
         # # Click the 'Create File' button
         create_file_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit' and contains(text(), 'Create File')]")))
+
+        time.sleep(2)
         create_file_button.click()
 
-        # Add a delay to allow for the download to complete
+        wait = WebDriverWait(driver, 20)
+
+        # # Add a delay to allow for the download to complete
+        # wait = WebDriverWait(driver, 20)
         time.sleep(20)
 
-        # Extra step to kill any lingering Chrome processes
-        def kill_process(process_name):
-            for proc in psutil.process_iter():
-                try:
-                    if process_name.lower() in proc.name().lower():
-                        proc.kill()
-                except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
-                    pass
-
-        # Kill chromedriver and chrome processes
-        kill_process('chromedriver')
-        kill_process('chrome')
-
-        # Alternatively, for Windows
-        if os.name == 'nt':
-            os.system("taskkill /f /im chromedriver.exe /T")
-            os.system("taskkill /f /im chrome.exe /T")
     
     except Exception as e:
         print("exception occurred", e , "###################")
         p = psutil.Process(pid)
         p.terminate()  #or p.kill()
+
+
+    finally:
+        # finally kill the process
+        # kill_process('geckodriver')
+        kill_process('chromedriver')
+
 
     return Response("done")

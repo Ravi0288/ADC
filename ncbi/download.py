@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -10,6 +11,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from rest_framework.response import Response
 from django.conf import settings
 import platform
+import psutil
 
 def kill_process(process_name):
     """
@@ -26,7 +28,7 @@ def kill_process(process_name):
         print(f"Unsupported OS: {system}")
 
 
-@api_view(['GET'])
+
 def download_xml_file(request):
     # Define download directory
     download_dir = settings.NCBI_DOCUMENTS
@@ -44,6 +46,7 @@ def download_xml_file(request):
     
     # Initialize Chrome WebDriver
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+    # pid = driver.service.process.pid
     
     try:
         # Navigate to the URL
@@ -75,32 +78,19 @@ def download_xml_file(request):
         create_file_button.click()
 
         # Add a delay to allow for the download to complete
-        time.sleep(20)  # Adjust as per your requirement
-        print("stopping")
-        driver.service.stop()
-        try:
-            print("closing")
-            driver.close()
-        except Exception as e:
-            print("excception while closing", e)
-        print("quitting")
-        driver.quit()
+        time.sleep(30)  # Adjust as per your requirement
+        # driver.service._terminate_process()
         print("quitted in main")
+        # kill_process("chrome")
+        driver.close()
+        driver.quit()
 
     except Exception as e:
         print("entered in exception")
-        # print("stopping")
-        # driver.service.stop()
-        print("closing")
+        # kill_process("chrome")
         driver.close()
-        print("quitting")
         driver.quit()
-        print("quitted in exception")
-
         print(f"Exception occurred: {e}")
 
-    finally:
-        # Quit the driver
-        kill_process("chromedriver")
 
-    return Response("done")
+    return HttpResponse("done")

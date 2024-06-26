@@ -1,5 +1,4 @@
 from django.http import HttpResponse
-from rest_framework.decorators import api_view
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -8,10 +7,11 @@ import time
 import os
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from rest_framework.response import Response
 from django.conf import settings
 import platform
-import psutil
+import os
+import xml.etree.ElementTree as ET
+
 
 def kill_process(process_name):
     """
@@ -92,5 +92,78 @@ def download_xml_file(request):
         driver.quit()
         print(f"Exception occurred: {e}")
 
-
     return HttpResponse("done")
+
+
+# wrap the document in single root.
+def wrap_with_root_element(file_content):
+    return f"<root>{file_content}</root>"
+
+
+def extract_and_save_records(latest_file, output_dir, created=0, updated=0):
+    try:
+        with open(latest_file, 'r', encoding='utf-8') as file:  # Specify the encoding
+            file_content = file.read()
+
+    # downloaded file has some format related issues. Try a different encoding if utf-8 fails      
+    except UnicodeDecodeError:
+        with open(latest_file, 'r', encoding='latin-1') as file:
+            file_content = file.read()
+    
+    # The file has multiple records with no root, to process the file we need to wrap all the records under a single root
+    wrapped_content = wrap_with_root_element(file_content)
+    
+    # parse the xml file
+    try:
+        root = ET.fromstring(wrapped_content)
+    except ET.ParseError as e:
+        print(f"Error parsing XML: {e}")
+        return
+    
+    # read the xml file, find the records and save file
+    for doc_summary in root.findall('DocumentSummary'):
+        uid = doc_summary.get('uid')
+        archive_id_element = doc_summary.find('.//ArchiveID')
+        if archive_id_element is not None:
+            accession_number = archive_id_element.get('accession')
+            # Create a new XML element for the record
+            new_tree = ET.ElementTree(doc_summary)
+
+            file_name = os.path.join(output_dir, f"{accession_number}.xml")
+
+            # check if file already exist, than update
+            if os.path.isfile(file_name):
+                updated +=1
+                with open(file_name, 'wb') as f:
+                    new_tree.write(f, encoding='utf-8', xml_declaration=True)
+                    f.close()
+
+            # else Save the new XML element to a file named with the accession number
+            else:
+                created+=1
+                new_tree.write(file_name)
+    print(created, " file created and ", updated, "file updated")
+
+
+
+
+
+from rest_framework.decorators import api_view
+@api_view(['GET'])
+def seperate_record_by_assesion_number(request):
+    # Define directory / file path
+    base_dir = settings.NCBI_DOCUMENTS
+    file_path = os.path.join(base_dir, 'bioproject_result.xml')
+
+    if os.path.isfile(file_path):
+        # segregate the file content and save the content by accession number as new file
+        extract_and_save_records(file_path, base_dir)
+        # once file is processed remove the file
+        os.remove(file_path)
+        
+        return HttpResponse("all records seperated and saved as accession.xml sucessfully")
+    else:
+        return HttpResponse("No file found to procceed further. Exiting")
+
+
+

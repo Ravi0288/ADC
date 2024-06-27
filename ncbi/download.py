@@ -11,7 +11,9 @@ from django.conf import settings
 import platform
 import os
 import xml.etree.ElementTree as ET
-
+from rest_framework.decorators import api_view
+from xml.dom import minidom
+import glob
 
 def kill_process(process_name):
     """
@@ -95,75 +97,102 @@ def download_xml_file(request):
     return HttpResponse("done")
 
 
-# wrap the document in single root.
+
+# function to get latest file
+def get_latest_file(download_dir):
+    list_of_files = glob.glob(os.path.join(download_dir, '*'))
+    if not list_of_files:
+        return None
+    latest_file = max(list_of_files, key=os.path.getmtime)
+    return latest_file
+
+# function to add all the xml records under a single root
 def wrap_with_root_element(file_content):
     return f"<root>{file_content}</root>"
 
-
-def extract_and_save_records(latest_file, output_dir, created=0, updated=0):
+# function to read xml file
+def read_existing_file_content(file_path):
     try:
-        with open(latest_file, 'r', encoding='utf-8') as file:  # Specify the encoding
-            file_content = file.read()
+        with open(file_path, 'r', encoding='utf-8') as file:
+            return file.read()
+    except FileNotFoundError:
+        return None
 
-    # downloaded file has some format related issues. Try a different encoding if utf-8 fails      
+# function to normalize the xml content
+def normalize_xml_content(xml_string):
+    try:
+        root = ET.fromstring(xml_string)
+        rough_string = ET.tostring(root, encoding='utf-8', xml_declaration=True, method='xml')
+        reparsed = minidom.parseString(rough_string)
+        return reparsed.toprettyxml(indent="  ", encoding='utf-8').decode('utf-8').strip()
+    except ET.ParseError as e:
+        print(f"Error parsing XML for normalization: {e}")
+        return xml_string.strip()
+
+# function to extract the record and save assession wise
+def extract_and_save_records(latest_file, output_dir):
+    created, updated = 0, 0
+    try:
+        with open(latest_file, 'r', encoding='utf-8') as file:
+            file_content = file.read()
     except UnicodeDecodeError:
         with open(latest_file, 'r', encoding='latin-1') as file:
             file_content = file.read()
     
-    # The file has multiple records with no root, to process the file we need to wrap all the records under a single root
     wrapped_content = wrap_with_root_element(file_content)
     
-    # parse the xml file
     try:
         root = ET.fromstring(wrapped_content)
     except ET.ParseError as e:
         print(f"Error parsing XML: {e}")
         return
     
-    # read the xml file, find the records and save file
     for doc_summary in root.findall('DocumentSummary'):
-        uid = doc_summary.get('uid')
         archive_id_element = doc_summary.find('.//ArchiveID')
         if archive_id_element is not None:
             accession_number = archive_id_element.get('accession')
-            # Create a new XML element for the record
             new_tree = ET.ElementTree(doc_summary)
-
+            rough_string = ET.tostring(doc_summary, encoding='utf-8', xml_declaration=True)
+            reparsed = minidom.parseString(rough_string)
+            new_tree_str = reparsed.toprettyxml(indent="  ", encoding='utf-8').decode('utf-8').strip()
             file_name = os.path.join(output_dir, f"{accession_number}.xml")
 
-            # check if file already exist, than update
-            if os.path.isfile(file_name):
-                updated +=1
+            existing_content = read_existing_file_content(file_name)
+
+            if existing_content is None:
+                created += 1
                 with open(file_name, 'wb') as f:
                     new_tree.write(f, encoding='utf-8', xml_declaration=True)
-                    f.close()
-
-            # else Save the new XML element to a file named with the accession number
             else:
-                created+=1
-                new_tree.write(file_name)
-    print(created, " file created and ", updated, "file updated")
+                existing_content_normalized = normalize_xml_content(existing_content)
+                if existing_content_normalized == new_tree_str:
+                    print(f"No changes for {file_name}.")
+                    continue
+                else:
+                    updated += 1
+                    with open(file_name, 'wb') as f:
+                        new_tree.write(f, encoding='utf-8', xml_declaration=True)
+
+    print(f"{created} file(s) created and {updated} file(s) updated")
 
 
-
-
-
-from rest_framework.decorators import api_view
+# this is the main function
 @api_view(['GET'])
 def seperate_record_by_assesion_number(request):
-    # Define directory / file path
     base_dir = settings.NCBI_DOCUMENTS
     file_path = os.path.join(base_dir, 'bioproject_result.xml')
 
+    # if the file exists process it
     if os.path.isfile(file_path):
-        # segregate the file content and save the content by accession number as new file
         extract_and_save_records(file_path, base_dir)
-        # once file is processed remove the file
-        os.remove(file_path)
         
-        return HttpResponse("all records seperated and saved as accession.xml sucessfully")
+        # delete the file once processed
+        try:
+            os.remove(file_path)
+        except:
+            pass
+
+        return HttpResponse("All records separated and saved as accession.xml successfully")
     else:
-        return HttpResponse("No file found to procceed further. Exiting")
-
-
+        return HttpResponse("No file found to proceed further. Exiting")
 

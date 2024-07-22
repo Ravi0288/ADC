@@ -1,0 +1,291 @@
+'''
+########################################## INTRODUCTION TO THE PAGE ############################################
+This page has three models, related serializers and views.
+1 Sync_from_source : This model will store the history each time the source.json will be accssed.
+
+2 URL_to_be_accessed : Each time the source.json will be downloaded, the file is read and queried for concerned bureau_code,
+    and finally these json record is saved in this model.
+
+3 Download_history : This model is maintained for the logging purpose only. Each time url's from the URL_to_be_accessed will be
+ accessed to downlod file, last accessed date_time and status is updated in URL_to_be_accessed model itself, in Download_history a new 
+ entry of the last accessed status and dateitme will be made.
+
+
+ sequence of actions:
+    download the source.json => store, read and find all the records related to bureau_code => make entry of these records to URL_to_accessed model
+    => (research_documents.py) accesse these URL's to downloaded the files, store these files in local storage and make entry in 
+        download_research_documents models.
+
+    (i) localhost:8000/api/download-and-read-source-json/?bureau_code='5.3.5' => download the source.json file, read it, query the concerned bureau code records, and make 
+    entry of all the URLS that has bureau_code='as provided' in URL_to_be_accessed.
+
+    (ii) localhost:8000/api/source-json => View source_json access history and stored files.
+
+    (iii) localhost:8000/api/url-to-be-accessed => all the links can be accessed from this link.
+        localhost:8000/api/url-to-be-accessed/?bureau_code='5.3.5' => provide bureau_code to see links related to bureau_code.
+
+    (iv) localhost:8000/api/downloaded-history => See history of urls accessed to download the research documents
+    
+
+'''
+
+
+
+from django.db import models
+from django.core.files.storage import FileSystemStorage
+import os
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.serializers import ModelSerializer
+from datetime import datetime
+
+import json
+from rest_framework.decorators import api_view
+from django.conf import settings
+import requests
+from rest_framework.response import Response
+from django.core.files.base import ContentFile
+import urllib.parse
+from django.dispatch import receiver
+from django.db.models.signals import post_save
+from .research_document import Download_From_List_Of_Websites_Directly
+
+
+'''
+Class to remove the existing file.
+This class will ensure to overwrite the existing file in case of same file is update in any recor
+'''
+class Over_write_storage(FileSystemStorage):
+    def get_replace_or_create_file(self, name, max_length=None):
+        if self.exists(name):
+            os.remove(os.path.join(self.location, name))
+            return super(Over_write_storage, self).get_replace_or_create_file(name, max_length)
+
+
+
+'''
+    Function to return the storage file path as string.
+    This function will return file path as article_library/Current_year/Current_month/day/file_name_with_extension
+    Any downloaded file will be stored at this path.
+'''     
+def get_file_path(instance, filename):
+    return '{0}/{1}/{2}/{3}'.format(
+        datetime.today().year, 
+        datetime.today().month,
+        datetime.today().day, 
+        filename
+        )
+
+
+# Model to record logs of downloaded files/folders from FTP/SFTP's
+class Sync_from_source(models.Model):
+    source = models.URLField()
+    source_name = models.CharField(max_length=30)
+    file_content = models.FileField(upload_to=get_file_path, blank=True, null=True, storage=Over_write_storage)
+    file_name = models.CharField(max_length=500)
+    file_size = models.BigIntegerField(default=0)
+    file_type = models.CharField(max_length=20)
+    received_on = models.DateTimeField(auto_now_add=True)
+    processed_on = models.DateTimeField(null=True)
+    status = models.CharField(max_length=12)
+
+    def __str__(self) -> str:
+        return self.source
+    
+
+# serializer for SyncFromSource model
+class Sync_from_source_serializers(ModelSerializer):
+    class Meta:
+        model = Sync_from_source
+        fields = '__all__'
+
+
+# views for SyncFromSource
+class SyncFromSourceView(ModelViewSet):
+    queryset = Sync_from_source.objects.all()
+    serializer_class = Sync_from_source_serializers
+
+
+#  model to list all the urls to be accessed 
+class URL_to_be_accessed(models.Model):
+    download_URL = models.URLField()
+    resource = models.IntegerField(null=True)
+    bureau_code = models.CharField(max_length=10)
+    modified_on = models.DateField(null=True)
+    identifier = models.TextField(null=True)
+    access_level = models.TextField(null=True)
+    program_code = models.TextField(null=True)
+    description = models.TextField(null=True)
+    title = models.TextField(null=True)
+    media_type = models.TextField(null=True)
+    distribution_type = models.TextField(null=True)
+    distribution_title = models.TextField(null=True)
+    publisher_name = models.TextField(null=True)
+    publisher_type = models.TextField(null=True)
+    contact_point_email = models.TextField(null=True)
+    contact_point_type = models.TextField(null=True)
+    contact_point_fn = models.TextField(null=True)
+    license = models.TextField(null=True)
+
+    added_on = models.DateTimeField(auto_now_add=True)
+
+    last_accessed_status = models.CharField(max_length=10, default='initial')
+    last_accessed_at = models.DateTimeField(auto_now=True)
+    last_error_message = models.TextField(default='N/A')
+    next_due_date = models.DateTimeField(null=True)
+
+    def __str__(self):
+        return self.download_URL
+
+
+# model to keep download history
+class Download_history(models.Model):
+    url = models.ForeignKey(URL_to_be_accessed, on_delete=models.CASCADE)
+    status = models.CharField(max_length=12)
+    error_message = models.TextField(default="N/A")
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+
+class URL_to_be_accessed_serializer(ModelSerializer):
+    class Meta:
+        model = URL_to_be_accessed
+        fields = '__all__'
+
+
+class Download_history_serializer(ModelSerializer):
+    class Meta:
+        model = Download_history
+        fields = '__all__'
+
+
+class URL_to_be_accessed_view(ModelViewSet):
+    queryset = URL_to_be_accessed.objects.all()
+    serializer_class = URL_to_be_accessed_serializer
+
+
+class Download_history_view(ModelViewSet):
+    queryset = Download_history.objects.all()
+    serializer_class = Download_history_serializer
+
+
+''''''
+# this function will make entry to URL_to_be_accessed against each record from the downloaded json file
+def make_entry_of_urls(response, resource_instance, bureau_code):
+    json_data_1 = json.loads(response._content.decode('utf-8'))
+    data = json_data_1["dataset"]
+    result = []
+    for item in data:
+        obj = URL_to_be_accessed()
+        obj.identifier = item.get("identifier", None)
+        obj.access_level = item.get("accessLevel", None)
+        obj.description = item.get("description", None)
+        obj.publisher_type = item["publisher"].get('@type', None)
+        obj.publisher_name = item["publisher"].get('name', None)
+
+        obj.contact_point_email = (item["contactPoint"].get('hasEmail', None)).split(':')[1]
+        obj.contact_point_type = item["contactPoint"].get('@type', None)
+        obj.contact_point_fn = item["contactPoint"].get('fn', None)
+        obj.modified_on = item["modified"]	
+        obj.license = item.get("license", None)			
+        obj.resource = resource_instance.id
+
+        for codes in item['bureauCode']:
+            if codes == bureau_code:
+                obj.bureau_code = bureau_code
+                for distribution in item['distribution']:
+                    try:
+                        obj.distribution_title = distribution.get("title", None)
+                        obj.distribution_type = distribution.get("@type", None)
+                        obj.media_type = distribution.get("mediaType", None)
+                        obj.download_URL = distribution["downloadURL"]
+                        if not (
+                            URL_to_be_accessed.objects.filter(
+                                download_URL=distribution["downloadURL"], 
+                                modified_on=item["modified"]
+                                ).exists()
+                            ):
+                            result.append(obj)
+                    except:
+                        pass
+
+    try:
+        # URL_to_be_accessed.objects.bulk_create(result)
+        Download_From_List_Of_Websites_Directly(result)
+    except Exception as e:
+        resource_instance.status="failed"
+        resource_instance.save()
+        print(e)
+        return Response("failed")
+
+
+
+
+# this function will downlod source json and will save the file to local storge
+# once saved this will iterate through the content and list all the required url and will internally call the make_entry_of_urls function
+@api_view(['GET'])
+def download_and_read_source_json(request):
+    # if bureau_code received as query parameter assign to variables for further query else assign default bureau_code
+    if request.GET.get("bureau_code", None):
+        bureau_code = request.GET.get("bureau_code")
+    else:
+        # bureau_code = "005:12"
+        raise KeyError("Provide bureau_code. For example : " + str(request.build_absolute_uri()) + '?bureau_code=xxxxxx')
+
+    # accesse the source file 
+    response = requests.get(settings.JSON_SOURCE, verify=False)
+    if response.status_code == 200:
+
+        # Retrieve file name and file size from response headers
+        content_disposition = response.headers.get('content-disposition')
+        if content_disposition:
+            file_name = content_disposition.split('filename=')[1]
+        else:
+            file_name =  (response.url).split('/')[-1]  # Use URL as filename if content-disposition is not provided
+
+        # decode the url to get the exact file name
+        file_name = urllib.parse.unquote(file_name)
+        file_size = int(response.headers.get('content-length', 0))
+        file_type = os.path.splitext(file_name)[1]
+
+        resource_instance = Sync_from_source.objects.create(
+            file_name = file_name,
+            source = settings.JSON_SOURCE,
+            processed_on = datetime.today(),
+            status = 'success',
+            file_size = file_size,
+            file_type = file_type
+        )
+        # save file
+        resource_instance.file_content.save(file_name, ContentFile(response.content))
+        '''
+        refer this function. This function will read the downloaded file, 
+        query the bureau code and make the entry in the URL_to_be_accessed table
+        '''
+        res = make_entry_of_urls(response, resource_instance, bureau_code)
+        if res:
+            return Response("success")
+
+    else:
+        Sync_from_source.objects.create(
+        file_name = '',
+        source = settings.JSON_SOURCE,
+        processed_on = datetime.today(),
+        status = 'failed',
+        file_size = 0,
+        file_type = 'none'
+        )
+
+    return Response("failed")
+
+
+# Triggers to update history. This function to be called automatically to update history of each accesss to API's
+@receiver(post_save, sender=URL_to_be_accessed)
+def update_history(sender, instance, created, **kwargs):
+    # if record is updated
+    if not created:
+        # create fetch_history for log purposes
+        Download_history.objects.create(
+            url = instance,
+            status = instance.last_accessed_status,
+            error_message = instance.last_error_message
+        )
+        return True

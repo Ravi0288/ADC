@@ -1,0 +1,76 @@
+{
+    "title": "Ovis aries rumen metagenome",
+    "description": "Metagenomic survey sequencing of O. aries rumen microflora",
+    "authors": [
+        {
+            "name": "University of Missouri"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2013-08-05",
+        "postedDate": "2013-08-05",
+        "revision": "2013-08-05"
+    },
+    "tags": [
+        "gut metagenome",
+        "eOther",
+        "metagenome"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2013-08-05"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA214227"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "metagenomics;sequence analysis"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "U.S. Department of Agriculture, NRI-2011-68006-30185"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/214227",
+            "title": "Ovis aries rumen metagenome",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

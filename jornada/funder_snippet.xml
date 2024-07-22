@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<gmd:descriptiveKeywords xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml"
+    xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+    xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <gmd:MD_Keywords>
+        <gmd:keyword>
+            <gco:CharacterString></gco:CharacterString>
+        </gmd:keyword>
+        <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+        </gmd:type>
+        <gmd:thesaurusName>
+            <gmd:CI_Citation>
+                <gmd:title>
+                    <gco:CharacterString>Crossref Funding</gco:CharacterString>
+                </gmd:title>
+                <gmd:alternateTitle>
+                    <gco:CharacterString>Crossref Open Funder Registry</gco:CharacterString>
+                </gmd:alternateTitle>
+                <gmd:date>
+                    <gmd:CI_Date>
+                        <gmd:date>
+                            <gco:Date>2016-08-11</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                            <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+                        </gmd:dateType>
+                    </gmd:CI_Date>
+                </gmd:date>
+                <gmd:edition>
+                    <gco:CharacterString>1.2</gco:CharacterString>
+                </gmd:edition>
+                <gmd:citedResponsibleParty>
+                    <gmd:CI_ResponsibleParty uuid="814c1d4e-330a-4755-9f61-45cc24af2a8c">
+                        <gmd:organisationName>
+                            <gco:CharacterString>crossref.org</gco:CharacterString>
+                        </gmd:organisationName>
+                        <gmd:contactInfo>
+                            <gmd:CI_Contact>
+                                <gmd:onlineResource>
+                                    <gmd:CI_OnlineResource>
+                                        <gmd:linkage>
+                                            <gmd:URL>https://www.crossref.org/services/funder-registry/</gmd:URL>
+                                        </gmd:linkage>
+                                        <gmd:protocol>
+                                            <gco:CharacterString>HTTP</gco:CharacterString>
+                                        </gmd:protocol>
+                                        <gmd:applicationProfile>
+                                            <gco:CharacterString>Web Browser</gco:CharacterString>
+                                        </gmd:applicationProfile>
+                                        <gmd:name>
+                                            <gco:CharacterString>Open Funder Registry</gco:CharacterString>
+                                        </gmd:name>
+                                        <gmd:description>
+                                            <gco:CharacterString>Funding data provides a standard way to report funding sources for published scholarly research. Publishers deposit funding information from articles and other content using a standard taxonomy of funder names.</gco:CharacterString>
+                                        </gmd:description>
+                                        <gmd:function>
+                                            <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>
+                                        </gmd:function>
+                                    </gmd:CI_OnlineResource>
+                                </gmd:onlineResource>
+                            </gmd:CI_Contact>
+                        </gmd:contactInfo>
+                        <gmd:role>
+                            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider">Resource Provider</gmd:CI_RoleCode>
+                        </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                </gmd:citedResponsibleParty>
+                <gmd:otherCitationDetails>
+                    <gco:CharacterString>A common taxonomy of over 11,000 funding body names that funding data initiative participants should use to normalize Funder Names and IDs.</gco:CharacterString>
+                </gmd:otherCitationDetails>
+            </gmd:CI_Citation>
+        </gmd:thesaurusName>
+    </gmd:MD_Keywords>
+</gmd:descriptiveKeywords>

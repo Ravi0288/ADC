@@ -1,0 +1,79 @@
+{
+    "title": "Genome sequencing and assembly of an early wheat blast strain T3",
+    "description": "The project is to sequence and assemble the genomes of blast fungal strains from diverse plant hosts for investigating genome divergence and its implications for pathogenicity and host jumping.",
+    "authors": [
+        {
+            "name": "Kansas State University"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2023-08-14",
+        "postedDate": "2023-08-14",
+        "revision": "2023-08-05"
+    },
+    "tags": [
+        "Pyricularia oryzae",
+        "eEukaryotes",
+        "genome sequencing and assembly"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2023-08-13"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA1002604"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "genomics;sequence analysis;genome assembly"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "National Science Foundation, 2011500"
+        },
+        {
+            "title": "U.S. Department of Agriculture, 2021-67013-35724"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/1002604",
+            "title": "Genome sequencing and assembly of an early wheat blast strain T3",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

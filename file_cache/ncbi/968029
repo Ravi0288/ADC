@@ -1,0 +1,43 @@
+<DocumentSummary uid="968029">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA968029" archive="NCBI" id="968029"/>
+            <LocalID>bp0</LocalID>
+            <LocalID>bp0</LocalID>
+        </ProjectID>
+        <ProjectDescr>
+            <Title>Analysis of Oomycetal Communities in Apple Replant Disease in Nova Scotia</Title>
+            <Description>Analysis of Oomycetal Communities in Apple Replant Disease in Nova Scotia</Description>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMultispecies"/>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eRawSequenceReads"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>raw sequence reads</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>raw sequence reads</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2023-05-06" submission_id="SUB13294553" submitted="2023-05-06">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>USDA ARS</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB13294553-bp0"/>
+    </Submission>
+</DocumentSummary>
+

@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0 minimal-ui" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        {% load static %}
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
+
+        <title> {{title}} </title>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        {% block head %}{% endblock %}
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-light" style="background-color: rgb(223, 176, 243);">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{% url 'reports' %}"> ADC REPORTS VIEW INTERFACE </a>
+                </div>
+                <div id="navbar-main" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'ers' %}">ERS</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'fas' %}">FAS</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'fsa' %}">FSA</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'fslm' %}">FS Land Management</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'nrcs' %}">NRCS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+ 
+            {% if page_obj %}
+            <div class="messages">
+                {% for obj in page_obj %}
+                    {% if forloop.counter0|divisibleby:2 %}
+                        <div class="alert" style="background-color: rgb(184, 214, 241); margin: 0px;">
+                            <button type="button" class="close" data-dismiss="alert" style="color: red;">X</button>
+                            {{ obj }}
+                        </div>
+                    {% else %}
+                        <div class="alert" style="background-color: aliceblue; margin: 0px;">
+                            <button type="button" class="close" data-dismiss="alert" style="color: red;">X</button>
+                            {{ obj }}
+                        </div>
+                    {% endif %}
+
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="messages">
+                NO REPORT FOUND
+            </div>
+
+            {% endif %}
+
+            {% block content %}{% endblock %}
+        </div>
+
+        <hr/>
+        <div class="container">
+            <div class="navbar navbar-light">
+                <div class="navbar-header">
+                    {% if page_obj.paginator.num_pages %}
+                    <a class="navbar-brand disabled" href="#"> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </a>
+                    {% endif %}
+                </div>
+                <div id="navbar-main" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            {% if page_obj.has_previous %}
+                                <a href="?page=1">&laquo; first</a>
+                            {% endif %}
+                        </li>
+                        <li>
+                            {% if page_obj.has_previous %}
+                                <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                            {% endif %}
+                        </li>
+
+                        <li> 
+                            {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}">next</a>
+                            {% endif %}
+                        </li>
+
+                        <li> 
+                            {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <hr/>
+    </body>
+</html>

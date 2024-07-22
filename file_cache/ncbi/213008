@@ -1,0 +1,52 @@
+<DocumentSummary uid="213008">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA213008" archive="NCBI" id="213008"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Acyrthosiphon pisum strain:LSR1</Name>
+            <Title>Acyrthosiphon pisum strain:LSR1 Transcriptome or Gene expression</Title>
+            <Description>To further understand the metabolic interaction between aphids and their obligate nutritional symbionts. In this study aphids fed on different host plants that vary in essential amino acid concentrations.</Description>
+            <Grant GrantId="2011-67012-30707">
+                <Title>Fusion of amino acid metabolisms between pest aphid species and their obligate bacterial endosymbionts</Title>
+                <Agency abbr="USDA">United States Department of Agriculture</Agency>
+            </Grant>
+            <Relevance>
+                <Evolution>yes</Evolution>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eTranscriptome" sample_scope="eMultiisolate">
+                    <Organism species="7029" taxID="7029">
+                        <OrganismName>Acyrthosiphon pisum</OrganismName>
+                        <Strain>LSR1</Strain>
+                        <Supergroup>eEukaryotes</Supergroup>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eRawSequenceReads"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-07-22" submission_id="SUB300321" submitted="2013-07-22">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>University of Illinois, Champaign-Urbana</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB300321-1"/>
+    </Submission>
+</DocumentSummary>
+

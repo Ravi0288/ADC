@@ -1,0 +1,91 @@
+<DocumentSummary uid="202304">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA202304" archive="NCBI" id="202304"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Avena sativa strain:Ogle</Name>
+            <Title>Avena sativa Transcriptome Analysis and Annotation</Title>
+            <Description>Comprehensive seed transcriptome analysis of oat, a major hexaploid crop. Derived from a single plant reselection with several rounds of selfing from the cultivar 'Ogle'.</Description>
+            <Grant GrantId="CRIS 3640-21000-025-00D">
+                <Title>GENOMICS, GERMPLASM EVALUATION, AND GENETIC IMPROVEMENT OF OATS</Title>
+                <Agency abbr="USDA-ARS">United States Department of Agriculture</Agency>
+            </Grant>
+            <Publication date="2013-07-11T00:00:00Z" id="23845136">
+                <Reference/>
+                <StructuredCitation>
+                    <Title>Analysis and annotation of the hexaploid oat seed transcriptome.</Title>
+                    <Journal>
+                        <JournalTitle>BMC genomics</JournalTitle>
+                        <Year>2013</Year>
+                        <Volume>14</Volume>
+                        <PagesFrom>471</PagesFrom>
+                    </Journal>
+                    <AuthorSet>
+                        <Author>
+                            <Name>
+                                <First>Juan J</First>
+                                <Last>Gutierrez-Gonzalez</Last>
+                            </Name>
+                            <Consortium>USDA-ARS Plant Science Research Unit and Department of Agronomy and Plant Genetics, University of Minnesota, St Paul, MN 55108, USA.</Consortium>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>Zheng Jin</First>
+                                <Last>Tu</Last>
+                            </Name>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>David F</First>
+                                <Last>Garvin</Last>
+                            </Name>
+                        </Author>
+                    </AuthorSet>
+                </StructuredCitation>
+                <DbType>ePubmed</DbType>
+            </Publication>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+            <LocusTagPrefix biosample_id="SAMN02142117">AJG73</LocusTagPrefix>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eTranscriptome" sample_scope="eMonoisolate">
+                    <Organism species="4498" taxID="4498">
+                        <OrganismName>Avena sativa</OrganismName>
+                        <Label>C</Label>
+                        <Strain>Ogle</Strain>
+                        <Supergroup>eEukaryotes</Supergroup>
+                        <Organization>eMulticellular</Organization>
+                        <Reproduction>eSexual</Reproduction>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eAnalysis"/>
+                    <Data data_type="eAssembly"/>
+                    <Data data_type="eAnnotation"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>Transcriptome or Gene expression</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-05-09" submitted="2013-05-09" submission_id="SUB194371">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>USDA-ARS</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB194371-1"/>
+    </Submission>
+</DocumentSummary>

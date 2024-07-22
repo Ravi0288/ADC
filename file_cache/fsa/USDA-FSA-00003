@@ -1,0 +1,42 @@
+{
+    "identifier": "USDA-FSA-00003",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:askfsa@usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Website Administrator"
+    },
+    "programCode": [
+        "005:012"
+    ],
+    "description": "\"The Farm Service Agency (FSA) offers farm operating loans to farmers who are temporarily unable to obtain private, commercial credit at reasonable rates and terms. Operating loans are used to purchase items such as livestock and feed, machinery and equipment, fuel, farm chemicals, and insurance; pay family living expenses and general farm operating expenses; and make minor improvements or repairs to buildings and fencing.\r\n\r\nBoth guaranteed loans and direct loans are available through this program. FSA guaranteed loans provide lenders (e.g., banks, Farm Credit System institutions, credit unions) with a guarantee of up to 95 percent of the loss of principal and interest on a loan. The maximum FSA guaranteed operating loan is $1,302,000 (adjusted annually based on inflation).\r\n\r\nApplicants unable to qualify for a guaranteed loan may be eligible for a direct loan from FSA. Direct loans are made and serviced by FSA officials, who also provide borrowers with supervision and credit counseling. The maximum amount for a direct farm operating loan is $300,000.\r\n\r\nFSA also provides Microloans, which are direct operating loans designed to meet the unique financial operating needs of many socially disadvantaged and beginning farmers, niche farm operations, the smallest of family farm operations, and those serving local and regional food markets, including urban farmers. The maximum loan amount for a Microloan is $35,000.\r\n\r\nThe repayment terms vary according to the type of loan made, collateral securing the loan, and the applicant's ability to repay. Term operating loans are normally repaid within 7 years and annual operating loans are generally repaid within 12 months or when the commodities produced are sold.\"",
+    "title": "Farm Operating Loans (Direct and Guaranteed)",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/www.fsa.usda.gov\/programs-and-services\/farm-loan-programs\/farm-operating-loans\/index",
+            "mediaType": "text\/html",
+            "title": "Farm Operating Loans (Direct and Guaranteed)"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:49"
+    ],
+    "modified": "2014-04-25",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Farm Service Agency, Department of Agriculture"
+    },
+    "keyword": [
+        "Disaster Relief",
+        "agriculture",
+        "disaster assistance",
+        "loans"
+    ],
+    "author": "USDA Farm Service Agency",
+    "fundref": "Farm Service Agency",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

@@ -1,0 +1,77 @@
+{
+    "title": "Schizaphis graminum strain:Biotype H Transcriptome or Gene expression",
+    "description": "Combined head\/gut transcriptome of Schizaphis graminum biotype H.",
+    "authors": [
+        {
+            "name": "USDA ARS"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2013-07-24",
+        "postedDate": "2013-07-24",
+        "revision": "2013-07-24"
+    },
+    "tags": [
+        "Schizaphis graminum",
+        "Biotype H",
+        "eEukaryotes",
+        "transcriptome"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2013-07-24"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA213167"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "transcriptome;gene expression"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "National Science Foundation, 1109989"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/213167",
+            "title": "Schizaphis graminum strain:Biotype H Transcriptome or Gene expression",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

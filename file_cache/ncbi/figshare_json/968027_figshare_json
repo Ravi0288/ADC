@@ -1,0 +1,70 @@
+{
+    "title": "Analysis of Fungal Communities in Apple Replant Disease in Nova Scotia",
+    "description": "Analysis of Fungal Communities in Apple Replant Disease in Nova Scotia",
+    "authors": [
+        {
+            "name": "USDA ARS"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2023-05-06",
+        "postedDate": "2023-05-06",
+        "revision": "2023-05-06"
+    },
+    "tags": [
+        "raw sequence reads"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2023-05-06"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA968027"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "sequence analysis"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/968027",
+            "title": "Analysis of Fungal Communities in Apple Replant Disease in Nova Scotia",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+<DocumentSummary uid="971242">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA971242" archive="NCBI" id="971242"/>
+            <LocalID>bp0</LocalID>
+            <LocalID>bp0</LocalID>
+        </ProjectID>
+        <ProjectDescr>
+            <Title>Cacao pod response to Phytophthora palmivora inoculation</Title>
+            <Description>The oomycete Phytophthora palmivora infects the fruit of cacao trees (Theobroma cacao) causing black pod rot and reducing yields. Cacao genotypes vary in their resistance levels to P. palmivora, yet our understanding of how cacao fruit respond to the pathogen at the molecular level during disease establishment is limited. To address this issue, a disease development and RNA-Seq study was conducted on pods of seven cacao genotypes to better understand their reactions to the post-penetration stage of P. palmivora infection.</Description>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMultispecies"/>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eRawSequenceReads"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>raw sequence reads</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>raw sequence reads</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2023-05-10" submission_id="SUB13256442" submitted="2023-05-10">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>USDA ARS</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB13256442-bp0"/>
+    </Submission>
+</DocumentSummary>
+

@@ -1,0 +1,86 @@
+{
+    "title": "Aureobasidium pullulans strain:NRRL 62042 Genome sequencing",
+    "description": "Aureobasidium pullulans NRRL62042 genome sequencing and assembly",
+    "authors": [
+        {
+            "name": "RWTH Aachen University"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2023-05-16",
+        "postedDate": "2023-05-16",
+        "revision": "2023-05-16"
+    },
+    "tags": [
+        "Aureobasidium pullulans",
+        "NRRL 62042",
+        "eEukaryotes",
+        "genome sequencing"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2023-05-16"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA972899"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "genomics;sequence analysis;genome"
+        },
+        {
+            "name": "Ag Data Commons Group",
+            "value": [
+                "ARS Culture Collection"
+            ]
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "Fachagentur Nachwachsende Rohstoffe, 2220NR262X"
+        },
+        {
+            "title": "Ministerium f\u00fcr Kultur und Wissenschaft des Landes Nordrhein-Westfalen, 313\/323\u2010400\u201000213"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/972899",
+            "title": "Aureobasidium pullulans strain:NRRL 62042 Genome sequencing",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

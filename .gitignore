@@ -1,0 +1,8 @@
+__pycache__
+.dist
+.env
+env
+stakes
+documents
+logs
+ADC.log

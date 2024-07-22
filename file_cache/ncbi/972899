@@ -1,0 +1,57 @@
+<DocumentSummary uid="972899">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA972899" archive="NCBI" id="972899"/>
+            <LocalID>bp0</LocalID>
+            <LocalID>bp0</LocalID>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Aureobasidium pullulans strain:NRRL 62042</Name>
+            <Title>Aureobasidium pullulans strain:NRRL 62042 Genome sequencing</Title>
+            <Description>Aureobasidium pullulans NRRL62042 genome sequencing and assembly</Description>
+            <Grant GrantId="2220NR262X">
+                <Title>ViRIDi Aurum</Title>
+                <Agency abbr="FNR">Fachagentur Nachwachsende Rohstoffe</Agency>
+            </Grant>
+            <Grant GrantId="313/323‐400‐00213">
+                <Title>SurfIn (part of Bioeconomy Science Center)</Title>
+                <Agency abbr="MKW NRW">Ministerium für Kultur und Wissenschaft des Landes Nordrhein-Westfalen</Agency>
+            </Grant>
+            <LocusTagPrefix biosample_id="SAMN35102111">QM012</LocusTagPrefix>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMonoisolate">
+                    <Organism species="5580" taxID="5580">
+                        <OrganismName>Aureobasidium pullulans</OrganismName>
+                        <Label>RSU21</Label>
+                        <Strain>NRRL 62042</Strain>
+                        <Supergroup>eEukaryotes</Supergroup>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eSequence"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>genome sequencing</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>genome sequencing</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2023-05-16" submission_id="SUB13327642" submitted="2023-05-16">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>RWTH Aachen University</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB13327642-bp0"/>
+    </Submission>
+</DocumentSummary>
+

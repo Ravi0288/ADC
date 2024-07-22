@@ -1,0 +1,78 @@
+{
+    "title": "Monascus purpureus NRRL 1596 Genome sequencing",
+    "description": "Sequencing of 1000 fungal genomes to serve as the foundation for a reference database for studies of fungal metagenomics and the fungal metabolome. Selection of target taxa will aim to sample all orders and families of fungi, as well as major ecologies and morphologies, in order to well represent phylogenetic, ecological and functional fungal diversity.",
+    "authors": [
+        {
+            "name": "DOE Joint Genome Institute"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2013-05-21",
+        "postedDate": "2013-05-21",
+        "revision": "2013-05-21"
+    },
+    "tags": [
+        "Monascus purpureus NRRL 1596",
+        "NRRL 1596",
+        "eEukaryotes"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2013-05-21"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA204098"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "genomics;sequence analysis;genome"
+        },
+        {
+            "name": "Ag Data Commons Group",
+            "value": [
+                "ARS Culture Collection"
+            ]
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/204098",
+            "title": "Monascus purpureus NRRL 1596 Genome sequencing",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

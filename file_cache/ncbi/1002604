@@ -1,0 +1,59 @@
+<DocumentSummary uid="1002604">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA1002604" archive="NCBI" id="1002604"/>
+            <LocalID>bp0</LocalID>
+            <LocalID>bp0</LocalID>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Pyricularia oryzae</Name>
+            <Title>Genome sequencing and assembly of an early wheat blast strain T3</Title>
+            <Description>The project is to sequence and assemble the genomes of blast fungal strains from diverse plant hosts for investigating genome divergence and its implications for pathogenicity and host jumping.</Description>
+            <Grant GrantId="2011500">
+                <Title>Dynamic mini-chromosomes: mechanisms of exchange, stability and causation of fungal pathogen adaptation</Title>
+                <Agency abbr="NSF">NATIONAL SCIENCE FOUNDATION</Agency>
+            </Grant>
+            <Grant GrantId="2021-67013-35724">
+                <Title>Dynamic mini-chromosomes: mechanisms of exchange, stability and causation of fungal pathogen adaptation</Title>
+                <Agency abbr="USDA">United States Dept of Agriculture</Agency>
+            </Grant>
+            <ProjectReleaseDate>2023-08-14T00:00:00Z</ProjectReleaseDate>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+            <LocusTagPrefix biosample_id="SAMN36849576">Q9G91</LocusTagPrefix>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMonoisolate">
+                    <Organism species="318829" taxID="318829">
+                        <OrganismName>Pyricularia oryzae</OrganismName>
+                        <Supergroup>eEukaryotes</Supergroup>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eSequence"/>
+                    <Data data_type="eAssembly"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>genome sequencing and assembly</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>genome sequencing and assembly</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2023-08-05" submission_id="SUB13732654" submitted="2023-08-05">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute" url="http://www.ksu.org/">
+                <Name>Kansas State University</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB13732654-bp0"/>
+    </Submission>
+</DocumentSummary>

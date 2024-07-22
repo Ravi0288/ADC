@@ -1,0 +1,45 @@
+{
+    "identifier": "USDA-FSA-00008",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:brad.karmen@usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Brad Karmen"
+    },
+    "programCode": [
+        "005:013"
+    ],
+    "description": "Crop year 2014 US map at the county level shows designations across the country under USDA's amended rule. The faster, more efficient process will immediately expand assistance to more than 1,000 counties in 26 states.",
+    "title": "Crop Year 2014 Disaster Map",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/www.fsa.usda.gov\/Internet\/FSA_File\/disaster_map_cropyr_14.pdf",
+            "mediaType": "application\/pdf",
+            "title": "Crop Year 2014 Disaster Map"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:49"
+    ],
+    "modified": "2014-04-24",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Farm Service Agency, Department of Agriculture"
+    },
+    "keyword": [
+        "Disaster Relief",
+        "agriculture",
+        "crop",
+        "disaster assistance",
+        "disaster declaration",
+        "farm damage",
+        "map"
+    ],
+    "author": "USDA Farm Service Agency",
+    "fundref": "Farm Service Agency",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

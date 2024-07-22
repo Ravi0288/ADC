@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.210380001.741" system="https://pasta.edirepository.org" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="d210380001">
+    <shortName>JERstdPRECIP</shortName>
+    <title>Monthly precipitation data from a network of standard gauges at the Jornada Experimental Range (Jornada Basin LTER) in southern New Mexico, January 1916 - ongoing</title>
+    <creator>
+      <individualName>
+        <givenName>David</givenName>
+        <surName>Thatcher</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Brandon T</givenName>
+        <surName>Bestelmeyer</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>brandon.bestelmeyer@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0001-5060-9955</userId>
+    </creator>
+    <metadataProvider>
+      <organizationName>Jornada Experimental Range LTAR (USDA-ARS)</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <onlineUrl>https://jornada.nmsu.edu</onlineUrl>
+    </metadataProvider>
+    <pubDate>2023-03-23</pubDate>
+    <language>English</language>
+    <abstract>
+      <para>
+    This ongoing dataset contains monthly precipitation measurements
+    from a network of standard can rain gauges at the Jornada
+    Experimental Range in Dona Ana County, New Mexico, USA.
+    Precipitation physically collects within gauges during the month and
+    is manually measured with a graduated cylinder at the end of each
+    month. This network is maintained by USDA Agricultural Research
+    Service personnel. This dataset includes 39 different locations but
+    only 29 of them are current. Other precipitation data exist for this
+    area, including event-based tipping bucket data with timestamps, but
+    do not go as far back in time as this dataset.
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">disturbance</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">hydrology</keyword>
+      <keyword keywordType="theme">long term ecological research</keyword>
+      <keyword keywordType="theme">meteorology</keyword>
+      <keyword keywordType="theme">precipitation</keyword>
+      <keyword keywordType="theme">rain</keyword>
+      <keyword keywordType="theme">rainfall</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary v1</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Jornada Basin LTER</keyword>
+      <keyword keywordType="theme">network</keyword>
+      <keyword keywordType="theme">rain gauge</keyword>
+      <keyword keywordType="theme">standard rain gauge</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Climate, Soils, and Atmosphere</keyword>
+      <keyword keywordType="theme">Hydrology</keyword>
+      <keyword keywordType="theme">Land-Atmosphere Interactions</keyword>
+      <keywordThesaurus>Jornada Basin LTER dataset keywords</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">Study 380</keyword>
+      <keywordThesaurus>Jornada Basin project names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">Dona Ana</keyword>
+      <keyword keywordType="place">HQ</keyword>
+      <keyword keywordType="place">JER</keyword>
+      <keywordThesaurus>Jornada Basin place names</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keywordThesaurus>USDA National Ag Library's Agricultural Thesaurus</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license - Attribution - CC BY 
+  (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" 
+  herein) is required to cite it appropriately in any publication that results from its 
+  use. The Data User should realize that these data may be actively used by others for 
+  ongoing research and that coordination may be necessary to prevent duplicate 
+  publication. The Data User is urged to contact the authors of these data if any 
+  questions about methodology or results occur. Where appropriate, the Data User is 
+  encouraged to consider collaboration or co-authorship with the authors. The Data User 
+  should realize that misinterpretation of data may occur if used out of context of the 
+  original study. While substantial efforts are made to ensure the accuracy of data and 
+  associated documentation, complete accuracy of data sets cannot be guaranteed. All data 
+  are made available "as is." The Data User should be aware, however, that data are updated 
+  periodically and it is the responsibility of the Data User to check for new versions of 
+  the data. The data authors and the repository where these data were obtained shall not be 
+  liable for damages resulting from any use or misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">https://jornada.nmsu.edu</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>JER Standard can rain gauges (prj 380): Standard can rain gauges at Jornada Experimental Range (project 380)</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-106.869420</westBoundingCoordinate>
+          <eastBoundingCoordinate>-106.489790</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.782560</northBoundingCoordinate>
+          <southBoundingCoordinate>32.475900</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1915-01-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2021-10-01</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>ongoing</description>
+      <maintenanceUpdateFrequency>biannually</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <positionName>Jornada Information Manager</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>575-646-1739</phone>
+      <electronicMailAddress>jornada.data@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://jornada.nmsu.edu/ltar/data/documentation</onlineUrl>
+    </contact>
+    
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@edirepository.org</electronicMailAddress><onlineUrl>https://edirepository.org</onlineUrl><userId directory="https://ror.org">0330j0z60</userId></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Field collection</title>
+            <para>
+      Precipitation is collected monthly at each location in a National
+      Weather Service type standard rain gauge with an 8-inch diameter
+      catchment orifice. A small amount of mineral oil is used to
+      prevent evaporation during the month. As close to the end of the
+      month as possible, USDA-ARS personnel travel to each standard
+      gauge and measure the collected rainfall with a graduated
+      cylinder. To measure the effects of nitrogen fertilizer on plant
+      communities, the average percent coverage of each plant species
+      was calculated along plant intercept lines perpendicular to the
+      permanent, 2.7 km transects. There are 91 station markers arranged
+      at 30 meter intervals along each permanent transect, and each has
+      a plant intercept line that extends 15 meters on either side of
+      the transect. These data are available in dataset
+      knb-lter-jrn.210119001.
+    </para>
+          </section>
+          <section>
+            <title>Data processing</title>
+            <para>
+      These measurements are entered directly into a spreadsheet and
+      emailed to the Jornada Experimental Range network. Actual
+      collection dates before 2010 are not available.
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Jornada Experimental Range LTAR</title>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Brandon</givenName>
+          <surName>Bestelmeyer</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-4842</phone>
+        <electronicMailAddress>brandon.bestelmeyer@usda.gov</electronicMailAddress>
+        <role>Research Leader</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Jornada Experimental Range Long-Term Agroecosystems Research (LTAR) program
+          is part of a national network of long-term agricultural and rangeland ecology research
+          sites funded by the US Department of Agriculture (USDA). The Jornada Experimental Range is
+          administered by the USDA-ARS (USDA Agricultural Research Service).
+          </para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>The Jornada Experimental Range is supported by the USDA Long-Term Agroecosystem Research Network (CRIS# 3050-11210-009-00D)</para>
+        </section>
+      </funding>
+    </project>
+    <dataTable id="337188e1e4f1f0228efb7b89c509bba0" scope="document" system="https://pasta.edirepository.org">
+      <entityName>JER monthly precip</entityName>
+      <entityDescription>Monthly precipitation data from standard collection gauges on the Jornada Experimental Range</entityDescription>
+      <physical>
+        <objectName>JER_standard_raingauge_network_monthly_precip.csv</objectName>
+        <size unit="byte">1127268</size>
+        <authentication method="MD5">7f4a831c9416436f4dfe816ce46685ac</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210380001/741/337188e1e4f1f0228efb7b89c509bba0</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="d210380001-e1-att1">
+          <attributeName>name</attributeName>
+          <attributeLabel>gauge name</attributeLabel>
+          <attributeDefinition>name of rain gauge</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>gauge name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210380001-e1-att2">
+          <attributeName>pasture</attributeName>
+          <attributeLabel>pasture</attributeLabel>
+          <attributeDefinition>names of pasture on the Jornada Experimental Range in wich gauge is located</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>pasture name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210380001-e1-att3">
+          <attributeName>year</attributeName>
+          <attributeLabel>year</attributeLabel>
+          <attributeDefinition>year of measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210380001-e1-att4">
+          <attributeName>month</attributeName>
+          <attributeLabel>month</attributeLabel>
+          <attributeDefinition>month of measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="d210380001-e1-att5">
+          <attributeName>sample_date</attributeName>
+          <attributeLabel>collection date</attributeLabel>
+          <attributeDefinition>day on which precipitation was measured</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value - data not collected or otherwise unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210380001-e1-att6">
+          <attributeName>prec_in</attributeName>
+          <attributeLabel>precip (inches)</attributeLabel>
+          <attributeDefinition>total monthly precipitation</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>inch</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value - data not collected or otherwise unavailable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="d210380001-e1-att7">
+          <attributeName>notes</attributeName>
+          <attributeLabel>notes</attributeLabel>
+          <attributeDefinition>notes recorded by technicians which may be of interest to data users</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>No comment, quality flag, or additional information available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>33174</numberOfRecords>
+    </dataTable>
+    <otherEntity id="24a6198cd251ef1bff31fa2de916a28d" scope="document" system="https://pasta.edirepository.org">
+      <entityName>JER monthly precip graph</entityName>
+      <entityDescription>Figure of the data contained in this data package</entityDescription>
+      <physical>
+        <objectName>JER_std_gauge_monthly_precip.jpg</objectName>
+        <size unit="byte">6439153</size>
+        <authentication method="MD5">86305f81cb702ee3da772821ee9aa134</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>JPG</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/210380001/741/24a6198cd251ef1bff31fa2de916a28d</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="dimensionless" name="dimensionless" unitType="dimensionless">
+          <description>a designation asserting the absence of an associated unit</description>
+        </unit>
+        <unit abbreviation="in" id="inch" multiplierToSI="0.0254" name="inch" parentSI="meter">
+          <description>unit of length in the (British) imperial and United States systems 
+      usually understood as 1/12 f a foot.</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

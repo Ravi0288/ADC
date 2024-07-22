@@ -1,0 +1,40 @@
+{
+    "identifier": "NRCS0046",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:eva.mitter@wdc.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Eva Mitter"
+    },
+    "programCode": [
+        "005:027"
+    ],
+    "description": "Energy Tools - Nitrogen Estimator",
+    "title": "NFAT",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/energytools.sc.egov.usda.gov\/",
+            "description": "Energy Tools - Nitrogen Estimator",
+            "mediaType": "text\/html",
+            "title": "NFAT"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:53"
+    ],
+    "modified": "2014-06-13",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "NRCS"
+    },
+    "keyword": [
+        "Conservation Outreach"
+    ],
+    "author": "USDA Natural Resources Conservation Service",
+    "fundref": "Natural Resources Conservation Service",
+    "catagories": "31922",
+    "nalt": "Natural Resources Conservation Service",
+    "isoTopic": "environment"
+}

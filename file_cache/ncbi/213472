@@ -1,0 +1,116 @@
+<DocumentSummary uid="213472">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA213472" archive="NCBI" id="213472"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Xiphinema americanum</Name>
+            <Title>Xiphinema americanum Targeted Locus (Loci)</Title>
+            <Description>Nematodes within the Xiphinema americanum species complex are economically important because they vector nepoviruses which cause considerable damage to a variety of agricultural crops. The taxonomy of X. americanum is controversial, with the number of putative species being the subject of debate. Accurate phylogenetic knowledge of this group is highly desirable as it may ultimately reveal genetic differences between species which do vector nepoviruses and those which do not. For this study, X. americanum populations were collected from 12 geographically disparate locations across the U.S. from different crops and in varying association with nepoviruses. Four individuals from each population were analyzed. A portion of the nuclear 18S nuclear ribosomal DNA (rDNA) gene was sequenced for all individuals while the internal transcribed spacer region 1 (ITS1) of rDNA was cloned and 4 to 7 clones per individual were sequenced. Mitochondrial genomes for numerous individuals were sequenced in parallel using high-throughput DNA sequencing (HTS) technology. Phylogenetic analysis of the 18S rDNA revealed virtually identical sequences across all populations. Analysis of ITS1 rDNA sequences revealed several well-supported clades, with some degree of congruence with geographic location and viral transmission, but also numerous presumably paralogous sequences that failed to form clades with other sequences from the same population. Analysis of mitochondrial DNA (mtDNA) indicated the presence of three distinct monophyletic clades of X. americanum species complex nematodes. Two clades contained nematodes found in association with nepovirus and the third contained divergent mtDNA sequences from three nematode populations where nepovirus was absent. The inherent heterogeneity in ITS1 rDNA sequence data and lack of informative sites in 18S rDNA analysis suggests that mtDNA may be more useful in sorting out the taxonomic confusion of the X. americanum species complex, and might serve as an effective practical tool in distinguishing virus-vectoring from non-vectoring nematode populations.</Description>
+            <Grant GrantId="2009-51181-06022">
+                <Title>Management of virus complexes in Rubus</Title>
+                <Agency>USDA-NIFA Specialty Crops Research Initiative</Agency>
+            </Grant>
+            <Publication id="24587203">
+                <Reference/>
+                <StructuredCitation>
+                    <Title>Using mitogenomic and nuclear ribosomal sequence data to investigate the phylogeny of the Xiphinema americanum species complex.</Title>
+                    <Journal>
+                        <JournalTitle>PloS one</JournalTitle>
+                        <Year>2014</Year>
+                        <Volume>9</Volume>
+                        <Issue>2</Issue>
+                        <PagesFrom>e90035</PagesFrom>
+                    </Journal>
+                    <AuthorSet>
+                        <Author>
+                            <Name>
+                                <First>Inga A</First>
+                                <Last>Zasada</Last>
+                            </Name>
+                            <Consortium>USDA-ARS Horticultural Crops Research Laboratory, Corvallis, Oregon, United States of America.</Consortium>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>Amy</First>
+                                <Last>Peetz</Last>
+                            </Name>
+                            <Consortium>USDA-ARS Horticultural Crops Research Laboratory, Corvallis, Oregon, United States of America.</Consortium>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>Dana K</First>
+                                <Last>Howe</Last>
+                            </Name>
+                            <Consortium>Department of Zoology, Oregon State University, Corvallis, Oregon, United States of America.</Consortium>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>Larry J</First>
+                                <Last>Wilhelm</Last>
+                            </Name>
+                            <Consortium>Department of Zoology, Oregon State University, Corvallis, Oregon, United States of America.</Consortium>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>Daravuth</First>
+                                <Last>Cheam</Last>
+                            </Name>
+                            <Consortium>Department of Zoology, Oregon State University, Corvallis, Oregon, United States of America.</Consortium>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>Dee R</First>
+                                <Last>Denver</Last>
+                            </Name>
+                            <Consortium>Department of Zoology, Oregon State University, Corvallis, Oregon, United States of America.</Consortium>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>Ashleigh B</First>
+                                <Last>Smythe</Last>
+                            </Name>
+                            <Consortium>Department of Biology, Hamilton College, Clinton, New York, United States of America.</Consortium>
+                        </Author>
+                    </AuthorSet>
+                </StructuredCitation>
+                <DbType>ePubmed</DbType>
+            </Publication>
+            <Relevance>
+                <Evolution>yes</Evolution>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eTargetedLocusLoci" material="eGenome" sample_scope="eMultiisolate">
+                    <Organism species="208518" taxID="208518">
+                        <OrganismName>Xiphinema americanum</OrganismName>
+                        <Supergroup>eEukaryotes</Supergroup>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eVariation"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>targeted loci</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>targeted loci</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-07-26" submitted="2013-07-26" submission_id="SUB273938">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>Oregon State University</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB273938-1"/>
+    </Submission>
+</DocumentSummary>
+

@@ -1,0 +1,80 @@
+{
+    "@type": "dcat:Dataset",
+    "identifier": "https:\/\/www.arcgis.com\/home\/item.html?id=0abf7d0e86c347c9919c786b7c1f0206",
+    "landingPage": "https:\/\/data-usfs.hub.arcgis.com\/datasets\/usfs::wildfire-risk-to-communities-flame-length-exceedance-probability-4-foot-image-service",
+    "title": "Wildfire Risk to Communities Flame Length Exceedance Probability - 4 foot (Image Service)",
+    "description": "This dataset is the Flame Length Exceedance Probability - 4 foot (FLEP4) raster for the United States. It is part of the Wildfire Risk to Communities: Spatial datasets of landscape-wide wildfire risk components for the United States. The values of FLEP4 represent the probability of having flame lengths greater than 4 feet if a fire occurs. FLEP4 indicates the potential for moderate to high wildfire intensity. Because 4 feet is considered the limit of manual fire control, FLEP4 represents the likelihood that fire intensity will be beyond the ability of hand crews to control. Vegetation and wildland fuels data from LANDFIRE 2014 (version 1.4.0) form the foundation for the Wildfire Risk to Communities data. As such, the data presented here reflect landscape conditions as of the end of 2014. National wildfire hazard datasets of annual burn probability and fire intensity were generated from the LANDFIRE 2014 data by the USDA Forest Service, Rocky Mountain Research Station (Short et al. 2020) using the large fire simulation system (FSim). These national datasets produced with FSim have a relatively coarse cell size of 270 meters (m). To bring these datasets down to a finer resolution more useful for assessing hazard and risk to communities, we upsampled them to the native 30 m resolution of the LANDFIRE fuel and vegetation data. In this upsampling process, we also spread values of modeled burn probability and intensity into developed areas represented in LANDFIRE fuels data as non-burnable.\ufffd<div><br \/><\/div><div>Additional methodology documentation is provided with the data publication download.\ufffd<a href='https:\/\/www.fs.usda.gov\/rds\/archive\/Catalog\/RDS-2020-0016' target='_blank' rel='nofollow ugc noopener noreferrer'>Metadata and Downloads.<\/a><\/div><div><br \/><\/div><div><b>Note:\ufffd<\/b>Pixel values in this image service have been altered from the original raster dataset due to data requirements in web services. The service is intended primarily for data visualization. Relative values and spatial patterns have been largely preserved in the service, but users are encouraged to download the source data for quantitative analysis.<br \/><\/div><div><br \/><\/div><div>Short, Karen C.; Finney, Mark A.; Vogler, Kevin C.; Scott, Joe H.; Gilbertson-Day, Julie W.; Grenfell, Isaac C. 2020. Spatial datasets of probabilistic wildfire risk components for the United States (270m). 2nd Edition. Fort Collins, CO: Forest Service Research Data Archive.\ufffd<a href='https:\/\/doi.org\/10.2737\/RDS-2016-0034-2' target='_blank' rel='nofollow ugc noopener noreferrer'>https:\/\/doi.org\/10.2737\/RDS-2016-0034-2<\/a><br \/><\/div>",
+    "keyword": [
+        "Fire suppression",
+        "pre-suppression",
+        "risk assessment",
+        "society",
+        "Environment and People",
+        "conterminous United States",
+        "wildland urban interface",
+        "geoscientificInformation",
+        "Landscape management",
+        "United States",
+        "structure",
+        "CONUS",
+        "hazard",
+        "Fire effects on environment",
+        "fire planning",
+        "Ecology",
+        "Ecosystems & Environment",
+        "environment",
+        "Open Data"
+    ],
+    "issued": "2021-04-14T23:05:43.000Z",
+    "modified": "2023-03-21T22:50:59.000Z",
+    "publisher": {
+        "source": "U.S. Forest Service",
+        "name": "U.S. Forest Service"
+    },
+    "contactPoint": {
+        "fn": "USFSEnterpriseContent",
+        "hasEmail": "mailto:SM.FS.data@usda.gov",
+        "@type": "vcard:Contact"
+    },
+    "accessLevel": "public",
+    "spatial": "-180.0000,18.8962,179.9999,71.4512",
+    "license": "https:\/\/creativecommons.org\/licenses\/by\/4.0\/",
+    "programCode": [
+        "005:059"
+    ],
+    "bureauCode": [
+        "005:96"
+    ],
+    "theme": [
+        "geospatial"
+    ],
+    "progressCode": "onGoing",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "title": "ISO-19139 metadata",
+            "conformsTo": "https:\/\/www.isotc211.org\/2005\/gmi",
+            "mediaType": "text\/xml",
+            "accessURL": "https:\/\/www.arcgis.com\/sharing\/rest\/content\/items\/0abf7d0e86c347c9919c786b7c1f0206\/info\/metadata\/metadata.xml?format=iso19139"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "title": "ArcGIS Hub Dataset",
+            "format": "Web Page",
+            "mediaType": "text\/html",
+            "accessURL": "https:\/\/data-usfs.hub.arcgis.com\/datasets\/usfs::wildfire-risk-to-communities-flame-length-exceedance-probability-4-foot-image-service"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "title": "ArcGIS GeoService",
+            "format": "ArcGIS GeoServices REST API",
+            "mediaType": "application\/json",
+            "accessURL": "https:\/\/apps.fs.usda.gov\/fsgisx01\/rest\/services\/RDW_Wildfire\/RMRS_WRC_FlameLengthExceedProb4ft\/ImageServer"
+        }
+    ],
+    "fundref": "U.S. Forest Service",
+    "catagories": "31922",
+    "nalt": "Forestry, Wildland Management",
+    "isoTopic": "environment",
+    "author": "U.S. Forest Service"
+}

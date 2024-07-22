@@ -1,0 +1,303 @@
+[
+  {
+    "id": 27452,
+    "resource_id": "",
+    "name": "United States Department of Agriculture",
+    "association_criteria": "",
+    "parent_id": 0
+  },
+  {
+    "id": 27630,
+    "resource_id": "",
+    "name": "AgBioData",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 27632,
+    "resource_id": "",
+    "name": "Farm 2 Fly",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 27636,
+    "resource_id": "",
+    "name": "Life Cycle Assessment",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 27638,
+    "resource_id": "",
+    "name": "Long Term Agroecosystem Research",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 45513,
+    "resource_id": "",
+    "name": "Archbold - University of Florida",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45583,
+    "resource_id": "",
+    "name": "R.J. Cook Agronomy Farm",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45585,
+    "resource_id": "",
+    "name": "Central Mississipi River Basin",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45587,
+    "resource_id": "",
+    "name": "Central Plains Experiment Range",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45589,
+    "resource_id": "",
+    "name": "Eastern Corn Belt",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45591,
+    "resource_id": "",
+    "name": "Gulf Atlantic Coastal Range",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45593,
+    "resource_id": "",
+    "name": "Great Basin",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45595,
+    "resource_id": "",
+    "name": "Jornada Experimental Range",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45597,
+    "resource_id": "",
+    "name": "Kellog Biological Station",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45599,
+    "resource_id": "",
+    "name": "Lower Missisippi River Basin",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45601,
+    "resource_id": "",
+    "name": "Lower Chesapeake Bay",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45603,
+    "resource_id": "",
+    "name": "Northern Plains",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45605,
+    "resource_id": "",
+    "name": "Platter River-High Plains Aquifer",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45607,
+    "resource_id": "",
+    "name": "Southern Plains",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45609,
+    "resource_id": "",
+    "name": "Texas Gulf",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45611,
+    "resource_id": "",
+    "name": "Upper Cheasapeake Bay",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45613,
+    "resource_id": "",
+    "name": "Upper Mississippi River Basin",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 45615,
+    "resource_id": "",
+    "name": "Walnut Gultch Experimental Station",
+    "association_criteria": "",
+    "parent_id": 27638
+  },
+  {
+    "id": 27642,
+    "resource_id": "",
+    "name": "Veterinary Pest Genomics Center",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 34106,
+    "resource_id": "",
+    "name": "USDA - Submissions",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 34199,
+    "resource_id": "",
+    "name": "Long-Term Livestock Production",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 35550,
+    "resource_id": "",
+    "name": "ARDN",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 45581,
+    "resource_id": "",
+    "name": "ARS Culture Collection",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 46926,
+    "resource_id": "",
+    "name": "Users",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 46928,
+    "resource_id": "",
+    "name": "Repository Records",
+    "association_criteria": "",
+    "parent_id": 46926
+  },
+  {
+    "id": 46930,
+    "resource_id": "",
+    "name": "Manual Catalog",
+    "association_criteria": "",
+    "parent_id": 46926
+  },
+  {
+    "id": 46932,
+    "resource_id": "",
+    "name": "Admins",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 46934,
+    "resource_id": "",
+    "name": "Harvested Catalog",
+    "association_criteria": "",
+    "parent_id": 46932
+  },
+  {
+    "id": 49684,
+    "resource_id": "",
+    "name": "EDI - Jornada",
+    "association_criteria": "",
+    "parent_id": 46934
+  },
+  {
+    "id": 49686,
+    "resource_id": "",
+    "name": "FS Research Data Archive",
+    "association_criteria": "",
+    "parent_id": 46934
+  },
+  {
+    "id": 49688,
+    "resource_id": "",
+    "name": "NCBI",
+    "association_criteria": "",
+    "parent_id": 46934
+  },
+  {
+    "id": 51827,
+    "resource_id": "",
+    "name": "data.gov - ERS",
+    "association_criteria": "",
+    "parent_id": 46934
+  },
+  {
+    "id": 51829,
+    "resource_id": "",
+    "name": "data.gov - NRCS",
+    "association_criteria": "",
+    "parent_id": 46934
+  },
+  {
+    "id": 51831,
+    "resource_id": "",
+    "name": "data.gov - FS Land Management",
+    "association_criteria": "",
+    "parent_id": 46934
+  },
+  {
+    "id": 51833,
+    "resource_id": "",
+    "name": "data.gov - FAS",
+    "association_criteria": "",
+    "parent_id": 46934
+  },
+  {
+    "id": 51835,
+    "resource_id": "",
+    "name": "data.gov - FSA",
+    "association_criteria": "",
+    "parent_id": 46934
+  },
+  {
+    "id": 51953,
+    "resource_id": "",
+    "name": "Insects - i5K",
+    "association_criteria": "",
+    "parent_id": 27452
+  },
+  {
+    "id": 51955,
+    "resource_id": "",
+    "name": "i5K",
+    "association_criteria": "",
+    "parent_id": 27452
+  }
+]

@@ -1,0 +1,40 @@
+{
+    "identifier": "USDA-27002",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:ronald.lord@fas.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Ronald Lord"
+    },
+    "programCode": [
+        "005:000"
+    ],
+    "description": "Amounts of 2016 Dairy Products Available for Reallocation, by Commodity and Country, as of October 1, 2016",
+    "title": "Amounts of 2016 Dairy Products Available for Reallocation, by Commodity and Country",
+    "distribution": [
+        {
+            "accessURL": "https:\/\/www.fas.usda.gov\/programs\/resources\/amounts-2016-dairy-products-available-reallocation-commodity-and-country-october-1-2016",
+            "@type": "dcat:Distribution",
+            "format": "text\/html",
+            "description": "Amounts of 2016 Dairy Products Available for Reallocation, by Commodity and Country, as of October 1, 2016",
+            "title": "Amounts of 2016 Dairy Products Available for Reallocation, by Commodity and Country"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:68"
+    ],
+    "modified": "2017-01-18",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Foreign Agricultural Service, Department of Agriculture"
+    },
+    "keyword": [
+        "dairy products reallocation"
+    ],
+    "author": "USDA Foreign Agricultural Service",
+    "fundref": "Foreign Agricultural Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

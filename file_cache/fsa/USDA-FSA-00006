@@ -1,0 +1,44 @@
+{
+    "identifier": "USDA-FSA-00006",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:brad.karmen@usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Brad Karmen"
+    },
+    "programCode": [
+        "005:013"
+    ],
+    "description": "Tabular records of State and County level records of crop year 2013 disaster designations made by the US Secretary of Agriculture.",
+    "title": "Crop Year 2013 Disaster Declarations",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/www.fsa.usda.gov\/Internet\/FSA_File\/disaster_cty_list_ytd.xls",
+            "mediaType": "application\/vnd.ms-excel",
+            "title": "Crop Year 2013 Disaster Declarations"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:49"
+    ],
+    "modified": "2014-04-24",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Farm Service Agency, Department of Agriculture"
+    },
+    "keyword": [
+        "Disaster Relief",
+        "agriculture",
+        "crop",
+        "disaster assistance",
+        "disaster declaration",
+        "farm damage"
+    ],
+    "author": "USDA Farm Service Agency",
+    "fundref": "Farm Service Agency",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

@@ -1,0 +1,65 @@
+<DocumentSummary uid="973627">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA973627" archive="NCBI" id="973627"/>
+            <CenterID center="DOE Joint Genome Institute" id="1215588"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Lipomyces tetrasporus strain:NRRL Y-64009 | isolate:NRRL Y-64009</Name>
+            <Title>Lipomyces tetrasporus strain:NRRL Y-64009 | isolate:NRRL Y-64009 RefSeq Genome sequencing and assembly</Title>
+            <Description>The reference sequence (RefSeq) genome assembly is derived from the submitted GenBank assembly (see linked project PRJNA928472). Annotation on the RefSeq genomic records is propagated from the INSDC submission. RefSeq records may differ from the submitted annotation in format details, some protein names, and occasionally in feature location details.</Description>
+            <ProjectReleaseDate>2023-03-31T00:00:00Z</ProjectReleaseDate>
+            <Relevance>
+                <Other>Comparative Analysis</Other>
+            </Relevance>
+            <RefSeq representation="eReference">
+                <AnnotationSource>
+                    <Name>Propagated from INSDC records</Name>
+                </AnnotationSource>
+            </RefSeq>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMonoisolate">
+                    <Organism species="54092" taxID="54092">
+                        <OrganismName>Lipomyces tetrasporus</OrganismName>
+                        <Strain>NRRL Y-64009</Strain>
+                        <IsolateName>NRRL Y-64009</IsolateName>
+                        <Supergroup>eEukaryotes</Supergroup>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eAnnotation"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>genome sequencing and assembly</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>RefSeq genome sequencing and assembly</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2023-01-26" submitted="2023-05-17">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="center" url="http://www.ncbi.nlm.nih.gov/">
+                <Name abbr="NCBI">National Center for Biotechnology Information</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB12662096-1215588"/>
+    </Submission>
+    <ProjectLinks>
+        <Link>
+            <ProjectIDRef archive="NCBI" id="928472" accession="PRJNA928472"/>
+            <PeerProject>
+                <CommonInputData>eRefseqGenbank</CommonInputData>
+                <MemberID archive="NCBI" id="973627" accession="PRJNA973627"/>
+            </PeerProject>
+        </Link>
+    </ProjectLinks>
+</DocumentSummary>
+

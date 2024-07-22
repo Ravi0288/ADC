@@ -1,0 +1,140 @@
+<DocumentSummary uid="212797">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA212797" archive="NCBI" id="212797"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Bacillus infantis NRRL B-14911</Name>
+            <Title>Bacillus infantis NRRL B-14911 Genome sequencing</Title>
+            <Description>This isolate was obtained from the Gulf of Mexico as part of the Gordon and Betty Moore Foundation Marine Microbiology Initiative by the J. Craig Venter Institute. More information in BioProject PRJNA13545.</Description>
+            <Publication id="10856371" status="ePublished">
+                <Reference/>
+                <StructuredCitation>
+                    <Title>Phylogeny of marine Bacillus isolates from the Gulf of Mexico.</Title>
+                    <Journal>
+                        <JournalTitle>Current microbiology</JournalTitle>
+                        <Year>2000</Year>
+                        <Volume>41</Volume>
+                        <Issue>2</Issue>
+                        <PagesFrom>84</PagesFrom>
+                        <PagesTo>8</PagesTo>
+                    </Journal>
+                    <AuthorSet>
+                        <Author>
+                            <Name>
+                                <First>J L</First>
+                                <Last>Siefert</Last>
+                            </Name>
+                            <Consortium>Dept. of Biology and Biochemistry, University of Houston, TX 77204-5513, USA. siefert@stat.rice.edu</Consortium>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>M</First>
+                                <Last>Larios-Sanz</Last>
+                            </Name>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>L K</First>
+                                <Last>Nakamura</Last>
+                            </Name>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>R A</First>
+                                <Last>Slepecky</Last>
+                            </Name>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>J H</First>
+                                <Last>Paul</Last>
+                            </Name>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>E R</First>
+                                <Last>Moore</Last>
+                            </Name>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>G E</First>
+                                <Last>Fox</Last>
+                            </Name>
+                        </Author>
+                        <Author>
+                            <Name>
+                                <First>P</First>
+                                <Last>Jurtshuk</Last>
+                            </Name>
+                        </Author>
+                    </AuthorSet>
+                </StructuredCitation>
+                <DbType>ePubmed</DbType>
+            </Publication>
+            <ProjectReleaseDate>2013-09-30T00:00:00Z</ProjectReleaseDate>
+            <Relevance>
+                <Environmental>yes</Environmental>
+            </Relevance>
+            <LocusTagPrefix assembly_id="GCA_000473245" biosample_id="SAMN02604281">N288</LocusTagPrefix>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMonoisolate">
+                    <Organism species="324767" taxID="1367477">
+                        <OrganismName>Bacillus infantis NRRL B-14911</OrganismName>
+                        <Label>NRRL B-14911</Label>
+                        <Strain>NRRL B-14911</Strain>
+                        <Supergroup>eBacteria</Supergroup>
+                        <BiologicalProperties>
+                            <Morphology>
+                                <Gram>eNegative</Gram>
+                                <Shape>eBacilli</Shape>
+                                <Motility>eYes</Motility>
+                            </Morphology>
+                            <Environment>
+                                <Salinity>eUnknown</Salinity>
+                                <Habitat>eAquatic</Habitat>
+                            </Environment>
+                        </BiologicalProperties>
+                        <Organization>eUnicellular</Organization>
+                        <Reproduction>eAsexual</Reproduction>
+                        <RepliconSet>
+                            <Replicon>
+                                <Type location="eNuclearProkaryote">eChromosome</Type>
+                                <Name>1</Name>
+                                <Size units="Mb">4.880000</Size>
+                            </Replicon>
+                            <Ploidy type="eHaploid"/>
+                        </RepliconSet>
+                        <GenomeSize units="Mb">4.880000</GenomeSize>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eSequence"/>
+                    <Data data_type="eAssembly"/>
+                    <Data data_type="eAnnotation"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>genome sequencing</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>genome sequencing</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-07-19" submitted="2013-07-19" submission_id="SUB299457">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute" url="http://www.marc.usda.gov/">
+                <Name>USDA-ARS U.S. Meat Animal Research Center</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB299457-1"/>
+    </Submission>
+</DocumentSummary>

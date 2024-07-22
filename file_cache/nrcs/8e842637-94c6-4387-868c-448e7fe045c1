@@ -1,0 +1,96 @@
+{
+    "identifier": "8e842637-94c6-4387-868c-448e7fe045c1",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:chris.dorich@colostate.edu",
+        "fn": "Dorich, Chris"
+    },
+    "programCode": [
+        "005:040"
+    ],
+    "description": "<p>Grass-Cast: Experimental Grassland Productivity Forecast for the Great Plains<\/p>\n<p>Grass-Cast uses almost 40 years of historical data on weather and vegetation growth in order to project grassland productivity in the Western U.S. More details on the projection model and method can be found at <a href=\"https:\/\/esajournals.onlinelibrary.wiley.com\/doi\/full\/10.1002\/ecs2.3280\">https:\/\/esajournals.onlinelibrary.wiley.com\/doi\/full\/10.1002\/ecs2.3280<\/a>.<\/p>\n<p>Every spring, ranchers in the drought\u2010prone U.S. Great Plains face the same difficult challenge\u2014trying to estimate how much forage will be available for livestock to graze during the upcoming summer grazing season. To reduce this uncertainty in predicting forage availability, we developed an innovative new grassland productivity forecast system, named Grass\u2010Cast, to provide science\u2010informed estimates of growing season aboveground net primary production (ANPP). Grass\u2010Cast uses over 30 yr of historical data including weather and the satellite\u2010derived normalized vegetation difference index (NDVI)\u2014combined with ecosystem modeling and seasonal precipitation forecasts\u2014to predict if rangelands in individual counties are likely to produce below\u2010normal, near\u2010normal, or above\u2010normal amounts of grass biomass (lbs\/ac). Grass\u2010Cast also provides a view of rangeland productivity in the broader region, to assist in larger\u2010scale decision\u2010making\u2014such as where forage resources for grazing might be more plentiful if a rancher\u2019s own region is at risk of drought. Grass\u2010Cast is updated approximately every two weeks from April through July. Each Grass\u2010Cast forecast provides three scenarios of ANPP for the upcoming growing season based on different precipitation outlooks. Near real\u2010time 8\u2010d NDVI can be used to supplement Grass\u2010Cast in predicting cumulative growing season NDVI and ANPP starting in mid\u2010April for the Southern Great Plains and mid\u2010May to early June for the Central and Northern Great Plains. Here, we present the scientific basis and methods for Grass\u2010Cast along with the county\u2010level production forecasts from 2017 and 2018 for ten states in the U.S. Great Plains. The correlation between early growing season forecasts and the end\u2010of\u2010growing season ANPP estimate is &gt;50% by late May or early June. In a retrospective evaluation, we compared Grass\u2010Cast end\u2010of\u2010growing season ANPP results to an independent dataset and found that the two agreed 69% of the time over a 20\u2010yr period. Although some predictive tools exist for forecasting upcoming growing season conditions, none predict actual productivity for the entire Great Plains. The Grass\u2010Cast system could be adapted to predict grassland ANPP outside of the Great Plains or to predict perennial biofuel grass production.<\/p>\n<p>This new experimental grassland forecast is the result of a collaboration between Colorado State University, U.S. Department of Agriculture (USDA), National Drought Mitigation Center, and the University of Arizona. Funding for this project was provided by the USDA Natural Resources Conservation Service (NRCS), USDA Agricultural Research Service (ARS), and the National Drought Mitigation Center.<\/p>\n<p>Watch for updates on the Grass-Cast website or on Twitter (@PeckAgEc). Project Contact: Dannele Peck, Director of the USDA Northern Plains Climate Hub, at <a href=\"mailto:dannele.peck@ars.usda.gov\">dannele.peck@ars.usda.gov<\/a> or 970-744-9043.<\/p>\n",
+    "title": "Grass-Cast Database - Data on aboveground net primary productivity (ANPP), climate data, NDVI, and cattle weight gain for Western U.S. rangelands",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/Grass-Cast_AgDataCommons_download.html",
+            "format": "html",
+            "description": "<p>Html document that shows database overview information. This document provides a glimpse of the data tables available within the data resource as well as respective meta-data tables.<br \/>\nThe R script (R markdown, .Rmd format) that generates the html file, and can be used to upload the Grass-Cast associated Ag Data Commons data files can be downloaded at the 'Grass-Cast R script' zip folder. The Grass-Cast files still need to be locally downloaded before use, but we are looking to make a download automated.<\/p>\n",
+            "mediaType": "text\/html",
+            "title": "Grass-Cast_AgDataCommons_overview"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/R_access_script.zip",
+            "format": "zip",
+            "description": "<p>R script (in Rmarkdown [Rmd] format) for uploading and looking at Grass-Cast data.<\/p>\n",
+            "mediaType": "application\/zip",
+            "title": "Grass-Cast R script"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/ANPP.xlsx",
+            "format": "xlsx",
+            "description": "<p>Dataset for annual aboveground net primary productivity (ANPP). Excel sheet is broken into two tabs, 1) &#039;readme&#039; describing the data, 2) &#039;ANPP&#039; with the actual data.<\/p>\n",
+            "mediaType": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "title": "ANPP"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/Cattle_weight_gains.xlsx",
+            "format": "xlsx",
+            "description": "<p>Cattle weight gain data for Grass-Cast Database.<\/p>\n",
+            "mediaType": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "title": "Cattle weight gain"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/NDVI.xlsx",
+            "format": "xlsx",
+            "description": "<p>Annual NDVI growing season values for Grass-Cast sites. See readme for more information and NDVI_raw for the raw values.<\/p>\n",
+            "mediaType": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "title": "NDVI"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/NDVI_raw.xlsx",
+            "format": "xlsx",
+            "description": "<p>Raw bimonthly NDVI values for Grass-Cast sites.<\/p>\n",
+            "mediaType": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "title": "NDVI_raw"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/Grass-Cast_sitelist.xlsx",
+            "format": "xlsx",
+            "description": "<p>This provides a list of sites-studies that are currently incorporated into the Database as well as meta-data and contact info associated with the data sets. Includes a '<em>readme<\/em>' tab and '<em>sitelist<\/em>' tab.<\/p>\n",
+            "mediaType": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "title": "Grass-Cast_sitelist"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/licenses\/by\/4.0\/",
+    "bureauCode": [
+        "005:18",
+        "005:53"
+    ],
+    "modified": "2023-05-24",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Agricultural Research Service"
+    },
+    "keyword": [
+        "cattle",
+        "cattle weight gain",
+        "Grass-Cast",
+        "grasses",
+        "NDVI",
+        "net primary production",
+        "Rangelands"
+    ],
+    "spatial": "{\"type\":\"MultiPoint\",\"coordinates\":[[-104.46,40.49],[-104.54,41.11],[-104.902,33.85],[-105.04,32.49],[-104.7,34.43],[-99.659,42.26],[-101.43,42.07],[-101.74,43.93],[-96.563,39.079],[-105.78,32.57],[-106.88,34.35],[-116.758,43.22]]}",
+    "author": "USDA Natural Resources Conservation Service",
+    "fundref": "Natural Resources Conservation Service",
+    "catagories": "31922",
+    "nalt": "Natural Resources Conservation Service",
+    "isoTopic": "environment"
+}

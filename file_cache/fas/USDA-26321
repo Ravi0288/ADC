@@ -1,0 +1,45 @@
+{
+    "identifier": "USDA-26321",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:GATShelp@fas.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Jon Heal"
+    },
+    "programCode": [
+        "005:000"
+    ],
+    "description": "Trade data from US Census Bureau as defined by USDA Foreign Agricultural Service groupings",
+    "title": "Global Agricultural Trade System",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/apps.fas.usda.gov\/gats\/",
+            "mediaType": "text\/html",
+            "title": "Global Agricultural Trade Sytem Home Page"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/licenses\/by\/4.0",
+    "bureauCode": [
+        "005:68"
+    ],
+    "modified": "2015-03-12",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Foreign Agricultural Service, Department of Agriculture"
+    },
+    "accrualPeriodicity": "R\/P1M",
+    "keyword": [
+        "BICO",
+        "FASUS",
+        "International trade",
+        "exports",
+        "imports"
+    ],
+    "spatial": "Global",
+    "author": "USDA Foreign Agricultural Service",
+    "fundref": "Foreign Agricultural Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

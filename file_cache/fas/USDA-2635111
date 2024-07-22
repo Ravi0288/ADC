@@ -1,0 +1,50 @@
+{
+    "identifier": "USDA-2635111",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:ronald.lord@fas.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Ronald Lord"
+    },
+    "programCode": [
+        "005:000"
+    ],
+    "description": "Listing of Dairy License Recipients Under Regulation 1 (as of March 2016)",
+    "title": "Listing of Dairy License Recipients Under Regulation 1",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/www.fas.usda.gov\/sites\/default\/files\/2017-01\/list_of_licenses_issued_march_2016.xlsx",
+            "format": "XLSX",
+            "description": "Listing of Dairy License Recipients Under Regulation 1 (as of March 2016)",
+            "mediaType": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "title": "Listing of Dairy License Recipients Under Regulation 1"
+        }
+    ],
+    "describedByType": "text\/csv",
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:68"
+    ],
+    "modified": "2016-01-18",
+    "publisher": {
+        "@type": "org:Organization",
+        "subOrganizationOf": {
+            "@type": "org:Organization",
+            "name": "Department of Agriculture"
+        },
+        "name": "Foreign Agricultural Service"
+    },
+    "accrualPeriodicity": "R\/P1Y",
+    "theme": [
+        "dairy licenses"
+    ],
+    "keyword": [
+        "dairy license recipients"
+    ],
+    "author": "USDA Foreign Agricultural Service",
+    "fundref": "Foreign Agricultural Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

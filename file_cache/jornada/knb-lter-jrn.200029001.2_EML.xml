@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.200029001.2" system="https://pasta.edirepository.org" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="d200029001">
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/7d61e257d0ad7ebd00db2b4c38cc8145</alternateIdentifier><title>Baseline survey for beef cattle producers in the Southwest and Southern Plains</title>
+    <creator>
+      <individualName>
+        <givenName>Emile</givenName>
+        <surName>Elias</surName>
+      </individualName>
+      <organizationName>USDA-ARS SW Climate Hub/Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>emile.elias@ars.usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0001-9964-3177</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Skye</givenName>
+        <surName>Aney</surName>
+      </individualName>
+      <organizationName>NMSU, SW Climate Hub/Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>sierra@nmsu.edu</electronicMailAddress>
+      <onlineUrl/>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Glenn</givenName>
+        <surName>Duff</surName>
+      </individualName>
+      <organizationName>New Mexico State University</organizationName>
+      <address>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>glennd@nmsu.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Craig</givenName>
+        <surName>Gifford</surName>
+      </individualName>
+      <organizationName>New Mexico State University</organizationName>
+      <positionName/>
+      <electronicMailAddress>cgifford@nmsu.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Sheri</givenName>
+        <surName>Spiegal</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <positionName>Research Rangeland Management Specialist</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>sheri.spiegal@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-5489-9512</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Andres F</givenName>
+        <surName>Cibils</surName>
+      </individualName>
+      <organizationName>New Mexico State University</organizationName>
+      <address>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003</postalCode>
+        <country>U.S.A</country>
+      </address>
+      <electronicMailAddress>acibils@nmsu.edu</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-4733-6463</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Jean</givenName>
+        <surName>Steiner</surName>
+      </individualName>
+      <organizationName>New Mexico State University</organizationName>
+      <address>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>jsteiner@nmsu.edu</electronicMailAddress>
+      <userId directory="ORCID">0000-0003-3779-8717</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Brent</givenName>
+        <surName>Auvermann</surName>
+      </individualName>
+      <organizationName>Texas A&amp;M University</organizationName>
+      <address>
+        <city>College Station</city>
+        <administrativeArea>TX</administrativeArea>
+        <postalCode>77843</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>brent.auvermann@ag.tamu.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Rick E</givenName>
+        <surName>Estell</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>rick.estell@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-3469-4712</userId>
+    </creator>
+    <metadataProvider>
+      <organizationName>Jornada Experimental Range LTAR (USDA-ARS)</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <onlineUrl>https://jornada.nmsu.edu</onlineUrl>
+    </metadataProvider>
+    <pubDate>2022-09-13</pubDate><language>English</language>
+    <abstract>
+      <para>
+    This data package includes survey questions from beef cattle
+    producers collectively operating in at least 31 counties in at least
+    7 states (California, Illinois, Missouri, Nebraska, New Mexico,
+    Oklahoma, Texas) - "at least" because there were some
+    respondents who chose not to provide the location of their
+    operation. Responses were collected between January 22, 2020 and May
+    31, 2021. Most of the surveys were administered in person at the
+    2020 Southwest Beef Symposium in Amarillo, TX. The survey was also
+    placed online and an additional few responses were collected through
+    the online survey. These data represent a sample of convenience as
+    no formal sampling scheme was employed in soliciting responses.
+    Survey responses are summarized in the publication, Snapshot of
+    Rancher Perspectives on Creative Cattle Management Options (Elias
+    et. al, 2020).
+  </para>
+      <para>
+    The purpose of gathering these data was to learn more about the
+    characteristics of beef cattle producers in the region and to gauge
+    producer interest in precision livestock ranching technologies and
+    heritage cattle – both strategies being researched by the
+    Sustainable Southwest Beef Project to support sustainability of
+    ranching operations in the Southwest and Southern Plains regions of
+    the US.
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">heritage cattle</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keyword keywordType="theme">beef cattle</keyword>
+      <keyword keywordType="theme">cattle production</keyword>
+      <keyword keywordType="theme">precision agriculture</keyword>
+      <keyword keywordType="theme">ranchers</keyword>
+      <keyword keywordType="theme">ranching</keyword>
+      <keywordThesaurus>USDA National Ag Library's Agricultural Thesaurus</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license - Attribution - CC BY 
+  (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" 
+  herein) is required to cite it appropriately in any publication that results from its 
+  use. The Data User should realize that these data may be actively used by others for 
+  ongoing research and that coordination may be necessary to prevent duplicate 
+  publication. The Data User is urged to contact the authors of these data if any 
+  questions about methodology or results occur. Where appropriate, the Data User is 
+  encouraged to consider collaboration or co-authorship with the authors. The Data User 
+  should realize that misinterpretation of data may occur if used out of context of the 
+  original study. While substantial efforts are made to ensure the accuracy of data and 
+  associated documentation, complete accuracy of data sets cannot be guaranteed. All data 
+  are made available "as is." The Data User should be aware, however, that data are updated 
+  periodically and it is the responsibility of the Data User to check for new versions of 
+  the data. The data authors and the repository where these data were obtained shall not be 
+  liable for damages resulting from any use or misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">https://southwestbeef.org</url>
+      </online>
+    </distribution>
+    <distribution id="10.6073/pasta/7d61e257d0ad7ebd00db2b4c38cc8145" scope="system" system="https://pasta.edirepository.org"><online><url function="information">https://doi.org/10.6073/pasta/7d61e257d0ad7ebd00db2b4c38cc8145</url></online></distribution><coverage>
+      <geographicCoverage>
+        <geographicDescription>U.S. states of ranch survey for study 200029: Bounding box for the states of participating ranchers in study 200029001</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-124.392638</westBoundingCoordinate>
+          <eastBoundingCoordinate>-87.507909</eastBoundingCoordinate>
+          <northBoundingCoordinate>43.003062</northBoundingCoordinate>
+          <southBoundingCoordinate>25.845557</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2020-01-22</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2021-05-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>complete</description>
+      <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <positionName>Jornada Information Manager</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>575-646-1739</phone>
+      <electronicMailAddress>jornada.data@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://jornada.nmsu.edu/ltar/data/documentation</onlineUrl>
+    </contact>
+    
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@edirepository.org</electronicMailAddress><onlineUrl>https://edirepository.org</onlineUrl><userId directory="https://ror.org">0330j0z60</userId></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Methods</title>
+            <para>
+      Survey responses were collected between January 22, 2020 and May
+      31, 2021. Most of the surveys were administered in person at the
+      2020 Southwest Beef Symposium in Amarillo, TX. The survey was also
+      made available online and an additional few responses were
+      collected through the online survey. In total, 51 surveys were
+      returned, of which 43 were used in our analysis. During an initial
+      quality control review, two surveys were found to be somewhat
+      questionable (e.g., incongruent answers, more than one mutually
+      exclusive option selected) and it was determined they could not be
+      relied upon; thus they were excluded. Another 6 respondents
+      reported that they do not currently raise cattle (although at
+      least one indicated that they had in the past) and these were also
+      excluded from the main analysis. Their opinions about barriers to
+      novel strategy adoption, however, were retained and reported
+      separately to project researchers for consideration. All survey
+      responses were aggregated to preserve respondent anonymity.
+      Fill-in-the-blank answers were used to create additional
+      categories if needed (as in the case of other breeds raised), or
+      were generalized and reported in natural groupings (as in the case
+      of suggested barriers to adoption of precision ranching
+      technology).
+    </para>
+            <para>
+      See the file Baseline_Producer_Rancher_Survey_2020-01-10.pdf for a
+      copy of the survey administered in-person, and Producer_Rancher
+      Survey_online_version.pdf for the survey that was subsequently
+      administered online.
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Sustainable Southwest Beef Coordinated Agriculture Project (CAP)</title>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Sheri</givenName>
+          <surName>Spiegal</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-7018</phone>
+        <electronicMailAddress>sheri.spiegal@usda.gov</electronicMailAddress>
+        <role>SW Beef Project Director</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Glen</givenName>
+          <surName>Duff</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>Clayton Livestock Research Center</deliveryPoint>
+          <deliveryPoint>15 NMSU Ln</deliveryPoint>
+          <city>Clayton</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>84115</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="cell">575-644-0366</phone>
+        <electronicMailAddress>glennd@nmsu.edu</electronicMailAddress>
+        <role>SW Beef Project Director</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Brandon</givenName>
+          <surName>Bestelmeyer</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-4842</phone>
+        <electronicMailAddress>brandon.bestelmeyer@usda.gov</electronicMailAddress>
+        <role>Research Leader (USDA LTAR)</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Sustainable Southwest Beef Coordinated Agriculture Project (CAP) is a five
+           year (2019-2024) project that evaluates and promotes ranch and rangeland resilience
+           in the Southwestern US. The project is funded by the USDA’s National Institute of
+           Food and Agriculture (NIFA) and coordinated through New Mexico State University
+           and the Jornada Long-Term Agroecosystems Research program (JER-LTAR). JER-LTAR is
+           part of a national network of long-term agricultural and rangeland ecology research
+           sites funded by the US Department of Agriculture (USDA). The Jornada Experimental
+           Range is administered by the USDA-ARS (USDA Agricultural Research Service).</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>The Sustainable Southwest Beef CAP is supported by the USDA-NIFA
+          (USDA-NIFA-AFRI-Sustainable Agricultural Systems, Grant Number: 2019-69012-29853).
+          </para>
+        </section>
+        <section>
+          <para>The JER-LTAR program is supported by the USDA Long-Term Agroecosystem Research
+           Network (CRIS# 3050-11210-009-00D).
+           </para>
+        </section>
+      </funding>
+    </project>
+    <otherEntity id="ab5611e0a0443643b845926cdc6a0a3a" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Baseline Producer Survey</entityName>
+      <entityDescription>Survey used for the study</entityDescription>
+      <physical>
+        <objectName>Baseline_Producer_Rancher_Survey_2020-01-10.pdf</objectName>
+        <size unit="byte">226892</size>
+        <authentication method="MD5">93fc14fd181d519486dc84689713e66b</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PDF</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200029001/2/ab5611e0a0443643b845926cdc6a0a3a</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+    <otherEntity id="06166edd8d9b8fa7b1074a20d8c7f722" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Baseline Producer Survey (online version)</entityName>
+      <entityDescription>Online version of the survey used for the study</entityDescription>
+      <physical>
+        <objectName>Baseline_Producer_Rancher_Survey_online_version.pdf</objectName>
+        <size unit="byte">207007</size>
+        <authentication method="MD5">0cf5da6cd6cfa0104aa0a8f6109ad191</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PDF</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200029001/2/06166edd8d9b8fa7b1074a20d8c7f722</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="knb-lter-jrn.200045001.3" system="https://pasta.edirepository.org" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=JRN,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="d200045001">
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/d6adbc29d37e569e053ac74a8e14d582</alternateIdentifier><title>Manure Cycling Interview Data</title>
+    <creator>
+      <individualName>
+        <givenName>Gwendwr R</givenName>
+        <surName>Meredith</surName>
+      </individualName>
+      <organizationName>University of Nebraska</organizationName>
+      <address>
+        <city>Lincoln</city>
+        <administrativeArea>NE</administrativeArea>
+        <postalCode>68583</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>gmeredith@unl.edu</electronicMailAddress>
+      <userId directory="ORCID">0000-0003-1798-5769</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Sheri</givenName>
+        <surName>Spiegal</surName>
+      </individualName>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <positionName>Research Rangeland Management Specialist</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003; MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>U.S.A.</country>
+      </address>
+      <electronicMailAddress>sheri.spiegal@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-5489-9512</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Peter J.A.</givenName>
+        <surName>Kleinman</surName>
+      </individualName>
+      <organizationName>USDA-ARS, Soil Mgmt and Sugar Beet Research Unit</organizationName>
+      <electronicMailAddress>peter.kleinman@usda.gov</electronicMailAddress>
+      <userId directory="ORCID">0000-0002-5093-3736</userId>
+    </creator>
+    <metadataProvider>
+      <organizationName>Jornada Experimental Range LTAR (USDA-ARS)</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <onlineUrl>https://jornada.nmsu.edu</onlineUrl>
+    </metadataProvider>
+    <pubDate>2022-09-08</pubDate><language>English</language>
+    <abstract>
+      <para>
+    Exploring the potential for nutrient circularity in the beef
+    production system requires an understanding of current practices.
+    Manure nutrients produced in feedlots are an ample source of
+    fertilizer for phosphorus deficient crop and hay lands. However, it
+    is unclear how far manure nutrients are travelling from feedlots,
+    what crops they’re being applied to, and whether those grains are in
+    turn integrated into the feedlot operations. The purpose of these
+    interviews was to ascertain the above information from feedlot
+    managers. In addition, we sought contextual information (provenance
+    of cattle, cattle weights/ages, manure treatment,
+    regulations/guidelines, processing facility destination, barriers,
+    suggestions for improvements). To answer our question about
+    potential manure nutrient circularity, we focused and report here
+    the elements pertaining to feed/grain provenance, crops manure was
+    applied to, and export distance for manure.
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">crop-livestock integration</keyword>
+      <keyword keywordType="theme">manureshed</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTAR</keyword>
+      <keyword keywordType="theme">animal production</keyword>
+      <keyword keywordType="theme">supply chain management</keyword>
+      <keyword keywordType="theme">sustainable agricultural intensification</keyword>
+      <keywordThesaurus>USDA National Ag Library's Agricultural Thesaurus</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license - Attribution - CC BY 
+  (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" 
+  herein) is required to cite it appropriately in any publication that results from its 
+  use. The Data User should realize that these data may be actively used by others for 
+  ongoing research and that coordination may be necessary to prevent duplicate 
+  publication. The Data User is urged to contact the authors of these data if any 
+  questions about methodology or results occur. Where appropriate, the Data User is 
+  encouraged to consider collaboration or co-authorship with the authors. The Data User 
+  should realize that misinterpretation of data may occur if used out of context of the 
+  original study. While substantial efforts are made to ensure the accuracy of data and 
+  associated documentation, complete accuracy of data sets cannot be guaranteed. All data 
+  are made available "as is." The Data User should be aware, however, that data are updated 
+  periodically and it is the responsibility of the Data User to check for new versions of 
+  the data. The data authors and the repository where these data were obtained shall not be 
+  liable for damages resulting from any use or misinterpretation of the data. Thank you.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">https://southwestbeef.org</url>
+      </online>
+    </distribution>
+    <distribution id="10.6073/pasta/d6adbc29d37e569e053ac74a8e14d582" scope="system" system="https://pasta.edirepository.org"><online><url function="information">https://doi.org/10.6073/pasta/d6adbc29d37e569e053ac74a8e14d582</url></online></distribution><coverage>
+      <geographicCoverage>
+        <geographicDescription>Idaho: Centroid for state of Idaho</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-114.537804</westBoundingCoordinate>
+          <eastBoundingCoordinate>-114.537804</eastBoundingCoordinate>
+          <northBoundingCoordinate>44.228190</northBoundingCoordinate>
+          <southBoundingCoordinate>44.228190</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Kansas: Centroid for state of Kansas</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-98.703632</westBoundingCoordinate>
+          <eastBoundingCoordinate>-98.703632</eastBoundingCoordinate>
+          <northBoundingCoordinate>38.733528</northBoundingCoordinate>
+          <southBoundingCoordinate>38.733528</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Nebraska: Centroid for state of Nebraska</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-99.929343</westBoundingCoordinate>
+          <eastBoundingCoordinate>-99.929343</eastBoundingCoordinate>
+          <northBoundingCoordinate>41.777959</northBoundingCoordinate>
+          <southBoundingCoordinate>41.777959</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Oklahoma: Centroid for state of Oklahoma</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-97.617506</westBoundingCoordinate>
+          <eastBoundingCoordinate>-97.617506</eastBoundingCoordinate>
+          <northBoundingCoordinate>35.595373</northBoundingCoordinate>
+          <southBoundingCoordinate>35.595373</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Texas: Centroid for state of Texas</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-99.106774</westBoundingCoordinate>
+          <eastBoundingCoordinate>-99.106774</eastBoundingCoordinate>
+          <northBoundingCoordinate>31.983975</northBoundingCoordinate>
+          <southBoundingCoordinate>31.983975</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Washington: Centroid for state of Washington</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.763527</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.763527</eastBoundingCoordinate>
+          <northBoundingCoordinate>47.459593</northBoundingCoordinate>
+          <southBoundingCoordinate>47.459593</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2020-07-03</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2020-12-02</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>complete</description>
+      <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <organizationName>USDA-ARS Jornada Experimental Range</organizationName>
+      <positionName>Jornada Information Manager</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 30003, MSC 3JER New Mexico State University</deliveryPoint>
+        <city>Las Cruces</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>88003-8003</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>575-646-1739</phone>
+      <electronicMailAddress>jornada.data@nmsu.edu</electronicMailAddress>
+      <onlineUrl>https://jornada.nmsu.edu/ltar/data/documentation</onlineUrl>
+    </contact>
+    
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@edirepository.org</electronicMailAddress><onlineUrl>https://edirepository.org</onlineUrl><userId directory="https://ror.org">0330j0z60</userId></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Methods</title>
+            <para>
+      To better understand what role feedlot operations have in nutrient
+      recycling, we conducted semi-structured interviews with
+      individuals from some of the top beef feedlot operations within
+      the United States. We chose to focus on the top 20 feedlots
+      because these are sites of concentrated beef production and
+      therefore also sites of concentrated nutrients. From
+      October-December 2020, we contacted via email and/or telephone the
+      top 20 beef feedlot operations within the United States. Key
+      informant interviews were then conducted over Zoom with 40% of the
+      top 20 feedlots. Interviews were audio-recorded and transcribed
+      for coding. An additional 10% of the top 20 feedlots agreed to
+      unrecorded phone interviews. All interview subjects received an
+      informed consent letter notifying them of the purpose of the study
+      and confidentiality of their operations’ name. The interview
+      protocol was reviewed and approved by the Institutional Review
+      Board at the University of Idaho as protocol #20-006. Interview
+      data was analyzed qualitatively for emergent patterns and themes.
+      In order to investigate each feedlot’s role in nutrient flows, we
+      asked participants about their operation’s nutrient inputs and
+      exports relating to cattle, feed/forage, and manure. Here, we
+      provide aggregated data for two key elements from the interview:
+      provenance of feed/grain and export distance for manure. For the
+      full list of questions, see interview_questions.pdf.
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Sustainable Southwest Beef Coordinated Agriculture Project (CAP)</title>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Sheri</givenName>
+          <surName>Spiegal</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-7018</phone>
+        <electronicMailAddress>sheri.spiegal@usda.gov</electronicMailAddress>
+        <role>SW Beef Project Director</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Glen</givenName>
+          <surName>Duff</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>Clayton Livestock Research Center</deliveryPoint>
+          <deliveryPoint>15 NMSU Ln</deliveryPoint>
+          <city>Clayton</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>84115</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="cell">575-644-0366</phone>
+        <electronicMailAddress>glennd@nmsu.edu</electronicMailAddress>
+        <role>SW Beef Project Director</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Brandon</givenName>
+          <surName>Bestelmeyer</surName>
+        </individualName>
+        <address>
+          <deliveryPoint>P.O. Box 30003, MSC 3JER</deliveryPoint>
+          <deliveryPoint>New Mexico State University</deliveryPoint>
+          <city>Las Cruces</city>
+          <administrativeArea>NM</administrativeArea>
+          <postalCode>88003-8003</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">575-646-4842</phone>
+        <electronicMailAddress>brandon.bestelmeyer@usda.gov</electronicMailAddress>
+        <role>Research Leader (USDA LTAR)</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The Sustainable Southwest Beef Coordinated Agriculture Project (CAP) is a five
+           year (2019-2024) project that evaluates and promotes ranch and rangeland resilience
+           in the Southwestern US. The project is funded by the USDA’s National Institute of
+           Food and Agriculture (NIFA) and coordinated through New Mexico State University
+           and the Jornada Long-Term Agroecosystems Research program (JER-LTAR). JER-LTAR is
+           part of a national network of long-term agricultural and rangeland ecology research
+           sites funded by the US Department of Agriculture (USDA). The Jornada Experimental
+           Range is administered by the USDA-ARS (USDA Agricultural Research Service).</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>The Sustainable Southwest Beef CAP is supported by the USDA-NIFA
+          (USDA-NIFA-AFRI-Sustainable Agricultural Systems, Grant Number: 2019-69012-29853).
+          </para>
+        </section>
+        <section>
+          <para>The JER-LTAR program is supported by the USDA Long-Term Agroecosystem Research
+           Network (CRIS# 3050-11210-009-00D).
+           </para>
+        </section>
+      </funding>
+    </project>
+    <otherEntity id="24255141257b0de368c37099ebbb3f7e" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Manure Cycling Interview Data</entityName>
+      <entityDescription>Disaggregated and de-identified interview data</entityDescription>
+      <physical>
+        <objectName>interview_data.pdf</objectName>
+        <size unit="byte">171122</size>
+        <authentication method="MD5">704368053757b39eea023364d3341e2f</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PDF</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200045001/3/24255141257b0de368c37099ebbb3f7e</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+    <otherEntity id="1c476c3a1e6fdb3498c54cf602551050" scope="document" system="https://pasta.edirepository.org">
+      <entityName>Manure Cycling Interview Questions</entityName>
+      <entityDescription>Interview questions</entityDescription>
+      <physical>
+        <objectName>interview_questions.pdf</objectName>
+        <size unit="byte">139752</size>
+        <authentication method="MD5">1b53dc06d9875b5d2658ffbd91f0c04a</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>PDF</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-jrn/200045001/3/1c476c3a1e6fdb3498c54cf602551050</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

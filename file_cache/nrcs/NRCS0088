@@ -1,0 +1,62 @@
+{
+    "references": [
+        "http:\/\/www.nrcs.usda.gov\/technical\/nri\/ceap\/cropland.html"
+    ],
+    "contactPoint": {
+        "hasEmail": "mailto:lnorfleet@brc.tamus.edu",
+        "@type": "vcard:Contact",
+        "fn": "Lee Norfleet, USDA\/NRCS, Temple, TX."
+    },
+    "description": "The dataset consists of estimates of erosion, sediment loss, soil organic carbon, nutrient loss, and pesticide loss from a statistically selected set of sample points within the Upper Mississippi River Basin.  Results for the Baseline Conservation Condition are reported for the region as a whole and for each of the 14 subbasins within the region.",
+    "title": "Conservation Effects Assessment Project (CEAP) Cropland Baseline Conservation Condition for Upper Mississippi River Basin",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "ftp:\/\/ftp-fc.sc.egov.usda.gov\/NHQ\/nri\/ceap\/UMRB_subbasin_APEX_tables.xls",
+            "description": "The dataset consists of estimates of erosion, sediment loss, soil organic carbon, nutrient loss, and pesticide loss from a statistically selected set of sample points within the Upper Mississippi River Basin. Results for the Baseline Conservation Condition are reported for the region as a whole and for each of the 14.",
+            "mediaType": "text\/html",
+            "title": "CEAP"
+        }
+    ],
+    "bureauCode": [
+        "005:53"
+    ],
+    "modified": "2014-06-13",
+    "describedBy": "http:\/\/www.nrcs.usda.gov\/technical\/nri\/ceap\/cropland.html",
+    "keyword": [
+        "conservation",
+        "conservation practices",
+        "cropland",
+        "environmental benefits",
+        "environmental effects",
+        "erosion",
+        "natural resources",
+        "nitrogen leaching",
+        "nitrogen loss",
+        "nonpoint source pollution",
+        "nutrient loss",
+        "nutrient management",
+        "nutrients and agriculture",
+        "pesticide loss",
+        "pesticides and agriculture",
+        "sediment loss"
+    ],
+    "spatial": "Upper Mississippi River Basin (parts of 8 states)",
+    "issued": "2010-06-16",
+    "identifier": "NRCS0088",
+    "accessLevel": "public",
+    "programCode": [
+        "005:027"
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "NRCS"
+    },
+    "accrualPeriodicity": "irregular",
+    "author": "USDA Natural Resources Conservation Service",
+    "fundref": "Natural Resources Conservation Service",
+    "catagories": "31922",
+    "nalt": "Natural Resources Conservation Service",
+    "isoTopic": "environment"
+}

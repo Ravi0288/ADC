@@ -1,0 +1,40 @@
+{
+    "identifier": "USDA-27003",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:ronald.lord@fas.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Ronald Lord"
+    },
+    "programCode": [
+        "005:000"
+    ],
+    "description": "Amounts of 2016 Licenses Issued, by Commodity and Country",
+    "title": "Amounts of 2016 Licenses Issued, by Commodity and Country",
+    "distribution": [
+        {
+            "accessURL": "https:\/\/www.fas.usda.gov\/programs\/resources\/amounts-2016-licenses-issued-commodity-and-country",
+            "@type": "dcat:Distribution",
+            "format": "text\/html",
+            "description": "https:\/\/www.fas.usda.gov\/programs\/resources\/amounts-2016-licenses-issued-commodity-and-country",
+            "title": "https:\/\/www.fas.usda.gov\/programs\/resources\/amounts-2016-licenses-issued-commodity-and-country"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:68"
+    ],
+    "modified": "2017-01-18",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Foreign Agricultural Service, Department of Agriculture"
+    },
+    "keyword": [
+        "dairy licenses issued"
+    ],
+    "author": "USDA Foreign Agricultural Service",
+    "fundref": "Foreign Agricultural Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

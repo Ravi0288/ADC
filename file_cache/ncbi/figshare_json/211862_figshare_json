@@ -1,0 +1,79 @@
+{
+    "title": "The complete Campylobacter jejuni transcriptome during colonization of a natural host determined by RNAseq",
+    "description": "Campylobacter jejuni is a major human pathogen and a leading cause of bacterial derived gastroenteritis worldwide. C. jejuni regulates gene expression under various environmental conditions and stresses, indicative of its ability to survive in diverse niches. Despite this ability to highly regulate gene transcription, C. jejuni encodes few transcription factors and its genome lacks many canonical transcriptional regulators. Here we report the complete transcriptome of C. jejuni during colonization of the chicken cecum and in two different in vitro growth phases using strand-specific RNAseq. Through this study, we identified over 250 genes differentially expressed in vivo and in vitro and have identified numerous putative regulatory RNAs, including trans-acting non-coding RNAs and anti-sense transcripts. Our results provide new insights into how C. jejuni responds and adapts to the cecal environment and reveals new functions involved in colonization of its natural host.",
+    "authors": [
+        {
+            "name": "University of Michigan"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2013-07-12",
+        "postedDate": "2013-07-12",
+        "revision": "2013-07-12"
+    },
+    "tags": [
+        "Campylobacter jejuni",
+        "eBacteria",
+        "transcriptome"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2013-07-12"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA211862"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "transcriptome;gene expression"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "U.S. Department of Agriculture, 2012-67012-19704"
+        },
+        {
+            "title": "National Institute of Allergy and Infectious Diseases, R01 AI069383"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/211862",
+            "title": "The complete Campylobacter jejuni transcriptome during colonization of a natural host determined by RNAseq",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

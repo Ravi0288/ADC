@@ -1,0 +1,76 @@
+{
+    "title": "Xiphinema americanum Targeted Locus (Loci)",
+    "description": "Nematodes within the Xiphinema americanum species complex are economically important because they vector nepoviruses which cause considerable damage to a variety of agricultural crops. The taxonomy of X. americanum is controversial, with the number of putative species being the subject of debate. Accurate phylogenetic knowledge of this group is highly desirable as it may ultimately reveal genetic differences between species which do vector nepoviruses and those which do not. For this study, X. americanum populations were collected from 12 geographically disparate locations across the U.S. from different crops and in varying association with nepoviruses. Four individuals from each population were analyzed. A portion of the nuclear 18S nuclear ribosomal DNA (rDNA) gene was sequenced for all individuals while the internal transcribed spacer region 1 (ITS1) of rDNA was cloned and 4 to 7 clones per individual were sequenced. Mitochondrial genomes for numerous individuals were sequenced in parallel using high-throughput DNA sequencing (HTS) technology. Phylogenetic analysis of the 18S rDNA revealed virtually identical sequences across all populations. Analysis of ITS1 rDNA sequences revealed several well-supported clades, with some degree of congruence with geographic location and viral transmission, but also numerous presumably paralogous sequences that failed to form clades with other sequences from the same population. Analysis of mitochondrial DNA (mtDNA) indicated the presence of three distinct monophyletic clades of X. americanum species complex nematodes. Two clades contained nematodes found in association with nepovirus and the third contained divergent mtDNA sequences from three nematode populations where nepovirus was absent. The inherent heterogeneity in ITS1 rDNA sequence data and lack of informative sites in 18S rDNA analysis suggests that mtDNA may be more useful in sorting out the taxonomic confusion of the X. americanum species complex, and might serve as an effective practical tool in distinguishing virus-vectoring from non-vectoring nematode populations.",
+    "authors": [
+        {
+            "name": "Oregon State University"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2013-07-26",
+        "postedDate": "2013-07-26",
+        "revision": "2013-07-26"
+    },
+    "tags": [
+        "Xiphinema americanum",
+        "eEukaryotes",
+        "targeted loci"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2013-07-26"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA213472"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "sequence analysis"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [
+        {
+            "title": "USDA-NIFA Specialty Crops Research Initiative, 2009-51181-06022"
+        }
+    ],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/213472",
+            "title": "Xiphinema americanum Targeted Locus (Loci)",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

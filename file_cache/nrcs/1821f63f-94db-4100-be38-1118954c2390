@@ -1,0 +1,64 @@
+{
+    "identifier": "1821f63f-94db-4100-be38-1118954c2390",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:david.toledo@usda.gov",
+        "fn": "Toledo, David"
+    },
+    "programCode": [
+        "005:040"
+    ],
+    "description": "<p>Plant biodiversity data and associated soils, ecological site, and livestock management data that were collected at the USDA-ARS Northern Great Plains Research Laboratory in 2011 and 2013. Data were collected using the modified Whittaker technique. The unique design of the Whitaker method reduces autocorrelation among subplots, which is common in standard transect methods (Goslee, 2006). Grassland scientists worldwide use this standard technique to quantify and monitor plant diversity on, for example, Serengeti grasslands (Anderson et al., 2006), South African serpentine grasslands (Reddy et al., 2009), and rangelands in Turkey (Firinciglu et al., 2007) among many other environments. In addition, Sanderson at the NGPRL and Goslee at ARS University Park have developed a large database on plant species diversity of grazing lands in the U.S. (nearly 300 sites sampled using the Whitaker plot method). The use of the standardized Whitaker plot method allows us to combine data from the northern Great Plains with other databases worldwide for larger-scale meta-analyses. The multiscale technique also enables comparison of vegetation dynamics at multiple scales.<\/p>\n<p>Resources in this dataset:<\/p>\n<ul>\n<li>\n<p>Resource Title: NGPRL modified Whittaker data<br \/>\nFile Name: NGPRL_ModWhit.csv<\/p>\n<\/li>\n<li>\n<p>Resource Title:  Ancillary data for NGPRL modified Whittaker plots<br \/>\nFile Name: NGPRL_ModWhit_Ancillary data.csv<\/p>\n<\/li>\n<li>\n<p>Resource Title: Data dictionary for NGPRL modified Whittaker data<br \/>\nFile Name: Modified Whittaker dataset dictionary.csv<\/p>\n<\/li>\n<li>\n<p>Methods for NGPRL modified Whittaker data<br \/>\nFile Name: modWhit methods and metadata.docx<\/p>\n<\/li>\n<\/ul>\n",
+    "title": "Data from: Evaluating plant biodiversity measurements and exotic species detection in National Resources Inventory Sampling protocols using examples from the Northern Great Plains of the USA",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/NGPRL_ModWhit.csv",
+            "format": "csv",
+            "mediaType": "text\/csv",
+            "title": "NGPRL modified Whittaker data"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/NGPRL_ModWhit_Ancillary%20data.csv",
+            "format": "csv",
+            "mediaType": "text\/csv",
+            "title": "Ancillary data for NGPRL modified Whittaker plots"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/Modified%20Whittaker%20dataset%20dictionary.csv",
+            "format": "csv",
+            "mediaType": "text\/csv",
+            "title": "Data dictionary for NGPRL modified Whittaker data"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/adc.nal.usda.gov\/system\/files\/modWhit%20methods%20and%20metadata.docx",
+            "format": "docx",
+            "mediaType": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "title": "Methods for NGPRL modified Whittaker data"
+        }
+    ],
+    "license": "http:\/\/www.usa.gov\/publicdomain\/label\/1.0\/",
+    "bureauCode": [
+        "005:18",
+        "005:53"
+    ],
+    "modified": "2023-05-30",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Agricultural Research Service"
+    },
+    "keyword": [
+        "biodiversity",
+        "NP215",
+        "species richness"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-100.95831783721,46.763624847465],[-100.95831783721,46.80098328223],[-100.90376049047,46.80098328223],[-100.90376049047,46.763624847465],[-100.95831783721,46.763624847465]]]}",
+    "author": "USDA Natural Resources Conservation Service",
+    "fundref": "Natural Resources Conservation Service",
+    "catagories": "31922",
+    "nalt": "Natural Resources Conservation Service",
+    "isoTopic": "environment"
+}

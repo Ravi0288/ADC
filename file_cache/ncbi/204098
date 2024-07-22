@@ -1,0 +1,53 @@
+<DocumentSummary uid="204098">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA204098" archive="NCBI" id="204098"/>
+            <CenterID center="DOE Joint Genome Institute" id="1006097"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Monascus purpureus NRRL 1596</Name>
+            <Title>Monascus purpureus NRRL 1596 Genome sequencing</Title>
+            <Description>Sequencing of 1000 fungal genomes to serve as the foundation for a reference database for studies of fungal metagenomics and the fungal metabolome. Selection of target taxa will aim to sample all orders and families of fungi, as well as major ecologies and morphologies, in order to well represent phylogenetic, ecological and functional fungal diversity.</Description>
+            <ExternalLink label="JGI Portal For Monascus purpureus NRRL 1596">
+                <URL>http://genome.jgi-psf.org//lookup?keyName=jgiProjectId&amp;keyValue=1006097&amp;</URL>
+            </ExternalLink>
+            <ExternalLink label="GOLD Card For Monascus purpureus NRRL 1596">
+                <URL>http://genomesonline.org/cgi-bin/GOLD/bin/GOLDCards.cgi?goldstamp=Gi22207</URL>
+            </ExternalLink>
+            <Relevance>
+                <Other>Comparative Analysis</Other>
+            </Relevance>
+            <LocusTagPrefix>L874</LocusTagPrefix>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eMonoisolate">
+                    <Organism species="5098" taxID="1149898">
+                        <OrganismName>Monascus purpureus NRRL 1596</OrganismName>
+                        <Strain>NRRL 1596</Strain>
+                        <Supergroup>eEukaryotes</Supergroup>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eSequence"/>
+                </Objectives>
+                <ProjectDataTypeSet>
+                    <DataType>Genome sequencing</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-05-21" submitted="2013-05-21" submission_id="SUB204033">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>DOE Joint Genome Institute</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB204033-1"/>
+    </Submission>
+</DocumentSummary>
+

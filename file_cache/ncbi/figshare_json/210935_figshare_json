@@ -1,0 +1,73 @@
+{
+    "title": "Malus domestica strain:Royal Gala Transcriptome or Gene expression",
+    "description": "Genes up- and down-regulated in response to drought. Young apple trees (~ 1 m tall) were clonally replicated on their own roots and subjected to a 2 week drought (water deficit) treatment. Control trees were watered throughout.",
+    "authors": [
+        {
+            "name": "USDA, ARS"
+        }
+    ],
+    "timeline": {
+        "firstOnline": "2013-07-09",
+        "postedDate": "2013-07-09",
+        "revision": "2013-07-09"
+    },
+    "tags": [
+        "Malus domestica",
+        "Royal Gala",
+        "eEukaryotes",
+        "transcriptome"
+    ],
+    "categories": [
+        30202
+    ],
+    "custom_fields_list": [
+        {
+            "name": "ISO Topic Category",
+            "value": [
+                "biota"
+            ]
+        },
+        {
+            "name": "Data contact name",
+            "value": "BioProject Curation Staff"
+        },
+        {
+            "name": "Data contact email",
+            "value": "bioprojecthelp@ncbi.nlm.nih.gov"
+        },
+        {
+            "name": "Theme",
+            "value": [
+                "Non-geospatial"
+            ]
+        },
+        {
+            "name": "Temporal Extent Start Date",
+            "value": "2013-07-09"
+        },
+        {
+            "name": "Accession Number",
+            "value": "PRJNA210935"
+        },
+        {
+            "name": "National Agricultural Library Thesaurus terms",
+            "value": "transcriptome;gene expression"
+        },
+        {
+            "name": "Publisher",
+            "value": "National Center for Biotechnology Information"
+        }
+    ],
+    "group_id": 49688,
+    "funding_list": [],
+    "defined_type": "Dataset",
+    "license": 71,
+    "related_materials": [
+        {
+            "identifier": "https:\/\/pubmed.ncbi.nlm.nih.gov\/210935",
+            "title": "Malus domestica strain:Royal Gala Transcriptome or Gene expression",
+            "relation": "IsSupplementTo",
+            "identifier_type": "URL"
+        }
+    ]
+}

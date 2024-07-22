@@ -1,0 +1,66 @@
+{
+    "@type": "dcat:Dataset",
+    "identifier": "https:\/\/www.arcgis.com\/home\/item.html?id=0adbe768f9714dbcb041334ef6789ef2",
+    "landingPage": "https:\/\/data-usfs.hub.arcgis.com\/documents\/usfs::terrestrial-condition-assessment-tca-uncharacteristic-fire-severity-moderate-map-service",
+    "title": "Terrestrial Condition Assessment (TCA) Uncharacteristic Fire Severity Moderate (Map Service)",
+    "description": "The LANDFIRE Percent Mixed-Severity Fire (PMS) raster dataset (LF US_120_PMS) was combined with the Monitoring Trends in Burn Severity (MTBS) data (1984-2017) to identify areas that have experienced unnaturally severe wildfires in the recent past (1984-2017). Areas mapped are greater than 50% Mixed-Severity Fire and a high severity fire MTBS mapped fire at the same location.",
+    "keyword": [
+        "TCA",
+        "GTAC",
+        "USFS",
+        "Fire",
+        "Open Data"
+    ],
+    "issued": "2021-01-21T22:44:24.000Z",
+    "modified": "2022-08-25T22:10:11.000Z",
+    "publisher": {
+        "source": "U.S. Forest Service",
+        "name": "U.S. Forest Service"
+    },
+    "contactPoint": {
+        "fn": "USFSEnterpriseContent",
+        "hasEmail": "mailto:SM.FS.data@usda.gov",
+        "@type": "vcard:Contact"
+    },
+    "accessLevel": "public",
+    "spatial": "-131.3620,6.8980,-65.6380,72.6220",
+    "license": "https:\/\/creativecommons.org\/licenses\/by\/4.0\/",
+    "programCode": [
+        "005:059"
+    ],
+    "bureauCode": [
+        "005:96"
+    ],
+    "theme": [
+        "geospatial"
+    ],
+    "progressCode": "onGoing",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "title": "ISO-19139 metadata",
+            "conformsTo": "https:\/\/www.isotc211.org\/2005\/gmi",
+            "mediaType": "text\/xml",
+            "accessURL": "https:\/\/www.arcgis.com\/sharing\/rest\/content\/items\/0adbe768f9714dbcb041334ef6789ef2\/info\/metadata\/metadata.xml?format=iso19139"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "title": "ArcGIS Hub Dataset",
+            "format": "Web Page",
+            "mediaType": "text\/html",
+            "accessURL": "https:\/\/data-usfs.hub.arcgis.com\/documents\/usfs::terrestrial-condition-assessment-tca-uncharacteristic-fire-severity-moderate-map-service"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "title": "ArcGIS GeoService",
+            "format": "ArcGIS GeoServices REST API",
+            "mediaType": "application\/json",
+            "accessURL": "https:\/\/usfs.maps.arcgis.com\/home\/item.html?id=0d70eddb049a485ca71dd9a15b364073"
+        }
+    ],
+    "fundref": "U.S. Forest Service",
+    "catagories": "31922",
+    "nalt": "Forestry, Wildland Management",
+    "isoTopic": "environment",
+    "author": "U.S. Forest Service"
+}

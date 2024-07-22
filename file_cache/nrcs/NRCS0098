@@ -1,0 +1,47 @@
+{
+    "identifier": "NRCS0098",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:eva.mitter@wdc.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Eva Mitter"
+    },
+    "programCode": [
+        "005:027"
+    ],
+    "description": "This dataset consists of general soil association units. It was developed by the National Cooperative Soil Survey and supersedes the State Soil Geographic (STATSGO) dataset published in 1994. It consists of a broad based inventory of soils and nonsoil areas that occur in a repeatable pattern on the landscape and that can be cartographically shown at the scale mapped of 1:250,000 in the continental U.S., Hawaii, Puerto, and the Virgin Islands and 1:1,000,000 in Alaska. The dataset was created by generalizing more detailed soil survey maps. Where more detailed soil survey maps were not available, data on geology, topography, vegetation,\r\nand climate were assembled, together with Land Remote Sensing Satellite (LANDSAT) images. Soils of like areas were studied, and the probable classification and extent of the soils were determined.\r\n\r\nMap unit composition was determined by transecting or sampling areas on the more detailed maps and expanding the data statistically to characterize the entire map unit.\r\n\r\nThis dataset consists of georeferenced vector digital data and tabular digital data. The map data were collected in 1- by 2-degree topographic quadrangle units. The soil map units are linked to attributes in the National Soil Information System relational database, which gives the proportionate extent of the component soils and their properties.\r\n\r\nThese data provide information about soil features on or near the surface of the Earth. Data were collected as part of the National Cooperative Soil Survey. These data are intended for geographic display and analysis at the state, regional, and national level. The data should be displayed and analyzed at scales appropriate for 1:250,000-scale data.",
+    "title": "U.S. General Soil Map (STATSGO2) for Individual States",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/datagateway.nrcs.usda.gov",
+            "description": "U.S. General Soil Map (STATSGO2) for Individual States \r\nAddtional link: http:\/\/websoilsurvey.nrcs.usda.gov",
+            "mediaType": "text\/html",
+            "title": "STATSGO2-State"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:53"
+    ],
+    "modified": "2006-07-06",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "NRCS"
+    },
+    "accrualPeriodicity": "irregular",
+    "keyword": [
+        "General Soil Map",
+        "NGDA",
+        "STATSGO",
+        "Soils",
+        "State Soil Geographic",
+        "tabular digital data",
+        "vector digital data"
+    ],
+    "author": "USDA Natural Resources Conservation Service",
+    "fundref": "Natural Resources Conservation Service",
+    "catagories": "31922",
+    "nalt": "Natural Resources Conservation Service",
+    "isoTopic": "environment"
+}

@@ -1,0 +1,51 @@
+{
+    "identifier": "USDA-26341",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:psdonline@fas.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Jeet Motwani"
+    },
+    "programCode": [
+        "005:000"
+    ],
+    "landingPage": "http:\/\/apps.fas.usda.gov\/psdonline",
+    "description": "Official USDA data on production, supply, and distribution of agricultural commodities for the United States and key producing and consuming countries.",
+    "title": "Production, Supply, and Distribution Database",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/apps.fas.usda.gov\/psdonline",
+            "description": "This database contains current and historical official USDA data on production, supply and distribution of agricultural commodities for the United States and key producing and consuming countries.",
+            "mediaType": "text\/html",
+            "title": "PSD Online Home Page"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/licenses\/by\/4.0",
+    "bureauCode": [
+        "005:68"
+    ],
+    "modified": "2014-04-01",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Foreign Agricultural Service, Department of Agriculture"
+    },
+    "accrualPeriodicity": "R\/P1M",
+    "keyword": [
+        "PSD",
+        "commodity balance",
+        "consumption",
+        "international market",
+        "market year",
+        "production",
+        "stocks",
+        "supply and demand",
+        "trade"
+    ],
+    "spatial": "Global",
+    "author": "USDA Foreign Agricultural Service",
+    "fundref": "Foreign Agricultural Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

@@ -1,0 +1,52 @@
+<DocumentSummary uid="213167">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA213167" archive="NCBI" id="213167"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Schizaphis graminum strain:Biotype H</Name>
+            <Title>Schizaphis graminum strain:Biotype H Transcriptome or Gene expression</Title>
+            <Description>Combined head/gut transcriptome of Schizaphis graminum biotype H.</Description>
+            <Grant GrantId="1109989">
+                <Title>BREAD: Novel Biomarkers that Rapidly Identify Insect Populations that are Efficient Vectors of Circulative Plant Viruses</Title>
+                <Agency abbr="NSF">National Science Foundation</Agency>
+            </Grant>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eTranscriptome" sample_scope="eMonoisolate">
+                    <Organism species="13262" taxID="13262">
+                        <OrganismName>Schizaphis graminum</OrganismName>
+                        <Strain>Biotype H</Strain>
+                        <Supergroup>eEukaryotes</Supergroup>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eSequence"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-07-24" submitted="2013-07-24" submission_id="SUB301798">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute" url="http://www.ars.usda.gov/pandp/people/people.htm?personid=40651">
+                <Name>USDA ARS</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB301798-1"/>
+    </Submission>
+</DocumentSummary>
+

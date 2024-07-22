@@ -1,0 +1,62 @@
+<DocumentSummary uid="214227">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA214227" archive="NCBI" id="214227"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>gut metagenome</Name>
+            <Title>Ovis aries rumen metagenome</Title>
+            <Description>Metagenomic survey sequencing of O. aries rumen microflora</Description>
+            <Grant GrantId="NRI-2011-68006-30185">
+                <Title>Improving Profitability and Sustainability of Sheep Production</Title>
+                <Agency abbr="USDA">United States Department of Agriculture</Agency>
+            </Grant>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eGenome" sample_scope="eEnvironment">
+                    <Organism species="749906" taxID="749906">
+                        <OrganismName>gut metagenome</OrganismName>
+                        <Supergroup>eOther</Supergroup>
+                        <BiologicalProperties>
+                            <Environment>
+                                <Salinity>eUnknown</Salinity>
+                                <OxygenReq>eAnaerobic</OxygenReq>
+                                <TemperatureRange>eMesophilic</TemperatureRange>
+                                <Habitat>eHostAssociated</Habitat>
+                            </Environment>
+                            <Phenotype>
+                                <BioticRelationship>eCommensal</BioticRelationship>
+                            </Phenotype>
+                        </BiologicalProperties>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eRawSequenceReads"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>metagenome</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>metagenome</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-08-05" submitted="2013-08-05" submission_id="SUB309471">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>University of Missouri</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB309471-1"/>
+    </Submission>
+</DocumentSummary>
+

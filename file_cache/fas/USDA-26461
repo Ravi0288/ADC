@@ -1,0 +1,44 @@
+{
+    "identifier": "USDA-26461",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:1-GAINAppSupport@fas.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "Lee Schartz"
+    },
+    "programCode": [
+        "005:000"
+    ],
+    "description": "Information reports on agricultural situations in more than 130 countries submitted by overseas offices of USDA's Foreign Agricultural Service",
+    "title": "Global Agricultural Information Network",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/gain.fas.usda.gov\/Lists\/Advanced%20Search\/AllItems.aspx",
+            "mediaType": "text\/html",
+            "title": "Web Page"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/licenses\/by\/4.0",
+    "bureauCode": [
+        "005:68"
+    ],
+    "modified": "2014-12-23",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Foreign Agricultural Service, Department of Agriculture"
+    },
+    "accrualPeriodicity": "R\/P1D",
+    "keyword": [
+        "Agricultural economy",
+        "agricultural policy",
+        "commodity report",
+        "foreign market"
+    ],
+    "spatial": "Global",
+    "author": "USDA Foreign Agricultural Service",
+    "fundref": "Foreign Agricultural Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

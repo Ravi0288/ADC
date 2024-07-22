@@ -1,0 +1,49 @@
+{
+    "identifier": "USDA-FAS-0010",
+    "accessLevel": "public",
+    "contactPoint": {
+        "hasEmail": "mailto:paul.provance@fas.usda.gov",
+        "@type": "vcard:Contact",
+        "fn": "International Production Assessment Division"
+    },
+    "programCode": [
+        "005:042"
+    ],
+    "description": "Monthly report on crop acreage, yield and production in major countries worldwide. Sources include reporting from FAS\u2019s worldwide offices, official statistics of foreign governments, and analysis of economic data and satellite imagery.",
+    "title": "World Agricultural Production",
+    "distribution": [
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "http:\/\/apps.fas.usda.gov\/psdonline\/circulars\/production.pdf",
+            "description": "Monthly report on crop acreage, yield and production in major countries worldwide. Sources include reporting from FAS\u2019s worldwide offices, official statistics of foreign governments, and analysis of economic data and satellite imagery.",
+            "mediaType": "application\/pdf",
+            "title": "World Agricultural Production"
+        },
+        {
+            "@type": "dcat:Distribution",
+            "downloadURL": "https:\/\/inventory.data.gov\/dataset\/a4bb2733-5ab4-479e-96f3-5fe7f839c93e\/resource\/e47689e1-6c62-4611-9574-c0ba88cd7570\/download\/worldagriculturalproductionaug2014.pdf",
+            "mediaType": "application\/pdf",
+            "title": "World Agricultural Production Aug 2014"
+        }
+    ],
+    "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+    "bureauCode": [
+        "005:68"
+    ],
+    "modified": "2014-08-01",
+    "publisher": {
+        "@type": "org:Organization",
+        "name": "Foreign Agricultural Service"
+    },
+    "keyword": [
+        "commodity",
+        "crop acreage",
+        "crop yield",
+        "production"
+    ],
+    "author": "USDA Foreign Agricultural Service",
+    "fundref": "Foreign Agricultural Service",
+    "catagories": "31314",
+    "nalt": "economics; agricultural economics",
+    "isoTopic": "economy"
+}

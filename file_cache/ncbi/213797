@@ -1,0 +1,75 @@
+<DocumentSummary uid="213797">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA213797" archive="NCBI" id="213797"/>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Oryza sativa Japonica Group</Name>
+            <Title>Oryza sativa Japonica Group Transcriptome or Gene expression</Title>
+            <Description>RNA-sequencing Reveals Previously Unannotated Protein-coding and miRNA-coding Genes Expressed in Aleurone Cells of Rice Seed</Description>
+            <ExternalLink label="Jeffery Q. Shen UNLV Lab of Bioinformatics and Molec Biology">
+                <URL>http://shenlab.sols.unlv.edu/shenlab/</URL>
+            </ExternalLink>
+            <ExternalLink label="Publication">
+                <URL>http://dx.doi.org/10.1016/j.ygeno.2013.10.007</URL>
+            </ExternalLink>
+            <Grant GrantId="2008-35100-04519">
+                <Title>2008-35100-04519</Title>
+                <Agency abbr="USDA">United States Department of Agriculture</Agency>
+            </Grant>
+            <Relevance>
+                <Agricultural>yes</Agricultural>
+            </Relevance>
+            <LocusTagPrefix biosample_id="SAMN02298005">ME40</LocusTagPrefix>
+            <LocusTagPrefix biosample_id="SAMN02298006">ME41</LocusTagPrefix>
+            <LocusTagPrefix biosample_id="SAMN02298007">ME42</LocusTagPrefix>
+            <LocusTagPrefix biosample_id="SAMN02298008">ME43</LocusTagPrefix>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eTranscriptome" sample_scope="eMultiisolate">
+                    <Organism species="4530" taxID="39947">
+                        <OrganismName>Oryza sativa Japonica Group</OrganismName>
+                        <Supergroup>eEukaryotes</Supergroup>
+                        <BiologicalProperties>
+                            <Environment>
+                                <Habitat>eTerrestrial</Habitat>
+                            </Environment>
+                        </BiologicalProperties>
+                        <Organization>eMulticellular</Organization>
+                        <Reproduction>eSexual</Reproduction>
+                        <GenomeSize units="Mb">375.000000</GenomeSize>
+                    </Organism>
+                    <Provider>USDA ARS, Dale Bumpers National Rice Research Center</Provider>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eRawSequenceReads"/>
+                    <Data data_type="eAnnotation"/>
+                    <Data data_type="eExpression"/>
+                </Objectives>
+                <IntendedDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </IntendedDataTypeSet>
+                <ProjectDataTypeSet>
+                    <DataType>transcriptome</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2013-07-30" submission_id="SUB306020" submitted="2013-07-30">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute" url="http://www.unlv.edu/">
+                <Name>UNLV</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Organization role="participant" type="center" url="http://shenlab.sols.unlv.edu/shenlab/">
+                <Name abbr="Dr. Jeffery Q. Shen">Dr. Jeffery Q. Shen</Name>
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB306020-1"/>
+    </Submission>
+</DocumentSummary>
+
